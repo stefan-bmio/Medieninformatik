@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.2}{Architekturmuster und -prinzipien}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{MVC}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{SOLID}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Logik und Datenmodell der Ansicht}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Single Responsibility}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Open-Closed}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Liskovsches Substitutionsprinzip}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Interface Segregation}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Dependency Inversion}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{G\374ltigkeitspr\374fung f\374r Eingaben}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Interpretation und Weiterleitung der Benutzereingaben}{section.4}% 12
+\BOOKMARK [1][-]{section*.22}{Glossar}{}% 13

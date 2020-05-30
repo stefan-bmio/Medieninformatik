@@ -1,0 +1,16 @@
+<APPLET
+CODEBASE = "."
+ARCHIVE  = "LueckenApplet.jar"
+CODE     = "Luecke.LueckeStart.class"
+WIDTH    = 200
+HEIGHT   = 50
+ALIGN    = middle
+>
+<param name="text" value="Meistens sind die § und Ziele byteorientierter Ströme §, in die § geschrieben bzw. aus denen Bytefolgen gelesen werden können. §-bzw. zeichenorientierte Ströme werden verwendet, um Daten in einer von Menschen § Form ausgeben zu können. In manchen Fällen ist es bequemer, statt der einzelnen Bytes, die § als Ganzes mit ihren aktuellen Daten aus einer § einzulesen bzw. in einer § auszugeben. Unter § wird ein § verstanden , indem ein Objekt leicht und sicher in einen Datenstrom und wieder zurück § werden kann. § sind Klassen, bei denen neue § aus vorhandenen erzeugt werden, indem die einzelnen § der Datenströme beliebig verarbeitet werden.">
+<param name="luecken_woerter" value="Quellen,Dateien,Bytefolgen,Character,lesbaren,Objekte,Datenquelle,Datensenke,Serilisation,Mechanismus,verwandelt,Filterklassen,Datenströme,Elemente,">
+<param name="luecken_loesung" value="Quellen,Dateien,Bytefolgen,Character,lesbaren,Objekte,Datenquelle,Datensenke,Serilisation,Mechanismus,verwandelt,Filterklassen,Datenströme,Elemente,">
+<param name="woerter" value="Quellen,Dateien,Bytefolgen,Character,lesbaren,Objekte,Datenquelle,Datensenke,Serilisation,Mechanismus,verwandelt,Filterklassen,Datenströme,Elemente,geworfen,">
+<param name="luecken_zeichen" value="§">
+<param name="umbruch_zeichen" value="$">
+<param name="tauschbar" value="">
+</APPLET>

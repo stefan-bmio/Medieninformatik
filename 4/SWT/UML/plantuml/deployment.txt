@@ -1,0 +1,37 @@
+@startuml
+
+title Product Review Webservice Verteilungsdiagramm
+
+node "Review-Service" <<Webservice>> as RS {
+	database "Produkte DB"
+	database "Benutzer DB" as Bendb
+	
+	note bottom of Bendb
+		Benutzer sind Händler,
+		Käufer und Hersteller
+	end note
+	
+	artifact "RESTful Service"
+}
+
+node "Übersetzer" <<optional>> as TranslDB{
+	database "Übersetzungen DB"
+}
+
+node "Online Shop A" as A{
+}
+node "Online Shop B" as B{
+}
+node "Online Shop C" as C{
+}
+
+cloud internet {
+}  
+
+A -> internet
+B -up-> internet
+C -down-> internet
+RS -left-> internet
+TranslDB -left-> RS
+
+@enduml

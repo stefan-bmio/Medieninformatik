@@ -1,0 +1,26 @@
+@startuml
+title Product Review Webservice - Paketdiagramm
+
+package "Front End" as FE {
+	component "Benutzerverwaltung"
+	component "Review Überprüfung"
+}
+
+package "Webservice" as WS {
+	component "Authentifizierung"
+	component "Review Resource"
+}
+
+package "DAO" as DAO {
+	component "User Dao"
+	component "Product Dao" as PD
+	note right of PD
+		Produkte jeweils mit
+		Liste von Reviews
+	end note
+}
+
+FE --> DAO : <<import>>
+WS --> DAO : <<import>>
+
+@enduml

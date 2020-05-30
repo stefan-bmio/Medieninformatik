@@ -1,0 +1,106 @@
+\documentclass{article}
+\renewcommand{\labelitemi}{$\triangleright$}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}.}
+
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\algtext*{EndWhile}
+\algtext*{EndIf}
+\algrenewcommand\alglinenumber[1]{\footnotesize #1}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{<}{\ \leq\ }{#1}} 
+\newcolumntype{e}[1]{D{-}{\ \leftrightarrow\ }{#1}} 
+
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+
+\usepackage{listings}
+
+\begin{document}
+\title{Einsendeaufgabe 7}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\subsection{}
+Ein Verein habe 756 Mitglieder, und auch in der Zukunft werde der Verein nicht mehr als 1000
+Mitglieder haben. Eine Mitglieds-Nummer gebe es nicht.
+Für diesen Verein ist eine Mitglieder-Datei anzulegen. Die Mitglieder-Datei ist als eine Hashtabelle
+mit offener Adressierung und einem initialen Belegungsfaktor von 1/2 zu implementieren. Dabei
+sind die ersten fünf Buchstaben des Nachnamens für das Hashing zu verwenden. Ist der Nachname
+kürzer, dann ist er durch Anhängen von Blanks entsprechend zu verlängern.
+Das zugrunde liegende Alphabet bestehe dabei aus 26 Buchstaben und dem Blank, eine Unterscheidung
+zwischen Groß- und Kleinbuchstaben werde nicht gemacht.
+\paragraph{a)} Spezifizieren Sie eine Hashfunktion. \\\\
+$
+n = 1000, \\
+\alpha = 0.5, \\
+l = \text{Nachname}, n_l = \text{Länge von } l, \\
+k = 
+\begin{cases}
+	l\{\textvisiblespace\}^{5-n_l} &\text{falls }n_l < 5 \\
+	l_0l_1\ldots l_4 &\text{sonst}
+\end{cases}, \\
+m = \text{eine Zweierpotenz} \geq n/\alpha \geq 8 = 2048, \\
+a = 8\lfloor m / 23\rfloor + 5 = 717, \\
+h(k) = (ak_1 + a^2k_2+\ldots + a^5k_5) \mod m
+$ 
+\paragraph{b)} Bestimmen Sie den aktuellen Belegungsfaktor. \\\\
+$\alpha = n/m = 756 / 2048 \approx 0.37$
+\paragraph{c)} Welche mittlere Länge hätten die Kollisionsketten, wenn zu Hashing mit geschlossener Adressierung
+übergegangen werden würde? \\\\
+Die mittlere Länge der Kollisionskette wäre gleich dem Belegungsfaktor. Bzw. wäre die Länge der Kollisionsketten im mittleren Fall $0$, denn $\alpha < 0.5$, d.h. bei einer Kollision wird im Mittel an der nächsten Position in der Hashtabelle ein Platz zur Verfügung stehen ($\lfloor \alpha + 0.5 \rfloor$).
+\pagebreak
+\subsection{}
+\lstset{language=Java}
+Was geben in Java die folgenden Anweisungen aus? Erklären Sie kurz, wie die HashFunktion in diesen drei Klassen implementiert ist. \\
+\begin{lstlisting}
+System.out.println("11".hashCode() );
+\end{lstlisting}
+Ausgabe: 1568\\\\
+$h(k) = \begin{cases} 0 &\text{falls } n = 0\\ s[0] \cdot 31^{n-1} + s[1] \cdot 31^{n-2} + \ldots + s[n-1] &sonst \end{cases}$ \\\\
+wobei $s[i]$ der Zeichencode des \textit iten Zeichen des Strings und $n$ die Länge des Strings ist.\\
+\begin{lstlisting}
+System.out.println(new Integer(1000).hashCode() );
+\end{lstlisting}
+Ausgabe: 1000 \\\\
+$h(k) = k$ \\
+\begin{lstlisting}
+ArrayList<Integer> arl = new ArrayList<Integer>();
+System.out.println(arl.hashCode() );
+\end{lstlisting}
+Ausgabe: 1\\
+\begin{lstlisting}
+arl.add(1);
+System.out.println(arl.hashCode() );
+\end{lstlisting}
+Ausgabe: 32\\
+\begin{lstlisting}
+arl.add(1);
+System.out.println(arl.hashCode() );
+\end{lstlisting}
+Ausgabe: 993 \\\\
+$h(k) = \begin{cases}1 & \text{falls } n = 0 \\31^{n} + h_g(l[0]) \cdot 31^{n-1} + h_g(l[1]) \cdot 31^{n-2} + \ldots + h_g(l[n-1])  &\text{sonst}\end{cases}$ \\\\
+wobei $l[i]$ das \textit ite Listenelement und $h_g$ die Hashfunktion für den Typparameter (hier \lstinline {Integer}) ist.
+\end{document}

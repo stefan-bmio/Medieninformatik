@@ -1,0 +1,11 @@
+{
+  "commands" : [
+    "*.tex : pdflatex {name}",
+    "*.tex : biber {name}",
+    "*.tex : pdflatex {name}",
+    "*.tex : pdflatex {name}",
+
+    "*.mp : mpost -output-directory mps {name}",
+    "*.mp : pdflatex product-review-webservice.tex"
+  ]
+}

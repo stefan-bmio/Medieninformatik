@@ -1,0 +1,1075 @@
+/* VFH Stylesheet Druck  Master - vfh01p (ehem. VFHGP1)*/
+
+/*-----------------------------------------------*/
+/* ====  Allgemeine Einstellungen  ==== */
+/*-----------------------------------------------*/
+html {
+	height:			100%;
+}
+body {
+	font-family:	Arial, sans-serif;
+	font-size:		11pt;
+	width:				100%;
+	height:				100.001%;
+	display:			block;
+	margin:				0;
+	padding:			0;
+}
+p, h1{
+	margin: 0;
+	padding:0;
+}
+img{
+	border:none;
+}
+
+/* Verhindert den Seitenumbruch */
+.no-pg-break {
+}
+/* Seitenumbruch VOR dem Element*/
+.pg-break-before {
+	display:none;
+}
+/* Seitenumbruch NACH dem Element*/
+.pg-break-after {
+	display:none;
+}
+
+
+/* Elemente für den Druck ausblenden */
+.versteckt {
+	visibility:			hidden;
+}
+.noprint{
+	display: none;
+}
+.autorenhinweis {
+    display: none;
+}
+/*Alternativbild (von z. B. Animationen) einblenden*/
+.alternativbild {
+	display: block;
+	visibility: visible;
+}
+/*Ausrichtungen und Floats*/
+#titleContainer, .lastpage{
+	text-align:center;
+}
+/* text-align links, mitte, rechts */
+.alignLeft{
+ text-align: left;
+}
+.alignCenter{
+ text-align: center;
+}
+.alignRight{
+ text-align: right;
+}
+.talign{
+	vertical-align:top;
+	}
+.balign{
+	vertical-align:bottom;
+	}
+/*Float links/rechts*/
+.floatLeft{
+ float: left;
+}
+.floatRight{
+ float: right;
+}
+/*Float beenden*/
+.clearTheFloats {
+	clear:both !important;
+}
+
+li.download {
+	list-style-image: url(IcoDiskette.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+	}
+
+li.download_pdf {
+	list-style-image: url(IcoPdf.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+	}
+
+li.download_na {
+	list-style-image: url(IcoDisketteX.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+	}
+
+/***************************************************************
+	MAIN CONTAINER
+***************************************************************/
+#mainContainer {
+	margin:			5px auto;
+	/*Height Workaround for IE ----*/
+	min-height:	98%;
+	height: 		auto !important;
+	_height:		98%;
+	width: 			760px;
+	position:		relative;
+	background: #fff;
+	/*-----------------------------*/
+}
+/***************************************************************
+	HEADER / FOOTER
+***************************************************************/
+#navMain, #footerContainer{
+	display:none
+	}
+/***************************************************************
+	CONTENT / Inhaltsbereich
+***************************************************************/
+#content {
+	border-top-width:0;
+	border-bottom-width:0;
+	width:			auto;
+	margin: 0px 15px;
+	padding-bottom:	40px;
+}
+#content p {
+	line-height:1.4em;
+}
+
+/* == Bildquelle nach Abbildungen und Animationen == */
+div.bildquelle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 0px 15px 0px;
+}
+div.bildquellelink {
+	margin: 3px 0px 5px 0px;
+	background: url(IcoSource.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:25px;
+}
+div.bildquellelink a:link {
+	text-decoration: none;
+	border-bottom:	1px dotted #009;
+	color: #009;
+}
+div.bildquellelink a:hover {
+	text-decoration: none;
+	border-bottom:	1px solid #009;
+	color: #009;
+}
+/* == Abbildungsmarginalie (auch fuer Tabellen anwendbar -> .tabellentitel)== */
+div.bildtitel, div.tabellentitel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 2px 0px 0px;
+}
+
+/******************** Tabelleninhalte *********************/
+/* == Content Table-Formatierung NEU (12.05.15) ==*/
+.table_main {
+	width: 730px;
+	border: 0;
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+.table_row{
+	vertical-align:top;
+	border: 0;
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+.table_margin{
+	width:150px;
+	vertical-align: top;
+	border: 0;
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+.table_content{
+	width:580px;
+	border: 0;
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+
+/* for <hr> */
+.trenner{
+	width: 578px;
+	background-color: #333;
+   border: none;
+   color: #333333;
+   height: 1px;
+	}
+
+/* == Quellcode Formatierung ==*/
+.CodeNormal {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #000000;
+  text-decoration: none;
+}
+
+
+.CodeKeyword {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #0000FF;
+  text-decoration: none;
+}
+.CodeType {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #000080;
+  text-decoration: none;
+}
+.CodeLiteral {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #008080;
+  text-decoration: none;
+}
+.CodeComment {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #008000;
+  text-decoration: none;
+}
+.CodeBracket {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #FF0000;
+  text-decoration: none;
+}
+.CodeLineNumber {
+  font-family: "Courier New", Courier, sans-serif;
+  font-style: normal; font-weight: normal; color: #808080;
+  text-decoration: none;
+}
+
+/*----------------------------*/
+/* Container für Quellcode    */
+/*----------------------------*/
+
+div.codeContainer {
+	border:1px solid #005190;
+}
+div.codeContainerContent{
+	background:#EBEBEB;
+	padding: 4px 4px 4px 4px;
+}
+div.codeContainerCaption{
+    background:#A8D3F4;
+    font-family: Arial, sans-serif; font-size: 13px; font-weight:bold;
+    border-bottom:1px solid #005190;
+    padding: 1px 0 0 5px;
+}
+div.codeContainerContent pre:last-child {
+  margin-bottom:2px;
+}
+div.codeContainerContent pre:first-child {
+  margin-top:2px;
+}
+/*Zeilennummernn*/
+.numbers{
+	float:left;
+	padding-top:1px;
+	padding-right:10px;
+	color:#999;
+	font-size: 12px;
+	line-height:15px;
+}
+
+/*-----------------------------------------------------*/
+/* Tabellenrahmen fuer Datentabellen im Inhaltsbereich */
+/*-----------------------------------------------------*/
+
+table.datentabelle  {
+	margin:	0 0 0 0;
+	padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+	border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+	/* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+	width:	100%;
+	text-align: center;
+}
+/* Tabellenunterschrift*/
+.datentabelle caption {
+    margin-top:	5px;
+    margin-bottom:	15px;
+    caption-side:	bottom;
+    font-size:		10px;
+    text-align:	right;
+}
+/* Kopfzeile */
+.datentabelle th {
+    /* text-align:	left;		 default-Wert ist center*/
+    border:		1px solid #404A5A;
+    padding:	        3px 5px;
+    background:	#BBC8D6;
+    font-size:	        12px;
+}
+/* Zelle */
+.datentabelle td {
+	border:		1px solid #404A5A;
+	padding:	        3px 5px;
+	vertical-align:	top;
+	text-align: left;
+}
+.datentabelle p {
+    margin:0 0 10px 0;
+    font-size:13px;
+}
+.datentabelle ul {
+    margin:		0;
+    padding:	        0 0 0 16px;
+    font-size:		10pt;
+}
+.datentabelle li {
+    margin-bottom:	5px;
+}
+/* fuer Listenpunkte in a. b. c. */
+.datentabelle .abc li {
+    list-style:	lower-latin;
+    margin-left:	5px;
+}
+.datentabelle .evenTR {
+    background:	#e7e9ee;
+}
+.datentabelle .oddTR {
+    background:	#FFF;
+}
+.kleinFont {
+    font-size:	        10pt;
+}
+.zentriert {
+   text-align:	        center;
+}
+
+/*------------------------------------------*/
+/* Tabellenrahmen fuer Tabellen in Uebungen */
+/*----------------------------------------- */
+
+table.table_uebung  {
+    margin:	0 0 10px 0;
+    padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+    border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+                               /* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+    width:	100%;
+}
+/* Tabellenunterschrift*/
+.table_uebung caption {
+    margin-top:	5px;
+    margin-bottom:	15px;
+    caption-side:	bottom;
+    font-size:		10px;
+    text-align:	right;
+}
+/* Kopfzeile */
+.table_uebung th {
+    /* text-align:	left;		 default-Wert ist center*/
+    border:		    1px solid #EA8C00;
+    padding:	    3px 5px;
+    background:		#F6C677;
+    font-size:	    12px;
+}
+/* Zelle */
+.table_uebung td {
+    border:			1px solid #EA8C00;
+    padding:	    3px 5px;
+    vertical-align:	top;
+}
+.table_uebung p {
+    margin:			0 0 10px 0;
+}
+.table_uebung ul {
+    margin:			0;
+    padding:	    0 0 0 16px;
+    font-size:		10pt;
+}
+.table_uebung li {
+    margin-bottom:	5px;
+	font: 	13px Arial, Helvetica, sans-serif;
+}
+/* fuer Listenpunkte in a. b. c. */
+.table_uebung .abc li {
+    list-style:	lower-latin;
+    margin-left:	5px;
+}
+.table_uebung .evenTR {
+    background:	#F9E3A6;
+}
+.table_uebung .oddTR {
+    background:	#FFF4CB;
+}
+
+/* ------------------------------- */
+/* Tabellen für statistische Daten */
+/* ------------------------------- */
+
+table.statistik {
+    margin:	0 0 0 0;
+    padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+    border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+                               /* margin in th, td und tr ebenfalls   */
+    font: 	10pt Arial, Helvetica, sans-serif;
+    text-align:	right;
+    width:	100%;
+}
+.statistik th {
+    border-top:		1px solid #404A5A;
+	border-bottom:  1px solid #404A5A;
+    padding:	        3px 5px;
+    background:		#FFF;
+    font-size:	        12px;
+}
+.statistik td {
+    border:			none;
+    padding:	    3px 5px;
+    vertical-align:	top;
+    background:		#FFF;
+}
+.statsitik p {
+    margin:			0 0 10px 0;
+	font-size:	        10pt;
+}
+.statistik tfoot {
+		border-bottom:  1px solid #404A5A;
+		height: 2px;
+}
+
+/* == Container fuer Eingabeaufforderung(CMD) == */
+.cmdContainer{
+    background:#000000;
+    width:auto;
+    height:auto;
+    display:block;
+    padding: 10px 5px 10px 5px;
+    border-bottom:solid #333333;
+    border-right:solid #333333;
+    border-top:solid #CCCCCC;
+    border-left:solid #CCCCCC;
+}
+.cmdContainerBody{
+    padding:0;
+    margin:0 5px 0 5px;
+    /*font-family: "Courier New", Courier, mono; font-size: 10pt;
+      font-style: normal; line-height: normal; font-weight: bold; color: #c0c0c0
+    */
+}
+.cmdText{
+    font-family: "Courier New", Courier, mono; font-size: 10pt;
+    font-style: normal; line-height: normal; font-weight: bold; color: #c0c0c0
+}
+.cmdContainer p{
+    margin:0px;
+    padding:0px;
+    font-family: "Courier New", Courier, mono; font-size: 10pt;
+    font-style: normal; line-height: normal; font-weight: bold; color: #c0c0c0
+}
+
+/*----------------------------*/
+/* Container für Animationen */
+/*----------------------------*/
+.aniContainer{
+	background:#EAEAEA;
+	width:auto;
+	height:auto;
+	display:block;
+	border: 1px solid #005190;
+}
+.aniContainerCaption{
+    background:#A8D3F4;
+    font-family: Arial, sans-serif; font-size: 13px; font-weight:bold;
+    width:auto;
+    height:auto;
+    border-bottom:1px solid #005190;
+    padding: 1px 0 0 5px;
+}
+.aniContainer h2{
+    font-family: Arial, sans-serif; font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height:normal;
+    padding:10px 5px 5px 5px;
+    margin:0;
+}
+.aniContainer p:first-child {
+	margin-top: 10px;
+}
+.aniContainerBody{
+    padding:0;
+    margin:0 5px 0 5px;
+    font-family: Arial, sans-serif; font-size: 14px;
+}
+object{
+	display: block;
+}
+
+/*-------------------------------------------------*/
+/* Container für Begriffe und Definitionen "Terms" */
+/*-------------------------------------------------*/
+
+.termContainer{
+     background:#E7E9EE;
+     width:auto;
+     height:auto;
+     display:block;
+	 overflow:auto;
+     border: 1px solid #41596b;
+     padding:5px 5px 0 5px;
+     margin:0 ;
+     font-family: Arial, sans-serif; font-size: 14px;
+}
+
+.termContainer h2{
+    font-family: Arial, sans-serif; font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 7px 0 3px 0;
+    margin:0;
+		margin-bottom: 10px;
+}
+.termContainer p:last-child {
+  margin-bottom:5px;
+}
+.termContainer p:first-child {
+  margin-top:2px;
+}
+/*-------------------------------------------------*/
+/* Container für Begriffe und Definitionen "Terms" */
+/*-------------------------------------------------*/
+.defContainer{
+	background: #f4f4d9;
+	background: -moz-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4d9), color-stop(39%, #fcfff4), color-stop(100%, #fcfff4));
+	background: -webkit-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -o-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -ms-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: linear-gradient(to bottom, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4d9', endColorstr='#fcfff4', GradientType=0 );
+     width:auto;
+     height:auto;
+     display:block;
+     overflow:auto;
+     border: 1px solid #9EA03F;
+     padding:5px 5px 0 5px;
+     margin:0 ;
+     font-family: Arial, sans-serif; font-size: 14px;
+}
+.defContainer h2{
+    font-family: Arial, sans-serif; font-size: 11pt;
+    font-style: normal;
+    font-weight: bold;
+    line-height:normal;
+    padding: 0px 0px 5px;
+    margin:0;
+}
+.defContainer p{
+	padding:0px 0px 5px 0px;
+	margin:0;
+}
+
+/*--------------------------------*/
+/* == Container fuer Beispiele == */
+/*--------------------------------*/
+.bspContainer{
+  background:#FFF;
+  width:auto;
+  height:auto;
+  display:block;
+  border: 1px solid #41596b;
+  padding:5px 5px 0 5px;
+  margin:0 ;
+  font-family: Arial; font-size: 11pt;
+  page-break-inside:avoid;
+}
+
+.bspContainer h2{
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height:normal;
+  padding: 10px 0 10px 0;
+  margin:0;
+}
+
+.bspContainer p{
+  padding: 2px 2px 5px 2px;
+  margin:0;
+}
+.bspContainer p:last-child {
+  margin-bottom:3px;
+}
+
+.bspContainer p:first-child {
+  margin-top:2px;
+}
+
+.bspContainer ul{
+  list-style-position: outside;
+  list-style-image: none;
+  font-family: Arial;
+  font-size: 11pt;
+  font-weight: normal;
+  color: #000000; clip: rect( );
+  line-height: normal;
+  /*margin:2px 2px;*/
+}
+
+.bspContainer li {
+	margin-bottom: 10px;
+}
+
+.bspContainer ol.loweralpha {
+	list-style-position: outside;
+	list-style-image: none;
+	list-style-type: lower-alpha;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+	margin:2px 2px;
+}
+
+.bspContainer table{
+    margin: 5px 0 0 0;
+}
+/*----------------------------*/
+/* Container für Wissenstests */
+/*----------------------------*/
+
+.uebContainer{
+	background:#FFF4CB;
+	width:auto;
+	height:auto;
+	display:block;
+	border: 1px solid #C57E00;
+}
+.uebContainerCaption{
+    background:#FBC969;
+    font-family: Arial, sans-serif; font-size: 10pt; font-weight:bold;
+    width:auto;
+    height:auto;
+    border-bottom:1px solid #C57E00;
+    padding: 0 0 0 5px;
+}
+.uebContainer h2{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height:normal;
+    padding:10px 0 0 5px;
+    margin:0;
+}
+.uebContainerBody{
+    padding:0;
+    margin:0 5px 0 5px;
+	font-family: Arial, sans-serif; font-size: 11pt;
+}
+.uebContainer p:last-child {
+  margin-bottom:4px;
+}
+.uebContainer p:first-child {
+  margin-top:6px;
+}
+
+/* Zusammenfassung */
+.zusammen {
+	background:			url(checked.gif) 0px 17px no-repeat;
+	height:				13px;
+	width:				23px;
+	margin:				0;
+	padding:			0;
+}
+UL.zusammenfassung {
+	margin:				0;
+	padding:			0;
+}
+.zusammenfassung li {
+	list-style:			none;
+	background:			url(checked.gif) 0px 2px no-repeat;
+	margin:				0;
+	padding:			0 0 15px 26px;
+}
+.zusammenfassung li li {
+	list-style:			disc;
+	background:			none;
+	padding:			0;
+}
+.zusammenfassung p {
+	margin:			0;
+}
+
+/*-----------------------------------------------*/
+/* Fussnoten */
+/*-----------------------------------------------*/
+.fussnote {
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  font-size: 8pt; color: #FF6600
+}
+.fussnotentext {
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  font-size: 8pt; color: #666666;
+	  margin-left: 2em;
+	  text-indent: -2em
+}
+.fussnotentrenner {
+		width: 150px;
+		height: 1px;
+		margin-left:0;
+		margin-top:20;
+		text-align: left;
+		border:none;
+		background-color:#666666
+}
+.fussnotentrenner_full {
+	width: 100%;
+	height: 1px;
+	margin-left:0;
+	margin-top:20;
+	text-align: left;
+	border:none;
+	background-color:#666666
+}
+
+/* == Link zur Textversion von Animationen == */
+.textversion {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	margin: 5px 0px 12px 0px;
+    background: url(IcoOpenWinS.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:15px;
+}
+.textversion a:link {
+	text-decoration: none;
+	border-bottom:	1px dotted #009;
+	color: #009;
+}
+.textversion a:hover {
+	text-decoration: none;
+	border-bottom:	1px solid #009;
+	color: #009;
+}
+
+/* == Typographische Anfuehrungszeichen Start == */
+q {
+/*background-color:#cff770;*/
+}
+:lang(de) {
+	quotes:"\201E" "\201C" "\201A" "\2018";
+}
+:lang(de-DE) {
+	quotes:"\00BB" "\00AB" "\203A" "\2039";
+}
+:lang(de-CH) {
+	quotes:"\00AB" "\00BB" "\2039" "\203A";
+}
+:lang(en) {
+	quotes:"\201C" "\201D" "\2018" "\2019";
+}
+:lang(fr) {
+	quotes:"\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A";
+}
+/* == Typographische Anfuehrungszeichen Ende == */
+
+/******************** altes VFH Stylesheet *********************/
+
+.bu {
+  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #666666; line-height: 14px; display:inline-block;
+}
+.copy {
+  font-family: Arial, Helvetica, sans-serif; font-size: 11pt;
+  font-style: normal; line-height: normal; font-weight: normal; color: #000000
+}
+.headline1 {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: normal; font-weight: bold; color: #666666; line-height: 16pt
+}
+.headline2 {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: normal; font-weight: bold; color: #000000
+}
+.courier {
+  font-family: "Courier New", Courier, mono; font-size: 10pt;
+  font-style: normal; line-height: normal; font-weight: bold; color: #000000
+}
+.courier_reg {
+  font-family: "Courier New", Courier, mono; font-size: 10pt;
+  font-style: normal; line-height: normal; color: #000000
+}
+.copyright {
+  font-family: Arial, Helvetica, sans-serif; font-size: 8pt;
+  font-style: normal; line-height: normal; font-weight: normal; color: #666666
+}
+.back {
+  background-color: #808080; margin: 0px;
+}
+.copybold {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: normal; line-height: 20pt; font-weight: bold; color: #000000
+}
+.fett {
+  font-weight: bold
+}
+pre {
+  font-family: "Courier New", Courier, sans-serif;
+  font-size: 12px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif; font-size: 11pt;
+  font-style: normal; line-height: 14pt; font-weight: normal; color: #000000;
+	margin-bottom: 14px;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: normal; font-weight: bold; color: #000000;
+  padding: 25px 0px 10px 0px; 	margin-bottom: 10px;
+}
+ul {
+  list-style-position: outside;
+  list-style-image: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: normal;
+  color: #333333;
+  clip: rect( );
+  line-height:20px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: italic; font-weight: bold; color: #000000 ; line-height: normal;
+}
+.inhaltsverzeichnis {
+  font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  font-style: normal; line-height: normal; font-weight: normal; color: #000000; padding-top:5px
+}
+ol {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height:20px;
+  list-style-position: outside;
+  list-style-type: decimal
+}
+.tableheader {
+  font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  font-style: normal; line-height: 12pt; font-weight: bold; color: #000000
+}
+.pageno {
+  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;
+  font-weight: normal; color: #000000
+}
+.shellbar {
+  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-height: 10pt
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold
+}
+.shellmenue {
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt
+}
+.quellcode {
+  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: normal; background-color: #D6D6D6
+}
+sub {
+  font-size: 8pt
+}
+sup {
+  font-size: 8pt
+}
+.ol_loweralpha {
+  font-family: Arial, Helvetica, sans-serif; font-size: 11pt;
+  line-height: normal; list-style-position: outside; list-style-type: lower-alpha
+}
+.zitate {
+  font-family: "Times New Roman", Times, serif; font-size: 12pt; font-style: italic
+}
+.term_eng {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #662200;
+}
+.courier:link { color: #000099; text-decoration: underline}
+.courier:visited { color: #7D217B; text-decoration: underline}
+
+a:link    { color: #000099; text-decoration: underline;}
+a:visited { color: #7D217B; text-decoration: underline}
+
+/* spezielle Verlinkungen, z.B. Glossar */
+/* im IE noch nicht dargestellt, dort werden die gewoehnlichen Linkunterstreichungen verwendet */
+a[href^="javascript:openGlossar"], a[href^="javascript: openGlossar"] {
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  color: #000;
+}
+a:hover[href^="javascript:openGlossar"], a:hover[href^="javascript: openGlossar"] {
+  text-decoration: none;
+  border-bottom: 0;
+  color: #000;
+  background: #eee;
+}
+
+.MargTextOrange {
+  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #D98B02;display:table-cell; height: 10px; line-height: 8px; padding-bottom: 5px;}
+.markerGelb { background-color: #FFFF99}
+.MargTextBlau { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #468EC6; display:table-cell; height: 10px; line-height: 16px; padding-bottom: 5px;}
+.MargTextAni { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #468EC6; display:table-cell; height: 10px; line-height: 16px; padding-bottom: 5px;}
+.tablehead { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-style: normal; line-height: 12pt; font-weight: bold; color: #000000; display:table-cell; height: 10px; line-height: 8px; padding-bottom: 5px;}
+.MargTextGrau { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #4F69AE; display:table-cell; height: 10px; line-height: 16px; padding-bottom: 5px;}
+.MargTextDef { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #468EC6; display:table-cell; height: 10px; line-height: 16px; padding-bottom: 5px;}
+
+/* Fragetext der vor SWF-Wissensueberpruefungen steht. */
+#uebungText  {
+	margin: 10px 10px 0px 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+.bearbeitungszeit {
+  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #666666;
+	margin-bottom: 5px;
+}
+
+/*---------------------------------------------*/
+/* - Container fuer Textversionen              */
+/*   (resizeable)                              */
+/*---------------------------------------------*/
+.txtver {
+	display: block !important;
+}
+.txtver_content {
+	background:		no-repeat scroll 0 0 #F2F2F2;
+	width:			auto;
+	padding: 		5px 5px;
+	border: 		1px solid #CCC;
+}
+.txtver_closeOben {
+	float:			right;
+}
+.txtver_closeOben a {
+	display: none;
+}
+
+.txtver h2 {
+	font-size:		14px !important;
+	font-weight:	bold !important;
+	font-style:		normal !important;
+	margin-bottom:	15px;
+	float:				left;
+	line-height:normal;
+}
+.txtversion_link {
+	cursor:			pointer;
+	color: 			#009;
+}
+.txtversion_link :hover {
+	cursor:			pointer;
+	color: 			#C30;
+}
+
+/* -------------------------------------------------------------------- */
+/* Klappbox für Avatarfragen, zeigt die Textversion unter dem Player an */
+/* -------------------------------------------------------------------- */
+div.audiotextcontainer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  color: #000000;
+	width: #580;
+  
+}
+.audiotextlink  {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #666666;
+	margin-top:0;
+	padding:5px;
+	vertical-align:middle;
+}
+div.audiotext
+{
+	margin:15px 0;
+	padding:10px 5px 5px 15px;
+	background-color:#ECE4D5;
+	border:1px solid #4E3E18;
+  display:block !important;
+}
+div.audiotext p,
+div.audiotext ul
+{
+    font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-style: italic
+}
+.audiotext p:last-child {
+  margin-bottom:3px;
+}
+.audiotext p:first-child {
+  margin-top:2px;
+}
+
+/* ---------------------------------------------------------*/
+/* Klappbox für Avatarfragen, die noch nicht vertont wurden */
+/* ---------------------------------------------------------*/
+
+div.avatartext {
+    background-color:#ECE4D5;
+	border:1px solid #4E3E18;
+	padding:0px 10px 10px 10px;
+}
+div.avatartext p {
+    font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-style: italic;
+	margin-top:5px;
+}
+div.showAnswer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+div.showAnswer p {
+    font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+	font-style: italic
+}
+.showAnswer p:last-child {
+  margin-bottom:3px;
+}
+.showAnswer p:first-child {
+  margin-top:2px;
+}
+div.answer {
+	margin-top: 10px;
+    padding: 10px;
+    background-color:#fbf6ee;
+	border:1px solid #9d927d;
+}
+
+/*-----------------
+ Tooltip Link
+ ----------------*/
+.tooltip_link{
+  /* background:url(images/IcoFlyWin.gif) no-repeat left; */
+  color:#009;
+  padding-left:0px;
+  cursor:pointer;
+	width: 100%;
+	text-align: center;
+}
+
+/*-----------------
+ Container fuer
+ die Anzeige von
+ Schlagworten
+ ----------------*/
+#container_buzzwords{
+	display:none !important;
+}

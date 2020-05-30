@@ -1,0 +1,12 @@
+{
+  "commands" : [
+    "*.tex : latex {name}",
+    "*.tex : bibtex {name}",
+    "*.tex : latex {name}",
+    "*.tex : latex {name}",
+    "*.tex : dvipdfmx {name}.dvi",
+
+    "*.mp : mpost {name}",
+    "*.mp : mptopdf {name}*.mps"
+  ]
+}

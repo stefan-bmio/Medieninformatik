@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{burbeck87}
+S.~Burbeck.
+\newblock Applications programming in smalltalk-80(tm): How to use
+  model-view-controller (mvc), 1987.
+
+\bibitem{GoF94}
+E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides.
+\newblock {\em Design Patterns: Elements of Reusable Object-oriented Software}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1995.
+
+\bibitem{KraPo88}
+G.~E. Krasner and S.~T. Pope.
+\newblock A cookbook for using the model-view-controller user interface
+  paradigm in smalltalk-80.
+\newblock {\em Journal of Object Oriented Programming}, August/November 88,
+  1988.
+
+\bibitem{Liskov1987}
+B.~Liskov.
+\newblock Data abstraction and hierarchy.
+\newblock {\em ACM SIGPLAN Notices}, 23(5):17--34, March 1987.
+
+\bibitem{Reens79-1}
+T.~M.~H.~Reenskaug.
+\newblock Models-views-controllers, December 1979.
+
+\bibitem{Reens79}
+T.~M.~H.~Reenskaug.
+\newblock The model-view-controller (mvc) -- its past and present, August 2003.
+\newblock Präsentation über Vergangenheit und Zukunft von MVC.
+
+\bibitem{Marti13}
+R.~C. Martin.
+\newblock {\em Agile Software Development, Principles, Patterns, and Practices:
+  Pearson New International Edition}.
+\newblock Pearson, 2013.
+
+\bibitem{Martin17}
+R.~C. Martin.
+\newblock {\em Clean Architecture: A Craftsman's Guide to Software Structure
+  and Design}.
+\newblock Robert C. Martin Series. Prentice Hall, Boston, MA, 2017.
+
+\end{thebibliography}

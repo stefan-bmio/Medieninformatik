@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//SoftQuad Software//DTD HoTMetaL PRO 6.0::19990601::extensions to HTML 4.0//EN">
+<html><head> 
+	 <title>Trygve/MVC</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head> 
+  <body> 
+	 <p><a href="http://heim.ifi.uio.no/~trygver/index.html">home</a> <a href="http://heim.ifi.uio.no/~trygver/themes/">themes</a> mvc</p><hr>
+	 
+	 <h1 align="CENTER"><b>MVC</b><br><i>XEROX PARC 1978-79</i></h1> 
+	 <p>I spent a very happy and inspiring year as a visiting scientist with the
+		Learning Research Gorup (LRG) at Xerox P<font size="-1">ARC</font> 
+from the summer og 1978 to the summer of 1979. This group was dedicated 
+to Alan Kay's vision of the Dynabook; a portable computer that should 
+contain all data of interest to its owner/user. Very importantly, these 
+data included the programs the owner used to manipulate them. The 
+owner/user should be able to understand and write the programs, thus 
+gaining ascendancy over the computer.</p>
+	 <p>The MVC notes should be read on this background. The user was the 
+czar;  everything done at LRG was done to support him. An earlier paper 
+adds  some background for MVC:</p>
+	 <p align="center"><strong>A note on DynaBook requirements</strong><em><br>
+	   </em>  <font size="-1">22 March 1979 (Partial scan, 11 pp</font><br>
+  <a href="http://folk.uio.no/trygver/1979/sysreq/SysReq.pdf">http://folk.uio.no/trygver/1979/sysreq/SysReq.pdf</a></p>
+	 <p align="center">&nbsp;</p>
+	 <p> I
+	   have sometimes been given more credit than is my due, so I should stress that I
+	   am not one of the original inventors of Smalltalk. I am only one of the very
+	   early and very enthusiastic users and contributors to this revolutionary
+	   innovation. I made the first implementation and wrote the original MVC note at Xerox
+		PARC in 1978. The note defines four terms; Model, View, Controller and Editor .
+		The Editor is an ephemeral component that the View creates on demand as an
+		interface between the View and the input devices such as mouse and
+	 keyboard.</p>
+  <p>Jim Althoff and others implemented a version of MVC for the Smalltalk-80
+		class library after I had left Xerox P<font size="-1">ARC</font>; I was in not
+		involved in this work. Jim Althoff uses the term Controller somewhat
+		differently from me. An important aspect of the original MVC was that its
+		Controller was responsible for creating and coordinating its subordinate views.
+		Also, in my later MVC implementations, a view accepts and handles user input
+		relevant to itself. The Controller accepts and handles input relevant to the
+		Controller/View assembly as a whole, now called the <i>Tool</i>.</p> 
+	 <p>The essential purpose of MVC is to bridge the gap between the human
+		user's mental model and the digital model that exists in the computer. The
+		ideal MVC solution supports the user illusion of seeing and manipulating the
+		domain information directly. The structure is useful if the user needs to see
+		the same model element simultaneously in different contexts and/or from
+		different viewpoints. The figure below illustrates the idea.</p> 
+	 <p align="CENTER"><img src="Trygve_MVC-Dateien/MVC-2006.gif" alt="MVC illustration." width="370" height="180" border="0"></p> 
+	 <p></p> 
+	 <p>MVC was conceived as a general solution to the problem of users
+		controlling a large and complex data set. The hardest part was to hit upon good
+		names for the different architectural components. Model-View-Editor was the
+		first set: </p> 
+	 <p align="CENTER"><b>Thing-Model-View-Editor</b> <br><font size="-1">12 May
+		1979 (11 pp) </font><br><a href="http://heim.ifi.uio.no/~trygver/1979/mvc-1/1979-05-MVC.pdf">PDF (11 pp,
+		312,594 bytes)</a> </p> 
+	 <p>After long discussions, particularly with Adele Goldberg, we ended with
+		the terms Model-View-Controller: </p> 
+	 <p align="CENTER"><b>Models-Views-Controllers</b><br> <font size="-1">10
+		December 1979 (2 pp)</font> <br><a href="http://heim.ifi.uio.no/~trygver/1979/mvc-2/1979-12-MVC.pdf">(.PDF (2 pp, 9,696 bytes) </a></p>
+	 <p align="CENTER">The two papers have been copied together here:<br><a href="http://heim.ifi.uio.no/~trygver/2007/MVC_Originals.pdf">(PDF, 396&nbsp;567 bytes)</a> </p> 
+	 <p>The Controller was here what I now call a <i>Tool</i>. The Smalltalk-80
+		Controller is here a fourth element called <i>Editor</i>. This was an ephemeral
+		component that the View creates on demand as an interface between the View and
+		the input devices such as mouse and keyboard. </p> 
+	 <p><i>The MVC problem has more facets than I realized in 1979. I started working
+		on a pattern language to disentangle the different aspects, that last 
+		draft was dated August 20, 2003. The plan was that it should be improved by a group of authors, not just the current single</i><em> one. Unfortunately, the projct died at his point.</em></p> 
+  <p align="CENTER"><b>MVC Pattern Language<br></b><a href="http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf">.PDF (1&nbsp;029&nbsp;554
+		bytes)</a></p> 
+	 <p>Also see <i>The Model-View-Controller (MVC ). Its Past and Present</i>
+		below:</p> 
+	 <table width="100%" border="2" bgcolor="#FFFFCC"> 
+		<colgroup> <col width="30%"> <col width="5%"> <col width="65%"> 
+		</colgroup> 
+		<tbody> 
+		  <tr valign="TOP"> 
+			 <td valign="TOP"><b>The Model-View-Controller (MVC ).<br> <i>Its Past
+				and Present</i></b><br><font size="-1">JavaZONE, Oslo, 2003.<br>JAOO,
+				Århus, 2003</font><br><font size="-1">Abstract </font>
+				<a href="http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/HM1A93.html">.HTML</a><br><font size="-1">Handout with draft pattern language</font>
+				<a href="http://heim.ifi.uio.no/~trygver/2003/javazone-jaoo/MVC_pattern.pdf">.PDF</a> </td> 
+			 <td valign="TOP">mvc, uml</td> 
+			 <td valign="TOP">MVC was conceived in 1978 as the design solution to
+				a particular problem. The top level goal was to support the user's mental model
+				of the relevant information space and to enable the user to inspect and edit
+				this information. The first part of the talk describes the original problem and
+				discusses the chosen solution. The second part elaborates the original ideas
+				and extends the scope to include current day challenges to the original goal.
+				It is all summarized in a condensed MVC pattern language. </td> 
+		  </tr> 
+		  <tr valign="TOP"> 
+			 <td valign="TOP"><b>THING-MODEL-VIEW-EDITOR<br><i>an Example from a
+				planningsystem.</i></b><br><font size="-1">Xerox PARC technical note May
+				1979.</font><br><a href="http://heim.ifi.uio.no/~trygver/1979/mvc-1/1979-05-MVC.pdf">.PDF</a> </td> 
+			 <td valign="TOP">is21c, mvc, roles</td> 
+			 <td valign="TOP"><b>The original MVC report. </b>The yards of the
+				Aker Group in Norway have been using network techniques and ad hoc methods for
+				planning and control for many years. The systems used have not been
+				satisfactory, and a new modelling tool was devised for the yards. The basic
+				building block of this tool is considerably more powerful than the activity of
+				the traditional networks. It is called a Component, and carries both its own
+				data and the algorithms needed to manipulate them. Each Component represents an
+				identifiable portion of the real world in the yard. The planning process
+				consists of the Components sending information to each other (messages), and
+				acting upon information received. </td> 
+		  </tr> 
+		  <tr valign="TOP"> 
+			 <td valign="TOP"><b>MODELS - VIEWS - CONTROLLERS</b><br><font size="-1">Xerox PARC technical note December 1979</font><br><a href="http://heim.ifi.uio.no/~trygver/1979/mvc-2/1979-12-MVC.pdf">.PDF</a> </td> 
+			 <td valign="TOP">is21c, mvc, roles</td> 
+			 <td valign="TOP">Defines the MVC terms</td> 
+		  </tr> 
+		  <tr valign="TOP"> 
+			 <td valign="TOP"><b>PROKON/PLAN-A MODELLING TOOL FOR PROJECT PLANNING
+				AND CONTROL.</b> <br><font size="-1">Paper, IFIP Congress, Toronto, Canada,
+				1977<br>First published in the 1977 IFIP Proceedings. <br>Scanned by the author
+				July 2003.</font><br><a href="http://heim.ifi.uio.no/~trygver/1977/Prokon/IFIP-Prokon.pdf">.PDF</a> </td>
+			 
+			 <td valign="TOP">is21c, roles, uml, mvc</td> 
+			 <td valign="TOP">The yards of the Aker Group in Norway have been
+				using network techniques and ad hoc methods for planning and control for many
+				years. The systems used have not been satisfactory, and a new moelling tool was
+				devised for the yards. The basic building block of this tool is considerably
+				more powerful than the activity of the traditional networks. It is called a
+				Component, and carries both its own data and the algorithms needed to
+				manipulate them. Each Component represents an identifiable portion of the real
+				world in the yard. The planning process consists of the Components sending
+				information to each other (messages), and acting upon information received. An
+				experimental system for the planning and control of the Design Sector of A/S
+				Bergens Mekaniske Verksteder has been developed.</td> 
+		  </tr> 
+		  <tr valign="TOP"> 
+			 <td valign="TOP"><b>ADMINISTRATIVE CONTROL IN THE
+				SHIPYARD.</b><br><font size="-1">Paper, ICCAS conference, Tokyo,
+				1973.</font><br><font size="-1">Scanned by the author July 2003 </font><br>
+				<a href="http://heim.ifi.uio.no/~trygver/1973/iccas/1973-08-ICCAS.pdf">.PDF</a> </td> 
+			 <td valign="TOP">is21c, components, architecture, mvc, </td> 
+			 <td valign="TOP">The organisation of a yard may be strongly
+				influenced by the information system it takes into use. The converse should
+				also be true: Systems development should be subordinated the desired evolution
+				of the organisation. The principle of Communicating Data Processes is
+				introduced as a tool for building information systems that are easily moulded
+				for fitting an existing organisation and for adaption to its continuous
+				development. A description of the principle is given, as well as an outline of
+				a new system designed for testing it out in practical shipbuilding.</td> 
+		  </tr> 
+		</tbody> 
+	 </table> 
+
+</body></html>

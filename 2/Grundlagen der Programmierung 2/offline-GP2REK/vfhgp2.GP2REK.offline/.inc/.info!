@@ -1,0 +1,12 @@
+Achtung !
+Die Programmierung geht davon aus, dass die Lerneinheiten wie folgt
+gespeichert werden:
+http://server/lernraum/modul/lerneinheit/...
+
+Insbesondere die Programmierung des Inhaltsverzeichnis
+http://server/lernraum/modul/lerneinheit/.inhalt/
+verl„sst sich auf dieses Verzeichnisstruktur.
+
+Ist sie anders, bitte in inhalt.js die 
+function buildMyLocation()
+anpassen.

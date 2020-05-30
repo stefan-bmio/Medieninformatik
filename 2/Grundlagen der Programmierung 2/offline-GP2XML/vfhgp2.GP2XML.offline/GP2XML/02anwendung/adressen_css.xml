@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--XML Dokument zum Speichern von Adressdaten inklusive Einbindung eines CSS Dokuments-->
+<?xml-stylesheet type="text/css" href="adressbuch.css"?>
+<Adressbuch>
+    <Kontakt typ="privat">
+        <Name>
+            <Vorname>Max</Vorname>
+            <Nachname>Mustermann</Nachname>
+        </Name>
+        <Adresse/>
+    </Kontakt>
+    <Kontakt typ="privat">
+        <Name>
+            <Vorname>Sandra</Vorname>
+            <Nachname>Tester</Nachname>
+        </Name>
+        <Adresse/>
+    </Kontakt>
+</Adressbuch>

@@ -1,0 +1,12 @@
+{
+  "commands" : [
+    "*.tex : pdflatex {name}",
+    "*.tex : biber {name}",
+    "*.tex : makeglossaries {name}",
+    "*.tex : pdflatex {name}",
+    "*.tex : pdflatex {name}",
+
+    "*.mp : mpost {name}",
+    "*.mp : mptopdf {name}*.mps"
+  ]
+}

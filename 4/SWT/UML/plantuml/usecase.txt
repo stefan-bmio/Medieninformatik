@@ -1,0 +1,10 @@
+@startuml
+
+title Product Review Webservice
+
+Händler -up-> (Beschreibung für Produkt abfragen)
+Händler -> (Bewertung 0-5 Sterne für Produkt abfragen)
+Händler --> (Bewertung einstellen)
+Käufer -> (Bewertung einstellen)
+Hersteller -up-> (Bewertung einstellen)
+@enduml

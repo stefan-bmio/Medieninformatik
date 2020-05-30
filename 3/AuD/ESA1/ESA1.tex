@@ -1,0 +1,69 @@
+\documentclass{article} 
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage{forest}
+\usepackage{mathtools}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+
+\begin{document}
+\title{\Large Einsendeaufgabe 1}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\subsection{}
+Der Algorithmus werde mit TuermeHanoi(3; A; B; C) aufgerufen. Zeigen Sie den Ablauf des
+Algorithmus mit einem Rekursionsbaum.\\\\
+
+\begin{forest}
+[TH(3; A; B; C)
+	[TH(2; A; C; B) 
+		[TH(1; A; B; C)
+			[ZS(A; C)]
+		]
+		[ZS(A; B), before computing xy={s/.average={s}{siblings}}]
+		[TH(1; C; A; B)
+			[ZS(C; B)]
+		]
+	] 
+	[ZS(A; C), before computing xy={s/.average={s}{siblings}}]
+	[TH(2; B; A; C)
+		[TH(1; B; C; A)
+			[ZS(B; A)]
+		]
+		[ZS(B; C), before computing xy={s/.average={s}{siblings}}]
+		[TH(1; A; B; C
+			[ZS(A; C)]
+		]
+	]
+]
+\end{forest}
+
+\stepcounter{subsection}
+\subsection{}
+Wie viele Aufrufe gibt es für n=3, n=4, n=5? \\\\
+\begin{tabular}{|c|c|c|c|}
+\hline
+n & 3 & 4 & 5 \\
+\hline
+rek. Aufrufe & 7 & 15 & 31 \\
+\hline
+\end{tabular}
+
+\subsection{}
+Verallgemeinern Sie Ihr Ergebnis aus Frage 3 für n in N. Schauen Sie die Tabelle im Skript Seite
+23 an. Wie wächst die Funktion, die Sie gefunden haben, im Vergleich? \\\\
+\begin{math}
+g(n) \in \Theta(2^n - 1)
+\end{math}
+\\
+Der Algorithmus ist nicht effizient.
+
+\end{document}

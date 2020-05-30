@@ -1,0 +1,530 @@
+
+/* Allgemeines, HTML Tags */
+body {
+    font-family:        Verdana, Arial, Geneva, Helvetica, sans-serif;
+    background-color:   #white !important;
+
+    margin:             0px;
+    margin-top:         20px;
+    margin-bottom:      20px;
+    padding:            0px;
+
+    text-align:center;
+
+    font-size: 100.1%;
+}
+
+a {
+    text-decoration: none;
+    color: #364280;
+}
+
+img {
+    border: 0;
+}
+
+label { display: none; }
+
+form {
+    margin: 0em;
+    padding: 0em;
+}
+
+/* Seitenlayout */
+#page {
+    width:  50em;
+    margin: auto auto;
+    position:relative;
+}
+
+#header {
+    display:none;
+}
+
+#footer {
+    display:none;
+}
+
+#inhalt {
+    position:relative;
+    background-color:white;
+    text-align:left;
+
+    padding-left:   0em;
+    padding-top:    0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 0em;
+
+    font-size: 0.92em;
+    font-family: Arial;
+}
+
+* html #inhalt {
+    width: 43.3em;
+
+}
+
+#lesezeichenListe  {
+    display: none;
+
+}
+
+#jsWarning {
+    display:none;
+}
+
+#pfad {
+    font-size: 0.7em;
+}
+
+#inhalt p.ebene1{
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: bold;
+	margin-bottom:1em;
+}
+
+#inhalt  p.ebene2{
+	margin-left: 1.5em;
+	font-size: 0.8em;
+	line-height: 0.6em;
+	margin-bottom:1em;
+}
+
+#inhalt p.ebene3{
+	margin-left: 3em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene4{
+	margin-left: 4.5em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene5{
+	margin-left: 6em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene6{
+	margin-left: 7.5em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene7{
+	margin-left: 9em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene8{
+	margin-left: 10.5em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhalt p.ebene9{
+	margin-left: 12em;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	font-weight: normal;
+	margin-bottom:1.4em;
+}
+
+#inhaltsverzeichnis * {
+    display:none;
+}
+
+#suchergebnis {
+    display:none;
+}
+
+h3 {
+    color:black;
+}
+
+h1 {
+    font-size: 1.4em;
+    color:black;
+}
+
+.Box {
+    margin-right: 2em;
+    overflow:hidden;
+}
+
+.Box .head {
+    color:white;
+    padding-left:0.3em;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+}
+
+.Box .text {
+    padding: 0.3em;
+    color:black;
+}
+
+.hinweis .head {
+    background-color: #002855;
+}
+
+.hinweis .text {
+    border: 1px solid #002855;
+    background-color: #8DB5E9;
+}
+
+
+.beispiel .head {
+    background-color: #AA7777;
+}
+
+.beispiel .text {
+    border: 1px solid #AA7777;
+    background-color: #DD6666;
+}
+
+.beispiel .text a {
+   color: #2222bb;
+}
+
+.motivation .head {
+    background-color: #506423;
+}
+
+.motivation .text {
+    border: 1px solid #506423;
+    background-color: #BCE08A;
+    color:black;
+}
+
+.lernziele .head {
+    background-color: #b06423;
+}
+
+.lernziele .text {
+    border: 1px solid #b06423;
+    background-color: #dCE08A;
+    color:black;
+}
+
+.rechtliches .head {
+    background-color: #50b423;
+}
+
+.rechtliches .text {
+    border: 1px solid #50b423;
+    background-color: #BCf08A;
+    color:black;
+}
+
+.zeitbedarf .head {
+    background-color: #506463;
+}
+
+.zeitbedarf .text {
+    border: 1px solid #506463;
+    background-color: #BCE0bA;
+    color:black;
+}
+.uebung .head {
+    background-color: #CE0711;
+}
+
+.uebung .text {
+    border: 1px solid #CE0711;
+    background-color: #D67777;
+}
+
+.aufgabe .head {
+    background-color: #FFCC00;
+    color:black;
+}
+
+.aufgabe .text {
+    border: 1px solid #FFCC00;
+    background-color: #FFEEBB;
+}
+
+.loesung .head {
+    background-color: #DEDE77;
+    color:black;
+}
+
+.loesung .text {
+    border: 1px solid #DEDE77;
+    background-color: #FFEEBB;
+    display:block;
+}
+
+.zusammenfassung .head {
+    background-color: #7692C0;
+}
+
+.zusammenfassung .text {
+    border: 1px solid #7692C0;
+    background-color: #D1D5DE;
+}
+
+.hginfos .head {
+    background-color: #914226;
+}
+
+.hginfos .text {
+    border: 1px solid #914226;
+    background-color: #A37460;
+    color:white;
+}
+
+.definition .head {
+    background-color: #76C092;
+}
+
+.definition .text {
+    border: 1px solid #76C092;
+    background-color: #c1cEc5;
+}
+
+.algorithmus .head {
+    background-color: #696969;
+}
+
+.algorithmus .text {
+    border: 1px solid #696969;
+    background-color: #cbcbcb;
+}
+
+.formel .head {
+    background-color: #444444;
+}
+
+.formel .text {
+    border: 1px solid #444444;
+    background-color: #aaaaaa;
+}
+
+.beweis .head {
+    background-color: #000000;
+}
+
+.beweis .text {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+.behauptung .head {
+    background-color: #FF5A00;
+}
+
+.behauptung .text {
+    border: 1px solid #FF5A00;
+    background-color: #FFD700;
+}
+
+#inhalt table {
+    padding: 0em;
+    margin: 0em;
+}
+
+#inhalt table td {
+    border: 1px solid #5c5c5c;
+    padding: 0em;
+    padding-left:0.2em;
+    padding-bottom:0.2em;
+}
+
+#inhalt table td p {
+    margin:0em;
+}
+
+.beschriftung {
+    font-size: 0.75em;
+    font-weight: bold;
+    display:block;
+}
+
+.beschriftung img {
+    display:none;
+}
+.singleCode {
+	font-family: Courier New, Courier, Thaoma;
+    display:inline;
+    white-space:pre;
+}
+
+.code {
+	font-family: Courier New, Courier, Thaoma;
+	margin:0px;
+}
+
+#outerCode {
+    width: 42em;
+    border:1px solid black;
+}
+
+.codebox {
+    margin-right: 3em;
+    width: 500em;
+}
+
+.codebox .linenumber {
+	font-family: Courier New, Courier, Thaoma;
+	border:1px solid black;
+	background-color: #ffffbb;
+	width: 1.5em;
+	margin-right:0.3em;
+	float:left;
+}
+
+.codebox pre {
+    margin:0em;
+    float:left;
+}
+
+.emphasized {
+    font-weight: bold;
+}
+
+.quoted {
+    font-style: italic;
+}
+
+.annotated {
+    color: red;
+}
+
+.defined {
+    color: green;
+}
+
+.glossarLink {
+    color:black;
+}
+
+.anchor {
+    height: 0em;
+    line-height: 0em;
+}
+
+#top {
+    height: 0px;
+    line-height: 0px;
+    overflow:hidden;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+.lowerRoman {
+    list-style-type: lower-roman;
+}
+
+.upperRoman {
+    list-style-type: upper-roman;
+}
+
+.lowerAlpha {
+    list-style-type: lower-alpha;
+}
+
+.upperAlpha {
+    list-style-type: upper-alpha;
+}
+
+.decimal {
+    list-style-type: decimal;
+}
+
+#lastVisited {
+    display:none;
+}
+
+.u1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom:0.7em;
+}
+
+.u2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom:0.5em;
+}
+
+.u3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u5 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u6 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u7 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u8 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom:0.3em;
+}
+
+.u9 {
+    font-size: 1em;
+    margin-bottom:0.3em;
+}
+
+.linkHint {
+    display: inline !important;
+}
+
+.openclose {
+    display: none;
+}
+
+.anummer {
+	letter-spacing: 0.1em;
+}

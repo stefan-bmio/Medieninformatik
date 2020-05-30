@@ -1,0 +1,112 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}.}
+
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\algtext*{EndWhile}
+\algtext*{EndIf}
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{<}{\ \leq\ }{#1}} 
+\newcolumntype{e}[1]{D{-}{\ \leftrightarrow\ }{#1}} 
+
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\title{Einsendeaufgabe 4}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\subsection{}
+Gegeben sei das Zahlenfelde A = (11, 15, 13, 8, 1, 10, 16, 12). A ist nach dem Algorithmus
+Quicksort aufsteigend zu sortieren.
+\paragraph{(a)} Führen Sie die erste Teilung nach dem im Skript gegebenen Verfahren durch.
+\subparagraph{i.} Geben Sie die dabei auftretenden Vertauschungen der Reihe nach an.
+\subparagraph{ii.} Welches ist der erste Teilungsindex?
+\begin{center}
+\begin{tabular}{C|C|C|C|C|d{2}|C|e{3}|e{3}}
+p & r & A[1..6] & x & j & \multicolumn{1}{c|}{A[j] $\leq$ x} & i & A[i] - A[j] & A[i] - A[r] \\ \hline
+1 & 8 & (11, 15, 13, 8, 1, 10, 16, 12) & 12 & 1 & 11 < 12 & 1 & 11 - 11 & \\ \hline
+ & & (11, 15, 13, 8, 1, 10, 16, 12) & & 2 & 15 < 12 & & & \\ \hline
+ & & & & 3 & 13 < 12 & & & \\ \hline
+ & & & & 4 & 8 < 12 & 2 & 15 - 8 & \\ \hline
+ & & (11, 8, 13, 15, 1, 10, 16, 12) & & 5 & 1 < 12 & 3 & 13 - 1 & \\ \hline
+ & & (11, 8, 1, 15, 13, 10, 16, 12) & & 6 & 10 < 12 & 4 & 15 - 10 & \\ \hline
+ & & (11, 8, 1, 10, 13, 15, 16, 12) & & 7 & 16 < 12 & & & \\ \hline
+ & & & & & & 5 & & 13 - 12 \\ \hline
+ & & (11, 8, 1, 10, 12, 15, 16, 13) & & & & & & \\ \hline
+\end{tabular}
+\end{center} 
+\paragraph{(b)} Stellen Sie den gesamten Ablauf in einem Binärbaum dar, so dass insbesondere das rekursive
+Teilen des Zahlenfeldes deutlich wird. Markieren Sie darin auch die jeweiligen Pivotelemente.  \\\\
+\begin{center}
+\begin{forest}
+for tree={edge=-{Latex},
+align=center,
+l sep+= .25cm,
+s sep+=1.5cm
+}
+[{(11, 15, 13, 8, 1, 10, 16, 12) }\\{(11, 8, 1, 10, \underline{12}, 15, 16, 13)}
+	[{(11, 8, 1, 10)}\\{(8, 1, \underline{10}, 11)}
+		[{(8, 1)}\\{(\underline{1}, 8)}
+			[{()}]
+			[{(8)}]
+		]
+		[(11)]
+	] 
+	[{(15, 16, 13)}\\{(\underline{13}, 16, 15)}
+		[{()}]
+		[{(16, 15)}\\{(\underline{15}, 16)}
+			[{()}]
+			[{(16)}]
+		]
+	]
+]
+\end{forest}
+\end{center}
+
+\stepcounter{subsection}
+\subsection{}
+Testen Sie Ihre Methode mit den Zahlen in der Datei QuickSort.txt Copyright Tim
+Roughgarden, Stanford University. Dafür benutzen Sie die Klasse UtilitiesArraysFiles.
+Wie viele Vergleiche bekommen Sie? Passt das Ergebnis mit dem theoretischen Ergebnis im besten
+Fall n Log n ? (Log sollte mit Basis 2 berechnet werden) \\\\
+Im besten Fall benötigt der Algorithmus $n \log n$ Vergleiche, z.B. $10000\ \cdot\ \log_2(10000) = 132877.1238$.
+Im Beispiel mit QuickSort.txt führt die Implementierung 160361 Vergleiche durch, das ist in dem Bereich zwischen dem besten Fall $T(n) \in \Omega(n \log n)$ und dem schlechtesten Fall $T(n) \in \mathcal{O}(n)$.
+
+\subsection{}
+Stellen Sie die Rekursionsgleichung zur Bestimmung der Zeitkomplexität vom Quicksort im idealen Fall auf: das Array wird immer in zwei geteilt.\\\\
+Der Verzweigungsfaktor beträgt 2 $\rightarrow b = 2$ \\
+Das Array wird mit jedem Rekursionsschritt durch 2 geteilt $\rightarrow c = 2$. \\
+Die Komplexität von $f(n)$ ist $T(n) = \Theta(n - 1)$ \\
+Die Rekursionsgleichung lautet daher $2T(n / 2) + f(n)$ mit $f(n) \in \Theta(n)$.
+
+\subsection{}
+Lösen Sie die Rekursionsgleichung mit Hilfe des Master-Theorems und geben sie die Zeit-
+Komplexität in asymptotischer Notation. \\\\
+Der Exponent $k$ von $n$ in $\Theta(n^k)$ ist für $f(n) \in \Theta(n)$ gleich $1 \rightarrow k = 1$ \\
+Die Lösung der Rekursionsgleichung mithilfe des Master-Theorems lautet daher: \\\\
+$T(n) \in \Theta(n^k \log n), falls\ b(1/c)^k = 1$ \\
+$b = 2, c = 2, k = 1$ \\
+$2(1/2)^1 = 1$ \\
+$T(n) \in \Theta(n \log n)$
+\end{document}

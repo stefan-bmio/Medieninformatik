@@ -1,0 +1,120 @@
+This is MetaPost, version 2.000 (TeX Live 2017) (kpathsea version 6.2.3)  6 MAY 2018 16:51
+**package.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./package.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_infrastructure.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_log.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_object.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_commons.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_margins.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_picture.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/boxes.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_group.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_picture_stack.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_positioning.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_shade.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_base.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_links.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_paths.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_note.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_defaults.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_stereotype.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_clipart.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_instance.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_relations.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_assoc.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_package.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_package_relations.
+mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_behavioral_common.
+mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_activity.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_state.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_behavioral_common.
+mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_activity.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_state.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_component.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_component_relation
+s.mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_templates.mp
+))
+>> path
+! Isolated expression.
+<to be read again> 
+                   ;
+<argument> ..."package"infont"ptmb8r");bpath(pkg);
+                                                  draw("com.value-aware.webs...
+
+image->...ture;currentpicture:=nullpicture;(TEXT2)
+                                                  ;currentpicture.endgroup
+l.24 )
+      ;
+? 
+! Emergency stop.
+<to be read again> 
+                   ;
+<argument> ..."package"infont"ptmb8r");bpath(pkg);
+                                                  draw("com.value-aware.webs...
+
+image->...ture;currentpicture:=nullpicture;(TEXT2)
+                                                  ;currentpicture.endgroup
+l.24 )
+      ;
+End of file on the terminal!
+
+
+file on the terminal!
+
+
+  ;
+<argument> ...g("package"infont"ptmb8r");draw.pkg;
+                                                  draw("com.value-aware.webs...
+
+image->...ture;currentpicture:=nullpicture;(TEXT2)
+                                                  ;currentpicture.endgroup
+l.24 )
+      ;
+End of file on the terminal!
+
+
+               )
+min->if((TEXT0)<(TEXT1))
+                        :(TEXT0)else:(TEXT1)fi;
+<for(valid)> ...alid.subItems.minx)((SUFFIX0)left)
+                                                  ;log"comparing(max)";log.v...
+
+Group_layout->...tIndex:=__objectIndex+1;fi;endfor
+                                                  ;log"... done iterating";l...
+<to be read again> 
+                   ;
+Package_layout->...;Group_layout(SUFFIX2)subItems;
+                                                  log"All elements in packag...
+<to be read again> 
+                   ;
+Package_draw->begingroup.Package_layout(SUFFIX2);
+                                                 objectEnsurePositioning(SUF...
+<to be read again> 
+                   ;
+drawObject->...2);scantokens(methodName)(SUFFIX2);
+                                                  endgroup
+l.51 drawObject(valid)
+                      ;
+End of file on the terminal!
+
+
+Object((SUFFIX0))
+                                                  ;fi; ENDFOR
+layoutObjects->...o)<>"":layoutObject(o);fi;endfor
+                                                  ;endgroup
+drawObjects->begingroup.layoutObjects((TEXT2))
+                                              ;forsuffixes.o=(TEXT2):if(str....
+l.55 drawObjects(res, model, data, valid)
+                                         ;
+End of file on the terminal!
+
+

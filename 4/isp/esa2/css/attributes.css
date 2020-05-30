@@ -1,0 +1,85 @@
+body {
+    padding: 70px 10px 20px;
+    background-color: #e7e7e7;
+}
+
+.navbar-header .attrlogo {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: overline;
+    text-decoration-color: #3276b1;
+    text-decoration-style: solid 2px;
+    padding-top: 16px;
+}
+
+h2 {
+    color: #5e5e5e;
+    font-style: italic;
+    font-weight: bold;
+}
+
+textarea.form-control {
+    height: 80px;
+}
+
+.float-label-control label.label-select {
+    top: -1.5em;
+}
+
+.name {
+    color: #3276b1;
+}
+
+.panel-title > a.collapsible-text {
+    color: #3276b1;
+}
+
+::placeholder {
+    color: #aaaaaa;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .panel.panel-default.details, hr.details {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .panel.panel-default.details, hr.details {
+        visibility: visible;
+        height: auto;
+    }
+}
+
+.form-label label, label {
+    font-weight: normal;
+    font-size: .85em;
+    color: gray;
+}
+
+table {
+  background-color: white;
+}
+
+.alert-login-invisible{
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}
+
+.alert-login-visible{
+  visibility: visible;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+}
+
+.register-label{
+  font-weight: normal;
+}
+
+.label-error{
+  color: red;
+}

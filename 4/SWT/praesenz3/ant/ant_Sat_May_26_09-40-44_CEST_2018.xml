@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ant" default="all">
+
+    <target name="clean" description="cleanup all">
+        <echo>Target: clean</echo>
+    </target>
+
+    <target name="get" depends="clean" description="build all modules">
+        <echo>Target: get</echo>
+    </target>
+
+    <target name="compile" depends="get" description="build all">
+        <echo>Target: compile</echo>
+    </target>
+
+    <target name="jar" depends="compile" description="build all">
+        <echo>Target: jar</echo>
+    </target>
+
+    <target name="test" depends="jar" description="build all">
+        <echo>Target: test</echo>
+    </target>
+
+    <target name="run" depends="test" description="build all">
+        <echo>Target: run</echo>
+    </target>
+
+    <target name="doc" depends="jar" description="build all">
+        <echo>Target: doc</echo>
+    </target>
+
+    <target name="all">
+        <echo>Target: all</echo>
+    </target>
+</project>

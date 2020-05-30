@@ -1,0 +1,8 @@
+{
+  "commands": [
+    "*.mp: mpost {filename}",
+    "*.mp: mptopdf {name}.mps",
+
+    "*.tex: pdflatex ESA1.tex"
+  ]
+}

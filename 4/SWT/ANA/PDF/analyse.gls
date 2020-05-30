@@ -1,0 +1,26 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{client}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{6}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{feed}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{8}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{review}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2\delimR 6}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{sku}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\glossentry{sw}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2\delimN 3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{5\delimN 6}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossentry{portal}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2\delimN 3}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossentry{webservice}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5\delimR 8}}}%
+\end{theglossary}\glossarypostamble

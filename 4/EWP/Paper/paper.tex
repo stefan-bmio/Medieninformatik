@@ -1,0 +1,184 @@
+% !TEX bib = lit.bib
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+\usepackage{geometry}
+\geometry{
+  tmargin=2.5cm,
+  bmargin=3cm,
+  lmargin=3cm,
+  rmargin=3cm,
+  bindingoffset=1cm
+}
+
+\usepackage{german}
+
+\usepackage{setspace}
+\setstretch{1.2}
+
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage[toc,acronym,nopostdot]{glossaries}
+\makeglossaries
+\newacronym{mvc}{MVC}{Model-View-Controller}
+\newglossaryentry{solid}{
+  name={SOLID},
+  description={Akronym für die Design-Prinzipien Single Responsibility, Open-Closed, Liskovsches Substitutionsprinzip, Interface Segregation und Dependency Inversion}
+}
+
+\newglossaryentry{model}{
+  name={Model}, description={Das 'M' in \gls{mvc}; das Anwendungsobjekt dessen Daten in der Ansicht dargestellt werden und das durch Benutzereingaben manipuliert wird}
+}
+\newglossaryentry{view}{
+  name={View}, description={Das 'V' in \gls{mvc}; das Ansichtsobjekt, das Daten der Anwendung darstellt und Steuerelemente zur Verfügung stellt}
+}
+\newglossaryentry{controller}{
+  name={Controller}, description={Das 'C' in \gls{mvc}; das Steuerungsobjekt, das Benutzereingaben validiert und das Verhalten des Ansichtsobjektes steuert}
+}
+Invarianz, Kovarianz, Kontravarianz
+MVC-Anwendung
+MVC-Architekturmuster
+
+\usepackage[style=alphabetic]{biblatex}
+\bibliography{lit}
+
+\usepackage{enumitem}
+
+\usepackage{graphicx}
+
+\usepackage{listings}
+
+\usepackage[german]{hyperref}
+
+\raggedright
+\begin{document}
+\title{
+  Eine Architektur für grafische Benutzeroberflächen nach dem MVC-Architekturmuster und unter Berücksichtigung der SOLID-Prinzipien
+}
+\author{Stefan Berger}
+\date{23. April 2018}
+\clearpage\maketitle
+\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Einleitung}
+\paragraph{}
+Seit der Entwicklung des Architekturmusters \gls{mvc} hat sich in den  Programmentwürfen für Benutzerschnittstellen die Trennung von Daten und Ansicht immer mehr durchgesetzt. Dabei wird der Quelltext einer Anwendung in die drei Klassen Programmlogik (\gls{model}), Ansicht (\gls{view}) und Steuerung (\gls{controller}) unterteilt. Diese Struktur macht den Quelltext für \gls{view}s und \gls{controller} austauschbar und wiederverwendbar. Außerdem erleichtern die Abstrahierung und die Modularisierung die Zusammenarbeit mehrerer Entwickler. Solange die Schnittstellen unverändert bleiben, können die verschiedenen Klassen flexibel bearbeitet werden, ohne dass sich die Programmierer gegenseitig behindern.
+
+\paragraph{}
+Zwei der wichtigsten Argumente der \gls{solid}--Prinzipien sind Wiederverwendbarkeit und Flexibilität. Außerdem soll durch deren Anwendung die Lesbarkeit und die Erweiterbarkeit des Quelltexts sichergestellt werden, und Entwicklerteams sollen effizienter zusammenarbeiten können. Die \gls{solid}--Prinzipien sind in dem Buch \glqq Agile Software Development, Principles, Patterns, and Practices\grqq \ von Robert C. Martin ausführlich beschrieben.
+
+\section{Architekturmuster und -prinzipien}
+\subsection{MVC}
+\paragraph{}
+Das Programmierparadigma \gls{mvc}~\autocite[S.~26--49]{KraPo88} sieht für interaktive Anwendungen die Trennung in ein Modul für die Programmlogik (Model), ein Ansichtsmodul (View) und ein Steuerungsmodul (Controller) vor. Jedes dieser Module steht mit jedem anderen in einer bestimmten Relation.
+\paragraph{}
+Das Model-View-Controller-Entwurfsmuster basiert auf diesem Programmierparadigma. Die Relationen der drei Module werden durch verschiedene Entwurfsmuster realisiert. Die View als Observer \autocite[S.~293--305]{GoF94} des Models wird über Änderungen am Model benachrichtigt. Benutzereingaben im Ansichtsmodul werden vom Controller interpretiert. In Form des Strategy-Patterns \autocite[S.~315--325]{GoF94} wird der View ein Controllermodul zugewiesen. Die Zuweisung kann sich zur Laufzeit ändern, wenn gleiche Benutzereingaben aufgrund geänderter Zustände unterschiedlich interpretiert werden müssen. Der Controller benachrichtigt das Model gegebenenfalls über Benutzereingaben, sodass diese entsprechend verarbeitet werden können. Einer View können also mehrere Controller zugewiesen werden und umgekehrt. Das Model ist normalerweise einzigartig. Views und Controller kennen also jeweils nur ein Model.
+\paragraph{}
+Mehrere Views können außerdem untereinander in Relation stehen. Mit dem Composite-Pattern \autocite[S.~163--175]{GoF94} können Teilkomponenten der Ansicht zum Ansichtsmodul zusammengefasst werden. Sowohl das Ansichtsmodul als auch die Teilkomponenten können dann auf Änderungen am Model reagieren.
+
+\subsection{SOLID}
+\paragraph{}
+Die SOLID-Prinzipien sind
+\begin{itemize}[noitemsep]
+\item Single Responsibility
+\item Open-Closed
+\item Liskovsches Substitutionsprinzip (Ersetzungsprinzip)
+\item Interface Segregation
+\item Dependency Inversion
+\end{itemize}
+\paragraph{}
+Das Single-Responsibility-Prinzip besagt, dass es \textit{für eine Klasse nur einen Grund zur Änderung} geben sollte \autocite[S.~95]{Marti13}. Nehmen wir an, dass eine Datenbankanwendung um eine Filtermöglichkeit nach betriebsspezifischen Kennzahlen -- etwa dem Anteil eines Verkaufsartikels am Umsatz -- erweitert werden soll. Um konkrete Werte für gefilterte Abfragen eingeben zu können, müssen der View entsprechende Steuerelemente hinzugefügt werden. Jede Änderung, die außerdem an der View vorgenommen werden muss, weist auf eine Verletzung des Single-Responsibility-Prinzips hin. Es ist zum Beispiel denkbar, dass der Ergebnistabelle im Ansichtsmodul eine Spalte mit der neuen Kennzahl hinzugefügt werden soll. Offensichtlich müssen die Steuerelemente zur Eingabe der Abfragewerte und die Darstellung des Abfrageergebnisses in unterschiedlichen Viewklassen implementiert werden, wenn sichergestellt werden soll, dass jede Klasse eine einzige Verantwortlichkeit besitzt.
+\paragraph{}
+Open-Closed sind \textit{Klassen, Module, Funktionen etc., die für Erweiterungen offen, aber für Modifikationen verschlossen sind} \autocite[S.~99]{Marti13}. Eine Hauptaufgabe von Controllerklassen ist es, Benachrichtigungen entgegenzunehmen und weiterzuleiten. Im einfachsten Fall sollen Benutzereingaben nur an das Anwendungsmodul übergeben werden. Ein komplizierteres Beispiel ist das Austauschen der View auf Anweisung des Anwenders. Weil das Zusammenspiel mit den anderen Klassen davon abhängt, dass der Controller diese Aufgabe wahrnimmt, muss die Controllerklasse für Änderungen an den jeweiligen Schnittstellen verschlossen sein. Im Gegensatz dazu müssen verschiedene Controller-Implementierungen dieselbe Aufgabe unterschiedlich ausführen. Die Klasse muss deshalb für solche Erweiterungen offen sein.
+\paragraph{}
+Vereinfacht gesagt schreibt das Liskovsche Substitutionsprinzip vor, dass \textit{Obertypen durch Untertypen ersetzbar} sein sollen \autocite[S.~111]{Marti13}. Angenommen, einer von mehreren Teilkomponenten des Ansichtsmoduls soll ein Textfeld hinzugefügt werden. Die Teilkomponente ohne das zusätzliche Textfeld soll aber weiterhin zur Verfügung stehen. Es ist naheliegend, für diesen Zweck eine neue Ansichtsklasse von der bestehenden abzuleiten. Bei Bedarf kann dann ein Objekt der bestehenden Klasse durch ein Objekt der neuen Klasse ersetzt werden. Wird das Liskovsche Substitutionsprinzip befolgt, kann das Objekt der neuen Klasse verwendet werden, ohne das Ansichtsmodul zu verändern. Ein wichtiger Aspekt ist dabei das neue Datenfeld, das dem Ansichtsmodul unbekannt ist.
+\paragraph{}
+Interface Segregation bedeutet, dass eine Klasse dem Programmierer genau die Schnittstelle zur Verfügung stellt, die für den jeweiligen Zweck vorgesehen ist. In MVC verwenden die View und der Controller jeweils die Schnittstelle des Models. Die View muss sich als Empfänger für Benachrichtigungen über Änderungen registrieren. Der Controller muss das Model über Benutzereingaben benachrichtigen. Daraus ergeben sich zwei verschiedene Schnittstellen zum Model, von denen die View und der Controller auch jeweils nur eine besitzen sollten.
+\paragraph{}
+Das Dependency-Inversion-Prinzip schreibt vor, dass Module nicht von anderen Modulen, die sich niedriger in der Modulhierarchie befinden, abhängig sein sollten \autocite[S.~127]{Marti13}. Wir werden dieses Prinzip beim Design des Ansichtsmoduls und seiner Teilkomponenten berücksichtigen.
+
+\section{Logik und Datenmodell der Ansicht}
+\subsection{Single Responsibility}
+\paragraph{}
+Ein Ansichtsmodul beinhaltet wenig Programmlogik. Es reagiert auf Änderungen an den Anwendungsdaten und macht diese sichtbar. Für Benachrichtigungen über Änderungen ist das Observer-Entwurfsmuster vorgesehen. Ein Observer besitzt eine Verantwortlichkeit im Sinne des Single-Responsibility-Prinzips. Die Registrierung am Model und der Callback sollten sich deshalb in einer eigenen Klasse befinden.
+\paragraph{}
+Interaktive Benutzeroberflächen mit Steuerelementen, die selbst von Benutzereingaben abhängig sind, besitzen eigene Zustände. Es würde keinen Sinn machen, diese Zustände im Datenmodell der Anwendungslogik zu speichern. Deshalb erhält unsere View außerdem ein eigenes Datenmodell und eine Klasse für die Implementierung aller dynamischer Aspekte der View.
+\begin{figure}[h]
+  \centering
+  \includegraphics{preslog-1.mps}
+  \caption{Ansichtsmodul mit Präsentationslogik}
+  \label{preslog}
+\end{figure}
+\ref{preslog} zeigt die Klassenstruktur des Ansichtsmoduls. Die Klasse \texttt{ModelObserver} behandelt die Benachrichtungen über Änderungen im Datenmodell der Anwendung, indem sie ein Attribut der Klasse \texttt{PresentationState} synchronisiert. In \texttt{PresentationState} werden außerdem die Zustände von Steuerelementen gespeichert. In der Klasse \texttt{Presentation} befinden sich Methoden, mit denen die Ansicht abhängig von den Zustandsattributen dynamisch aktualisiert werden kann. Zum Beispiel könnte das Datum der letzten Aktualisierung angezeigt werden. Die Klasse \texttt{View} ist für die Darstellung der Daten und Zustände verantwortlich. Diese Klassenstruktur befolgt das Single-Responsibility-Prinzip besser als eine einzige \texttt{View}--Klasse, in der alle diese Aspekte implementiert sind.
+
+\subsection{Open-Closed}
+\paragraph{}
+Das Ansichtsmodul ist für Erweiterungen an seinem Datenmodell und der Präsentationslogik offen. Wir werden später Zustandsattribute hinzufügen, um ungespeicherte Benutzereingaben hervorzuheben. Bis auf eine Ausnahme sind alle Klassen des Ansichtsmoduls abstrakt. Die Klasse \texttt{ModelObserver} ist keiner anderen Klasse bekannt und ist deshalb vollständig implementiert. Es sind keine Änderungen am Ansichtsmodul nötig, um neue Views zu implementieren. Die Vorgaben des Open-Closed-Prinzips sind eingehalten.
+
+\subsection{Liskovsches Substitutionsprinzip}
+\paragraph{}
+Bisher gibt es im Ansichtsmodul keine Vererbungshierarchie. Für die Erweiterungen des Datenmodells und der Präsentationslogik werden von den bestehenden Klassen neue abgeleitet.
+\paragraph{}
+Nennen wir die Klasse, die wir von \texttt{Presentation} ableiten, \texttt{Form}. Ein Formular kann Pflichtfelder enthalten, und Formularfelder können bereits mit einem Wert gefüllt sein. Diese Informationen werden vom Model geliefert und sind über das Attribut \texttt{state}, das die neue Klasse erbt, verfügbar. \texttt{Form} erhält zwei neue Methoden. Eine Methode füllt Formularfelder mit Standardwerten und die zweite markiert noch ungespeicherte Änderungen. Die geerbte abstrakte Methode \texttt{updateView} wird implementiert, um die beiden neuen Methoden aufzurufen. Die von \texttt{PresentationState} abgeleitete Klasse nennen wir \texttt{FormState}. Sie erhält für jedes Formularfeld ein Flag, das eine Änderung an dem Wert des jeweiligen Felds anzeigt. Von der Klasse \texttt{View} leiten wir ebenfalls eine Klasse ab, sie bekommt den Namen \texttt{FormView} und Attribute für die Formularfelder. Bei jeder Änderung wird im Objekt der Klasse \texttt{FormState} das Änderungs-Flag des jeweiligen Formularfelds gesetzt und geänderte Formularfelder werden hervorgehoben.
+
+\paragraph{}
+Wir fügen den drei Klassen \texttt{Form}, \texttt{FormState} und \texttt{FormView} jeweils noch eine Erweiterung hinzu, indem wir von jeder der drei Klassen wieder eine neue Klasse ableiten. Wir nennen die Klassen \texttt{ExtForm, ExtFormState} und \texttt{ExtFormView}. Mit ihnen wird ein erweitertes Formular realisiert, in dem bestimmte Formularfelder abhängig von einem Radiobutton ein- oder ausgeblendet werden. Das Attribut \texttt{appData} erhält Optionen für den Radiobutton und für jedes Formularfeld eine Zuordnung zu einer Radiobutton-Option. \texttt{ExtForm} erhält eine Methode, die Formularfelder ein- und ausblendet. Die Methode \texttt{updateView} wird noch einmal überschrieben, um die Basisklassenversion und die neue Methode aufzurufen. In \texttt{ExtFormState} wird in einem zusätzlichen Attribut die Information gespeichert, ob es versteckte Formularfelder mit ungespeicherten Änderungen gibt, beziehungsweise welchen Radiobutton-Optionen diese zugeordnet sind. In \texttt{ExtFormView} werden diese Radiobutton-Optionen hervorgehoben.
+
+\paragraph{}
+Objekte der Klassen \texttt{ModelObserver} und \texttt{Form} funktionieren zusammen mit Objekten der Klassen, die direkt von den abstrakten Basisklassen abgeleitet sind, genauso wie mit Objekten der Ext-Klassen, die von den konkreten Implementierungen erneut abgeleitet wurden. Die Forderung des Liskovschen Substitutionsprinzips ist erfüllt.
+
+\subsection{Interface Segregation}
+Ein Konstruktorparameter für die Klasse \texttt{ModelObserver} ist nötig, damit das Interface-Segregation-Prinzip eingehalten ist. Der Parameter gibt an, über welche Änderungen der Observer benachrichtigt werden soll. Je nach Zielsytem und verwendeter Programmiersprache kann der Parametertyp zum Beispiel eine Klasse, eine Enum oder eine URL sein.
+
+\subsection{Dependency Inversion}
+Weil sie die Geschäftslogik der Ansicht enthalten, stellen die Klassen, die direkt oder indirekt von \texttt{Presentation} abgeleitet sind, die «High~Level~Modules» im Sinne des Dependency-Inversion-Prinzips dar. Das Prinzip besagt, dass diese Klassen nicht von Implementierungsdetails in den anderen Klassen abhängig sein dürfen. Dadurch soll verhindert werden, dass Änderungen an Implementierungsdetails die Geschäftslogik in ihrer Gesamtheit beeinträchtigen. Wie schon beim Open-Closed-Prinzip ermöglicht Abstraktion, diese Anforderung zu implementieren. Keins der Attribute der Klasse \texttt{Presentation} ist von einem konkreten Typ, und die Klasse besitzt keine konkreten Methoden. Die Implementierungsdetails befinden sich in abgeleiteten Klassen, ohne die ungwünschte Abhängigkeit zu erzeugen.
+
+\section{Gültigkeitsprüfung für Eingaben}
+\subsection{Interpretation und Weiterleitung der Benutzereingaben}
+\paragraph{}
+Der Controller in einer MVC-Architektur hat zwei verschiedene Aufgaben. Er interpretiert Benutzereingaben, überprüft zum Beispiel Pflichtfelder eines Formulars, und benachrichtigt gegebenenfalls das Model und die View über relevante Benutzereingaben.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{inputval-1.mps}
+  \caption{Controllermodul mit Eingabeüberprüfung}
+  \label{inputval}
+\end{figure}
+
+Das Controllermodul besteht aus einer Observer-Implementierung für die View, einer Klasse für die Prüfung der Benutzereingaben, einem DTO für das Prüfungsergebnis und der Controllerklasse, wie in \autoref{inputval} zu sehen ist. Die Aufgabe der Klasse \texttt{Controller} ist es, das Model über Benutzereingaben zu benachrichtigen. Das Single-Responsibility-Prinzip ist mit dieser Klassenstruktur eingehalten.
+
+
+\pagebreak
+\printbibliography[title=Literaturverzeichnis]
+% \bibliographystyle{alpha}
+% \begin{thebibliography}{9}
+%   \bibitem[KraPo88]{KraPo88} Krasner, Glenn E. ; Pope, Steven T. ; Journal of Object Oriented Programming (Hrsg.): \textit{A Cookbook for Using the Model-View-Controller User Interface Paradigm in Smalltalk-80}. August/September 1988
+%
+%   \bibitem[Gamma~et~al.~94]{GoF94} Gamma, Erich ; Helm, Richard ; Johnson, Ralph ; Vlissides, John ; Addison-Wesley (Hrsg.): \textit{Design Patterns: Elements of Reusable Object-Oriented Software}
+%
+%   \bibitem[Marti13]{Marti13} Martin, Robert C. ; Pearson (Hrsg.); Agile Software Development, Principles, Patterns, and Practices: Pearson New International Edition
+% \end{thebibliography}
+
+https://glossar.hs-augsburg.de/Model-View-Controller-Paradigma (status- oder fehlermodell)
+
+\newpage
+\pagenumbering{Roman}
+\printglossary[type=main, title=Glossar, style=list]
+\end{document}

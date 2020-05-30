@@ -1,0 +1,356 @@
+\documentclass{article}
+
+\usepackage[shellescape]{gmp}
+\usepackage[utf8]{inputenc}
+\usepackage{german}
+
+\usepackage{geometry}
+\geometry{margin=.2cm,tmargin=1.5cm,bmargin=2cm}
+
+\usepackage{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\usepackage{pdflscape}
+
+\usepackage{titling}
+\setlength{\droptitle}{80px}
+
+\usepackage{color}
+
+\renewcommand{\figurename}{Abbildung}
+\begin{document}
+\title{\Large Einsendeaufgabe \\ Requirements Engineering}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\vspace{160px}
+
+\pagebreak
+
+\definecolor{g}{gray}{.6}
+
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{\color{g}{ID:}} \tiny{5b0b0e3fab265d0345271412}} & \footnotesize{\color{g}{Prio}} & \multicolumn{2}{|l|}{\footnotesize{\color{g}{Abhängigkeiten:}}} \\
+  \multicolumn{2}{|l|}{\footnotesize{\color{g}{Name:}} OAuth} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b0e3fab265d0345271412}} \\
+  \hline
+  \multicolumn{2}{|l|}{\footnotesize{\color{g}{Use Case}}} & \multicolumn{3}{|l|}{\footnotesize{\color{g}{Verlauf}}} \\
+  \multicolumn{2}{|l|}{read reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{\footnotesize{\color{g}{Abnahmekriterium}}} \\
+  \multicolumn{5}{|l|}{Resourcen sind nur authentifizierten Usern zugänglich} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{\footnotesize{\color{g}{Beschreibung}}} \\
+  \multicolumn{5}{|l|}{OAuth Authentifizierung für Reviewer,} \\
+  \multicolumn{5}{|l|}{Customer und Übersetzer} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b0e3fab265d0345271412}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: REST Resourcen} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b1b7dab265d03667091e3}} \\
+  \multicolumn{2}{|l|}{} &  & \multicolumn{2}{|l|}{\tiny{5b0b1c2fab265d034651ede4}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{read/write reviews,} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{rate products} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Domain-Klassen sind implementiert} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{s. Klassendiagramm, bitte auch an Übersetzer} \\
+  \multicolumn{5}{|l|}{(Translator) denken} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\vfill
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1438ab265d034651ede3}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Rechteverwaltung} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b0e3fab265d0345271412}} \\
+  \multicolumn{2}{|l|}{} &  & \multicolumn{2}{|l|}{\tiny{5b0b1336ab265d03615d5a82}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{-} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Benutzern können die Rechte ``Reviews lesen'',} \\
+  \multicolumn{5}{|l|}{ ``Reviews erstellen'' und ``Rechte vergeben'' erteilt werden} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Reviewer und Übersetzer müssen unterschiedliche} \\
+  \multicolumn{5}{|l|}{Zugriffsrechte erhalten} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b15daab265d03651553f3}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Simpler REST-Client I} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b0e3fab265d0345271412}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{read reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{REST Service kann abgefragt werden (JSON-Format)} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Zur Verwendung im HTML-Snippet und in der} \\
+  \multicolumn{5}{|l|}{Übersetzungs-GUI} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\vfill
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1778ab265d035020cbb2}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Simpler REST Client II} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b0e3fab265d0345271412}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Datensätze können via REST-Service erstellt und geändert} \\
+  \multicolumn{5}{|l|}{werden} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Zur Verwendung im HTML-Snippet und in der} \\
+  \multicolumn{5}{|l|}{Übersetzungs-GUI} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1863ab265d03651553f4}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: HTML-Snippet} & mittel/hoch & \multicolumn{2}{|l|}{\tiny{5b0b15daab265d03651553f3}} \\
+  \multicolumn{2}{|l|}{} &  & \multicolumn{2}{|l|}{\tiny{5b0b1778ab265d035020cbb2}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{read/write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Eine Webseite kann zum Lesen und Schreiben der Reviews} \\
+  \multicolumn{5}{|l|}{verwendet werden} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Muss in Webseiten der Online-Shops eingebettet werden} \\
+  \multicolumn{5}{|l|}{können} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+
+\pagebreak
+
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1929ab265d035020cbb3}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Mobile REST Client} & mittel & \multicolumn{2}{|l|}{\tiny{5b0b15daab265d03651553f3}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{read reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Für Anfragen an den REST-Service können benötigte} \\
+  \multicolumn{5}{|l|}{Felder der Datensätze spezifiziert werden.} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Zur Minimierung des Payloads können Anfrageergebnisse} \\
+  \multicolumn{5}{|l|}{angepasst werden.} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1987ab265d03667091e2}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Smileys} & niedrig & \multicolumn{2}{|l|}{\tiny{5b0b1863ab265d03651553f4}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{In Reviews können 5 verschiedene Emoticons} \\
+  \multicolumn{5}{|l|}{eingefügt werden} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Etwas mehr als nur Text in Reviews.} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\vfill
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1a09ab265d0345271413}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Übersetzungs-Client} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b15daab265d03651553f3}} \\
+  \multicolumn{2}{|l|}{} &  & \multicolumn{2}{|l|}{\tiny{5b0b1778ab265d035020cbb2}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{REST-Client zum Abfragen, Duplizieren und} \\
+  \multicolumn{5}{|l|}{Updaten von Reviews} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Übersetzer müssen von überall auf die Datensätze} \\
+  \multicolumn{5}{|l|}{zugreifen können um Übersetzungen zu schreiben.} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1af1ab265d035020cbb4}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Übersetzungs-GUI} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b1a09ab265d0345271413}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Web-App zur Nutzung mit dem Übersetzungs-Client} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Übersetzer müssen eine leicht verwendbare Oberfläche} \\
+  \multicolumn{5}{|l|}{bekommen.} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\vfill
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1b7dab265d03667091e3}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Skalierbare DB} & hoch & \multicolumn{2}{|l|}{\tiny{-}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{HBase-Setup für Domain-Objekte} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Products und Reviews müssen in horizontal} \\
+  \multicolumn{5}{|l|}{skalierbarer DB gespeichert werden} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1bc8ab265d0345271414}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: relationales DB-Schema I} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b1b7dab265d03667091e3}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{Products und Reviews können in HBase gespeichert werden} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Products und Reviews müssen in horizontal skalierbarer DB} \\
+  \multicolumn{5}{|l|}{gespeichert werden} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+
+\pagebreak
+
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1c2fab265d034651ede4}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: Reviewer-DB} & hoch & \multicolumn{2}{|l|}{\tiny{-}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{DB-Setup für Reviewer} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Benutzer müssen verwaltet werden können} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+\resizebox{10cm}{!} {
+\begin{tabular}{lllll}
+  \hline
+  \multicolumn{2}{|l|}{\tiny{ID: 5b0b1c93ab265d034477d0e4}} & Prio & \multicolumn{2}{|l|}{Abhängigkeiten:} \\
+  \multicolumn{2}{|l|}{Name: relationales DB-Schema II} & hoch & \multicolumn{2}{|l|}{\tiny{5b0b1c2fab265d034651ede4}} \\
+  \hline
+  \multicolumn{2}{|l|}{Use Case} & \multicolumn{3}{|l|}{Verlauf} \\
+  \multicolumn{2}{|l|}{write reviews} & \multicolumn{3}{|l|}{2018-05-27 erstellt} \\
+  \multicolumn{2}{|l|}{} & \multicolumn{3}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Abnahmekriterium} \\
+  \multicolumn{5}{|l|}{DB-Schema für Reviewer} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+  \multicolumn{5}{|l|}{Beschreibung} \\
+  \multicolumn{5}{|l|}{Benutzer müssen verwaltet werden können} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \multicolumn{5}{|l|}{} \\
+  \hline
+\end{tabular}
+}
+
+\end{document}

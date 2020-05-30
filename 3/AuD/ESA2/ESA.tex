@@ -1,0 +1,91 @@
+\documentclass{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\algtext*{EndWhile}
+\algtext*{EndIf}
+
+\begin{document}
+\title{\Large Einsendeaufgabe 2}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\subsection{}
+Schreiben Sie einen rekursiven Algorithmus für die binäre Suche Seite 43 im Skript. Siehe auch
+Übung 3 Übungsaufgaben Datei AlgOnl-Aufg-WS17-18-oL.pdf im Kursmaterial.\\
+
+\begin{algorithm}
+\textbf{Eingabe:} $A=(a_1, ..., a_n)$ mit $a_i, i, n \in \mathbb{N}, 1 \leq i \leq n, x \in \mathbb{N}, a_1<a_2<...<a_n$\\
+\textbf{Ausgabe:} $i \in {0, 1, ..., n}$ mit $1 \leq i \leq n$ gefunden, $i=0$ nicht gefunden\\
+\begin{algorithmic}[1]
+
+\State \Call {Binares Suchen}{$A, x, 1,$ Länge von $A$ + 1}
+\Function{Binares Suchen}{$A, x, l, r$}
+	\If {$l\geq r$}
+	\State \Return 0
+	\EndIf
+	\State $i\gets \lfloor{(l+r)/2} \rfloor$
+	\If {$A[i]=x$}
+	\State \Return {$i$}
+	\EndIf
+	\If {$A[i] < x$}
+	\State $l\gets i+1$
+	\Else
+	\State $r\gets i$
+	\EndIf
+	\State \Return \Call {Binares Suchen}{$A, x, l, r$}
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+\stepcounter{subsection}
+\subsection{}
+Erzeugen Sie ein int Array mit den Zahlen 0 bis 999 und suchen Sie 12. Wie viele Aufrufe sind
+notwendig? Gleiche Frage mit Zahlen von 0 bis 99999.\\
+
+Der Algorithmus benötigt 10 rekursive Aufrufe, um die Zahl 12 in dem Array mit den Zahlen von 0 bis 999 zu finden. Für das 
+Array mit den Zahlen 0 bis 99999 benötigt er 16 rekursive Aufrufe. Der Algorithmus hat eine logarithmische Komplexität ($T(n) = \lfloor{\log n + 1}\rfloor$).
+
+\pagebreak
+\subsection{}
+Stellen Sie die Rekursionsgleichung zur Bestimmung der Zeitkomplexität Ihres Algorithmus im
+schlechtesten Fall in Abhängigkeit von der Eingabe n auf.\\
+
+\begin{math}
+T(n) =
+\begin{cases}
+konstant, & falls\ n = 1\\
+T(n / 2) + \Theta(1), & falls\ n \geq 2
+\end{cases}
+\end{math}
+
+\subsection{}
+Lösen Sie die Rekursionsgleichung mit Hilfe des Master-Theorems und geben sie die Zeit-
+Komplexität in asymptotischer Notation. Entspricht das Ergebnis Ihrer Antworten der Frage 3?
+
+\begin{math}\\
+b=1, c = 2, k = 0 \\\\
+b(1/c)^k = (1/2)^0 = 1 \\\\
+T(n) \in \Theta(\log n) \\\\
+\end{math}
+\end{document}

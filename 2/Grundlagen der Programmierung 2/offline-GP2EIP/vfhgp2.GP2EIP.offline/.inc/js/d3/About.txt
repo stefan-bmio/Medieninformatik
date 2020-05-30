@@ -1,0 +1,3 @@
+Framework zur Manipulation und Darstellung von Daten im Browser
+
+Benutzt im Statistik Tool für jedes Modul und im Glossar Check

@@ -1,0 +1,65 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{2}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{2}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Architekturmuster und -prinzipien}{2}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}MVC}{2}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{2}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{2}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{2}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}SOLID}{3}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{3}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{3}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{3}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{3}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{3}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{4}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Logik und Datenmodell der Ansicht}{4}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Single Responsibility}{4}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{4}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{4}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Open-Closed}{5}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{5}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Liskovsches Substitutionsprinzip}{5}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{5}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{5}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{5}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{5}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Interface Segregation}{6}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Dependency Inversion}{6}{subsection.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}G\IeC {\"u}ltigkeitspr\IeC {\"u}fung f\IeC {\"u}r Eingaben}{6}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Interpretation und Weiterleitung der Benutzereingaben}{6}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{6}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Glossar}{I}{section*.22}

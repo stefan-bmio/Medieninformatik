@@ -1,0 +1,114 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{graphicx}
+
+\usepackage{tabularx}
+\usepackage[labelformat=empty,justification=raggedright,singlelinecheck=false,]{caption}
+
+\begin{document}
+\subsection*{}
+\textbf {Aufgabe 1. 8-Bit-Register} \\
+
+\begin{figure}[h]
+\includegraphics{register.mps}
+\end{figure}
+
+\subsection*{}
+\textbf{Aufgabe 2. Bitfolge in ein Register schreiben} \\ \\
+Input-Leitungen: 0 1 0 1 0 1 0 1 \\
+Select: 1 \\
+Write: 1
+
+\subsection*{}
+\textbf{Aufgae 3. Ermittle die Werte} \\ \\
+\begin{tabularx}{\linewidth}{c c c c c c}
+\textbf{Input} & \textbf{Select} & \textbf{Write} & \textbf{Flip-Flop} & \textbf{Flip-Flop (neu)} & \textbf{Output} \\
+1 & 1 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 & 1 & 1 \\
+0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+\end{tabularx}
+
+\subsection*{}
+\textbf{Aufgabe 4. ADD im Einadressformat} \\ \\
+ADD im Einadressformat bekommt einen Operanden übergeben und verwendet die Adresse bzw. den Wert im Akkumulator. Das Ergebnis schreibt ADD ebenfalls in den Akkumulator.
+
+\subsection*{}
+\textbf{Aufgabe 5. Dreiadressformat} \\ \\
+Die Reihenfolge der Operanden des Dreiadressformates ist
+\begin{center}
+Ergebnis\hspace{3mm}Operand~1\hspace{3mm}Operand~2.
+\end{center}
+Beispielsweise berechnet der Befehl
+\begin{center}
+$SUB$\hspace{3mm}$18$\hspace{3mm}$16$\hspace{3mm}$17$ \\
+\end{center}
+die Differenz der Werte an den Speicheradressen $16$ und $17$ und schreibt das Ergebnis an Speicheradresse $18$.
+
+\subsection*{}
+\textbf{Aufgabe 6. Adressierungsarten} \\ \\
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{l X}
+\textbf{ADD} R1, ACC, 8 & Addiert zum Wert im Akkumulator den Wert an der Speicheradresse 8 und schreibt das Ergebnis
+in das Register R1 \\
+\textbf{SUB} ACC, 10, (R2) & Subtrahiert den Wert an der Speicheradresse im Re\-gister R2 vom Wert an der Speicheradresse 10 und schreibt das Ergebnis in den Akkumulator \\
+\textbf{JUMP} (R3) & Setzt die Programmausführung an der Speicheradresse, die an der Speicheradresse im Register R3 steht, fort (schreibt den Wert an der Speicheradresse in Register R3 in das Register PC, den Program Counter) \\
+\textbf{ADD} ACC, (ACC), \#5 & Addiert zum Wert an der Speicheradresse im Akkumulator den Wert 5 und schreibt das Ergebnis in den Akkumulator \\
+\end{tabularx}
+}
+
+\pagebreak
+\subsection*{}
+\textbf{Aufgabe 7: Von-Neumann vs. Harvard} \\
+\begin{figure}[h]
+  \includegraphics{von-neumann.mps}
+  \caption{Von-Neumann-Architektur}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics{harvard.mps}
+  \caption{Harvard-Architektur}
+\end{figure}
+
+Der grundlegende Unterschied sind mehrere Rechenwerke in der Harvard-Architektur, die Befehle und Daten parallel verarbeiten können. In der Von-Neumann-Architektur gibt es nur ein Rechenwerk.
+
+\subsection*{}
+\textbf{Aufgabe 8. Infos für den DMA-Controller} \\ \\
+Der DMA-Controller benötigt
+\renewcommand{\labelitemi}{\textendash}
+\begin{itemize}
+  \item {Quelle}
+  \item {Ziel}
+  \item {Startadresse}
+  \item {Zieladresse}
+  \item {Anzahl Bytes}
+\end{itemize}
+
+\subsection*{}
+\textbf{Aufgabe 9. DMA und Interrupts} \\ \\
+In einem System ohne DMA wird für jeden Zugriff auf ein Datenwort ein Interrupt ausgelöst, und die CPU muss die Interruptbehandlungsroutine (ISR) ausführen. In einem System mit DMA kann ein ganzer Adressbereich (Start\-adresse, Anzahl Bytes) verarbeitet werden, bevor der Interrupt ausgelöst wird. Die ISR muss danach nur einmal ausgeführt werden.
+
+\subsection*{}
+\textbf{Aufgabe 10. Aufgabe der MMU} \\ \\
+Die grundlegende Aufgabe der MMU ist die Umrechnung virtueller Speicheradressen in physikalische Speicheradressen, um eine effiziente Verwaltung virtuellen Speichers zu ermöglichen.
+
+\subsection*{}
+\textbf{Aufgabe 11. Virtuelle Größen} \\ \\
+Betrachte einen Computer mt 2 GiB physikalischen Speicher (RAM). Jeder gestartete Prozess besitze 4 GiB virtuellen Speicher. Die typische Größe einer einzelnen virtuellen Seite bei Verwendung der virtuellen Speicherverwaltung betrage 4 KiB.
+\begin{itemize}
+  \item {Wie groß ist dann ein einzelner Seitenrahmen des physikalischen Spei\-chers?} \\
+  4 KiB (Größe der virtuellen Seite)
+  \item {In wieviele Seiten ist der gesamte virtuelle Speicher eines Prozesses unterteilt?} \\
+  4 GiB / 4 KiB = 4096 KiB / 4 KiB = 1024 Seiten
+  \item {Wieviele Seitenrahmen gibt es insgesamt?} \\
+  2 GiB / 4 KiB = 2048 KiB / 4 KiB = 512 Seitenrahmen
+  \item {Wieviele Speicherzellen zu je 8 Bit (= 1 Byte) besitzt ein einzelner Seitenrahmen?} \\
+  4 KiB / 1024 = 4096 Speicherzellen
+  \item {Wieviele Speicherzellen zu je 8 Bit (= 1 Byte) besitzt eine einzelne Seite?}
+  4096 (wie bei Seitenrahmen)
+\end{itemize}
+
+
+\end{document}

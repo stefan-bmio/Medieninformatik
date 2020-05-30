@@ -1,0 +1,90 @@
+\documentclass{scrartcl}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage[ngerman]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\begin{document}
+\begin{enumerate}
+\item Formale Sprachen
+
+\begin{enumerate}[label*=\arabic*.]
+\item Sei $\Sigma = \{a, b, c,\}$ ein Alphabet.
+\begin{enumerate}[label=(\alph*)]
+\item Listen Sie alle Wörter über $\Sigma$ mit $|w| \leq 2$ auf.
+\\ $\{\epsilon,a,b,c,aa,ab,ac,ba,bb,bc,ca,cb,cc\}$
+\item Wie viele Sprachen $L \subseteq \{w | w \in \Sigma^*, |w| = 2 \}$ gibt es? Spezifizieren Sie drei davon.
+\\ 512 Sprachen ($2^9$), 
+\\ $\{\epsilon,a,b,c\}$, 
+\\ $\{\epsilon,aa,ab,ac,ba,bb,bc,ca,cb,cc\}$, 
+\\ $\{\epsilon,a,b,c,aa,ab,ac,ba,bb,bc,ca,cb,cc\}$
+\item Definieren Sie drei unendliche Sprachen über $\Sigma$.
+\\ $ L=\{w|w \in \Sigma^*\}$
+\\ $L=\{w|w \in \Sigma^+\}$
+\\ $L=\{w| |w| \geq 2\}$
+\end{enumerate}
+
+\item $L_1 = \{0^i | i \in \mathbb{N}$ und $L_2 = \{1^i | i \in \mathbb{N}_0\}$ seien formale Sprachen über dem Alphabet $\Sigma = \{0, 1\}$. Berechnen Sie:
+
+\begin{enumerate}[label=(\alph*)]
+\item $L_1 \cup L_2$
+\\ $\{\epsilon, 0,1,00,11,...\}$
+\item $L_1 \cap L_2$
+\\ $\{\epsilon\}$
+\item $L_1 \setminus L_2$
+\\ $\{0,1,00,11,...\}$
+\item $L_1 \cap \Sigma^*$
+\\ $L_1$
+\item $(L_1 \cup L_2) \cap \Sigma^3$
+\\ $\{000,111\}$
+\end{enumerate}
+
+\item Sei $\Sigma = \{\$,\%,\&\}$ ein Alphabet.
+\begin{enumerate}[label=(\alph*)]
+\item Definieren Sie eine lineare Ordnung auf $\Sigma$.
+\\ $\$ \prec \% \prec \&$
+\item Listen sie alle Wörter $w$ über $\Sigma$ mit $|w| \leq 2$ in lexikographischer Ordnung bzgl. der unter (a) definierten linearen Ordnung auf.
+\\ $\{\$ \prec \% \prec \& \prec \$\$ \prec \$\% \prec \$\& \prec \%\$ \prec \%\% \prec \%\& \prec \&\$ \prec \&\% \prec \&\&\}$
+\item Welche Wörter gehören zur Sprache $L = \{w | w \in \bigcup\limits_{i=0}^2 \Sigma^i, w = w^R\}$?
+\\ $\{\epsilon,\$,\%,\&,\$\$,\%\%,\&\&\}$
+\end{enumerate}
+
+\pagebreak
+
+\item Sei $\Sigma$ ein Alphabet aus $n$ Zeichen, $n \in \mathbb{N}$.
+\begin{enumerate}[label=(\alph*)]
+\item Wie viele Wörter enthält $\Sigma^m, m \in \mathbb{N}_0$?
+\\ unendlich
+\item Wie viele Wörter enthält $\bigcup\limits_{i=0}^{m} \Sigma^i, m \in \mathbb{N}_0$?
+\\ unendlich
+\item Wie viele Wörter enthält $\Sigma^*$?
+\\ unendlich
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\pagebreak
+
+\begin{enumerate}
+\item
+\begin{enumerate}[label=(\alph*)]
+\item 
+Sei $\Sigma = \{+,\&,\#\}$ ein Alphabet, auf dem eine lineare Ordnung wie folgt definiert ist:
+\\ $\# \preceq_\Sigma \& \preceq_\Sigma +$ \\
+Bestimmen Sie die Sprache $\Sigma^0 \cup \Sigma^1 \cup \Sigma^2$ und listen Sie die darin enthaltenen Wörter in Wortordnung auf.
+\item Es sei $L = \{0^{2i+1} | i \in \mathbb{N}_0\}$ eine Sprache uber dem Alphabet $\Sigma = \{0\}$.
+\\ Bestimmen Sie $\Sigma^+ \setminus L$
+\item  Es seien $\Sigma$ ein Alphabet mit $|\Sigma| = 5$ und $k \in \mathbb{N}_0$.
+Bestimmen Sie $|\Sigma^k|$.
+\end{enumerate}
+\end{enumerate}
+
+Lösung:
+\begin{enumerate}[label=(\alph*)]
+\item $L= \{\epsilon \preceq_\Sigma \# \preceq_\Sigma \& \preceq_\Sigma + \preceq_\Sigma \#\# \preceq_\Sigma \#\& \preceq_\Sigma \#+ \preceq_\Sigma \&\# \preceq_\Sigma \&\& \preceq_\Sigma \&+ \preceq_\Sigma +\# \preceq_\Sigma +\& \preceq_\Sigma ++\}$
+\item $L = \{0²i | i \in \mathbb{N}_0\}$
+\item $5^k$
+\end{enumerate}
+
+\end{document}

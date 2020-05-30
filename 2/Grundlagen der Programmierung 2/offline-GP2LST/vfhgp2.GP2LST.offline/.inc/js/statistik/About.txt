@@ -1,0 +1,3 @@
+Skripte für die Statistik-Anzeige
+
+Beispiel GP1: http://vfh184.beuth-hochschule.de/lernraum/vfhgp1/.shell/statistik.html

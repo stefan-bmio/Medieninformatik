@@ -1,0 +1,35 @@
+@startuml
+
+title Product Review Webservice Komponentendiagramm
+
+component "Übersetzungsdienst" <<optional>> as TRDB {
+	database "Übersetzungen DB"
+}
+
+node "Datenbank-Server" <<Datenbank>> as DBS {
+	database "Produkte DB"
+	database "Benutzer DB" as Bendb
+	
+	note bottom of Bendb
+		Händler und Hersteller
+	end note
+}
+
+node "Frontend" <<GUI>> as GUI {
+	artifact "Benutzerschnittstelle" as UI
+	note bottom of UI : für Mitarbeiter
+}
+
+node "RESTful Service" <<Webservice>> as SRV {
+	artifact Authentifizierung as Auth
+}
+
+cloud internet {
+}  
+
+TRDB -down-> DBS
+DBS -> SRV
+DBS -down-> GUI
+SRV -> internet
+
+@enduml

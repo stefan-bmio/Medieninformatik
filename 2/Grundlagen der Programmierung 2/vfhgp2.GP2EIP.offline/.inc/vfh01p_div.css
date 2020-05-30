@@ -1,0 +1,1956 @@
+/* CSS Document für Druckversion PDF Generator Master*/
+
+
+.noprint{
+	display:none;
+}
+.alternativbild {
+	visibility: visible;
+	display: block;
+}
+
+body {
+	font-family: 		Arial, sans-serif;
+}
+
+/* Seitenumbruch VOR dem Element*/
+.pg-break-before {
+	page-break-before:always !important;
+}
+/* Seitenumbruch NACH dem Element*/
+.pg-break-after {
+	page-break-after:always !important;
+}
+
+/* Verhindert den Seitenumbruch */
+.no-pg-break{
+	page-break-before:avoid !important;
+	page-break-after:avoid !important;
+  padding: 0px !important;
+}
+
+/*********************************************************************
+	zusätzlich - Teck-Soo
+*********************************************************************/
+
+/* == Bildquelle nach Abbildungen und Animationen == */
+
+/* == Bildquelle nach Abbildungen und Animationen == */
+
+div.bildquelle {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 0px 15px 0px;
+}
+
+div.bildquellelink {
+	margin: 3px 0px 5px 0px;
+}
+
+div.bildquelle a:link {
+	text-decoration: none;
+	border-bottom:	1px dotted #fff;
+	color: #000;
+}
+
+div.bildquelle a:hover {
+	text-decoration: none;
+	border-bottom:	1px solid #000;
+	color: #000;
+}
+
+/* == Abbildungsmarginalie (auch für Tabellen anwendbar) == */
+
+div.bildtitel, div.tabellentitel {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 2px 0px 0px;
+		-moz-hyphens: manual;
+	 	-o-hyphens: manual;
+	 	-webkit-hyphens: manual;
+	 	-ms-hyphens: manual;
+	 	hyphens: manual;
+}
+
+img.bildrahmen1 {
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #999;
+}
+
+/*********************************************************************
+	Definition allgemeiner Klassen
+*********************************************************************/
+h1.modultitel{
+	page-break-before:avoid;
+  font-family: Arial, Helvetica, sans-serif; font-size: 12pt;
+  font-style: normal; font-weight: bold; color: #000000;
+  padding: 25px 0px 10px 0px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: italic; font-weight: bold; color: #000000;
+}
+img {
+	page-break-inside:avoid;
+}
+
+pre {
+  font-family: "Courier New";
+  font-size: 12px;
+}
+
+/* == Typographische Anfuehrungszeichen Start == */
+q {
+/* background-color:#cff770; */
+}
+:lang(de) {
+	quotes:"\201E" "\201C" "\201A" "\2018";
+}
+:lang(de-DE) {
+	quotes:"\00BB" "\00AB" "\203A" "\2039";
+}
+:lang(de-CH) {
+	quotes:"\00AB" "\00BB" "\2039" "\203A";
+}
+:lang(en) {
+	quotes:"\201C" "\201D" "\2018" "\2019";
+}
+:lang(fr) {
+	quotes:"\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A";
+}
+/* == Typographische Anfuehrungszeichen Ende == */
+p {
+  font-family: Arial; font-size: 11pt;
+  font-style: normal; line-height: normal; font-weight: normal; color: #000000
+}
+
+
+h1 {
+  font-family: Arial; font-size: 12pt;
+  font-style: normal; font-weight: bold; color: #000000;
+  padding: 25px 0px 0px 0px;
+/*  page-break-before: always; */
+}
+
+
+ul {
+  list-style-position: outside; list-style-image: none; font-family: Arial;
+  font-size: 11pt; font-weight: normal; color: #333333; clip: rect( ); line-height: normal
+}
+
+ol{list-style-position: outside; font-family: Arial;
+  font-size: 11pt; font-weight: normal; color: #333333; clip: rect( ); line-height: normal}
+
+.links_intern{
+	list-style:			url(.inc/IcoGoTo.gif);
+
+}
+.links_intern li{
+	padding:			0 0 5px 0px;
+}
+
+/* text-align links, mitte, rechts */
+/* text-align links, mitte, rechts, oben, unten */
+.alignLeft{
+ text-align: left;
+}
+.alignCenter{
+ text-align: center;
+}
+.alignRight{
+ text-align: right;
+}
+.talign{
+	vertical-align:top;
+	}
+.balign{
+	vertical-align:bottom;
+}
+
+.right, .floatRight{
+  float:right;
+  margin-left:5px;
+}
+
+.left, .floatLeft{
+	float:left;
+	margin-right:5px;
+}
+
+#mainText #main div.linksEingerueckt,
+#mainText #main p.linksEingerueckt{
+	margin-left:20px;
+}
+
+.clear, .clearTheFloats{
+	clear:both;
+  height: 0px;
+}
+
+.block{
+	display:block;
+	width:100%;
+	cursor:pointer;
+}
+
+.z-index-1{
+	z-index:1;
+}
+
+.z-index-2{
+	z-index:2;
+}
+
+#MathJax_Message{
+  display: none !important;
+}
+
+.math_inline{
+	font-size: 16px !important;
+}
+.mathformula, .math_block{
+	font-size: 18px !important;
+}
+
+.handschrift {
+	font-family:"Comic Sans MS", cursive;
+	font-style:italic;
+	color:blue;
+}
+
+/*********************************************************************
+	Main Container
+*********************************************************************/
+#mainContainer {
+	width:978px;
+	margin:10px auto !important;
+	/*Height Workaround for IE ====*/
+	min-height: 98%;
+	height: auto !important;
+	_height:98%;
+	/*=============================*/
+	position:relative;
+	/*background: #fff url(images/bgDummyFullHeight.gif) repeat-y 50% 0;*/
+}
+
+#mainContainer_shell {
+	width:978px;
+	margin:10px auto !important;
+	/*Height Workaround for IE ====*/
+	min-height: 98%;
+	height: auto !important;
+	_height:98%;
+	/*=============================*/
+	position:relative;
+	background: #fff url(../images/bgDummyFullHeight_shell.gif) repeat-y 50% 0;
+}
+
+
+/*********************************************************************
+	Header
+**********************************************************************/
+#logoBar {
+	display:none;
+}
+
+/**********************************************************************
+	Navigationsleisten
+***********************************************************************/
+.navBar {
+	display:none;
+
+}
+
+/*********************************************************************
+	Sektionstrenner Grafik
+**********************************************************************/
+
+.sectionDivider {
+	display:none;
+}
+
+/*********************************************************************
+	Inhalt, Glossar, Hilfe, Suche und Bugreport
+**********************************************************************/
+#inhaltFenster,
+#glossarFenster,
+#hilfeFenster,
+#sucheFenster,
+#bugFenster{
+	visibility:hidden;
+	font-family:"Times New Roman", Times, serif;
+	height:0px;
+}
+.ui-resizable{
+	display:none;
+}
+
+/*********************************************************************
+	Footer
+**********************************************************************/
+
+#footerContainer{
+
+}
+
+
+#copyright {
+	background-color:#fff;
+	font-size:11px;
+	letter-spacing:1px;
+	color:#8d96a5;
+}
+
+#copyright span {
+	display:block;
+	float:left;
+	margin-top:1px;
+	margin-left:12px;
+}
+
+#copyright img {
+	float:left;
+
+	width:28px;
+	height:13px;
+
+	margin-top:2px;
+	margin-left:-35px;
+	margin-right:8px;
+}
+
+#copyright a {
+	display:none;
+}
+
+/* Definitionen fuer den Fusszeilenbereich */
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #666666
+}
+
+/*********************************************************************
+	Appendix
+**********************************************************************/
+
+.appendix{
+	width: 100%;
+	position:relative;
+	left:-190px;
+}
+
+.appendix hr{
+	width:600px;
+}
+
+.appendix p{
+	font-size:11pt;
+	line-height:20px;
+}
+
+.appendix h1{
+	page-break-before:avoid !important;
+}
+
+.appendixTitle{
+	position:relative;
+	left: -190px;
+}
+.appendix ol, .appendix ul {
+	font-size:11pt;
+	line-height:20px;
+	margin:0 0 15px 25px;
+  padding:0;
+}
+
+/*********************************************************************
+	Inhalt
+**********************************************************************/
+
+#content {
+	/*float:left;*/
+	/*border:1px solid #b7b7b7;*/
+
+	border-top-width:0;
+	border-bottom-width:0;
+
+	/*background-color:#ffffff;
+
+	width:880px;*/
+
+	margin-top:0px;
+	margin-bottom:0px;
+
+	padding-bottom:40px;
+}
+
+.content h1{
+page-break-before: avoid;
+border-top: 1px solid #666;
+padding: 25px 0px 5px 0px;
+}
+
+/* clearfix Hack, damit innerhalb von statischen Containern frei mit Fliessobjekten gearbeitet werden kann. */
+.clearfix:after{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+/* Diese Angabe wird vom Safari Browser benoetigt */
+.clearfix{
+  display:block;
+}
+
+#mainText {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	width:640px;
+	margin-left:170px;
+	margin-top:0;
+	margin-bottom:0;
+	padding-left:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#lerneinheitenuebersicht #mainText,
+#lernzielseite #mainText,
+#lernformen #mainText,
+#voraussetzung #mainText,
+#suchen #mainText,
+#download #mainText,
+#ansprechpartner #mainText{
+  border-left:none;
+}
+
+#main {
+	margin:0;
+	padding:0;
+	width:auto;
+}
+
+.box {
+	position:relative;
+  padding:0;
+  margin:0;
+	margin-bottom:0px;
+	width:auto;
+	height:auto;
+}
+
+.box p {
+	font-size:11pt;
+	line-height:20px;
+	margin:0;
+	margin-bottom:15px;
+  padding:0;
+}
+
+.box p:first-child {
+  margin-top:10px;
+}
+
+.box p:last-child {
+  margin-bottom:10px;
+}
+
+.box ol, .box ul {
+	font-size:11pt;
+	line-height:20px;
+	margin:5px 0 10px 25px;
+  padding:0;
+}
+
+.box li {
+    margin-bottom:	5px;
+}
+.box ul{
+	list-style:disc;
+}
+
+.box ol{
+	list-style:decimal;
+}
+.box .txtver{
+	width: 578px;
+}
+
+/*--------------------------------------------------*/
+/* Zusatzklasse fuer breite 'box' Container 		*/
+/*--------------------------------------------------*/
+.box_large{
+	width: 830px;
+	position:relative;
+	left: -192px;
+	}
+/*-------------------------------------------------*/
+
+/*Feste Breite für aniContainer mit Flash-Objekt*/
+.box .aniContainer, .box .uebContainer {
+	width: 578px;
+}
+
+.box_large .uebContainer,.box_large .aniContainer{
+	margin-top: 30px;
+	width: 730px;
+}
+
+/*Abstand nach oben für beite code/cmd/def/term/bsp-Container*/
+.box_large .codeContainer,.box_large .cmdContainer,
+.box_large .defContainer, .box_large .bspContainer,
+.box_large .termContainer{
+	margin-top:30px;
+	width:	100%;
+}
+
+.box_large img{
+	margin-bottom: 10px;
+}
+.box_large img.alternativbild{
+	margin-bottom: 0;
+}
+.box_large .avatartext{
+	margin-top: 50px;
+}
+.grau{
+  color:#898989;
+}
+
+#lerneinheitenuebersicht .grau{
+  font-size:12px;
+}
+
+#benutzungshinweise #mainText{
+  border:none;
+}
+
+#mainText h1 {
+	font-size:12pt;
+	font-weight:bold;
+	page-break-before:always;
+	margin-bottom:20px;
+}
+
+#mainText p {
+	margin-top:0;
+	padding-top:0;
+}
+/*
+#mainText #main div,
+#mainText #main p{
+	margin:10px 0;
+}
+*/
+#mainText p.headlineSub{
+	margin-top:-30px;
+	margin-bottom:30px;
+}
+
+#mainText #main div.paragraphTopDesc { /* Marginaltext Ausrichtung Absatzanfang */
+	position:absolute;
+	top:3px;
+	/*right:815px;*/
+	left: -190px;
+	width:175px;
+	/*padding-left:15px;*/
+	margin-top: 0px;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:11px;
+	color:#333;
+}
+
+.paragraphTopDesc p{
+  font-family:Verdana, Arial, sans-serif;
+  font-size:8pt;
+  line-height:15px;
+  vertical-align:text-top;
+  margin-bottom:15px;
+  color:#666;
+}
+
+.paragraphTopDesc img{
+    margin-top:1px;
+}
+
+#mainText #main div.paragraphBottomDesc { /* Marginaltext Ausrichtung Absatzende */
+	position:absolute;
+	bottom:0px;
+	/*right:615px;*/
+	left: -190px;
+	float:left;
+
+	width:175px;
+
+	/*padding-left:15px;*/
+  margin-bottom: 0px;
+	font-family: Verdana;
+	font-size:8pt;
+	color:grey;
+}
+
+.paragraphBottomDesc p{
+  font-family:Verdana, Arial, sans-serif;
+  font-size:8pt;
+  line-height:15px;
+  margin-bottom:0px !important;
+}
+
+#mainText #main div.graphicBottomDesc {
+	position:relative;
+	width:auto;
+	/*padding-left:15px;*/
+  margin-bottom: 0px;
+	font-family: Verdana;
+	font-size:11px;
+	color:grey;
+}
+
+.graphicBottomDesc p{
+  font-family:Verdana, Arial, sans-serif;
+  font-size:11px;
+  line-height:15px;
+  margin-bottom:0px !important;
+}
+
+
+#mainText div span.MargTextBlau{
+	/*position:absolute;*/
+	font-size: 8pt;
+	top:27px;
+	left:0px;
+	color:#4082B6;
+}
+
+#mainText div span.MargTextAni{
+	/*position:absolute;*/
+	font-size: 8pt;
+	top:27px;
+	left:-3px;
+	color:#4082B6;
+}
+
+#mainText div span.MargTextDef{
+	/*position:absolute;*/
+	font-size: 8pt;
+	top:27px;
+	left:-3px;
+	color:#4082B6;
+}
+
+#mainText div span.MargTextOrange{
+	/*position:absolute;*/
+	font-size: 8pt;
+	top:27px;
+	left:0px;
+	color:#d98b02;
+}
+
+#mainText div span.MargTextGrau{
+  /*position:absolute;*/
+	top:27px;
+	left:0px;
+	color:#666666;
+}
+#mainText div span.MargTextBlau, span.MargTextAni, span.MargTextGrau, span.MargTextDef, span.MargTextOrange{
+  font-family:Verdana;
+}
+
+.autorenhinweis, .Autorenhinweis {
+	display: none;
+}
+.autorenname, .Autorenname {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.bu{
+	color: #666666;
+	font-family:Verdana;
+	font-size: 8pt;
+	line-height: normal !important;
+}
+
+p.bu{
+	color: #666666;
+	font-family:Verdana;
+	font-size: 8pt;
+}
+
+.bearbeitungszeit{
+	color: #666666;
+	font-family:Verdana;
+	font-size: 8pt !important;
+}
+
+img.frame1{
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #999;
+}
+
+/*-------------------------------------------------*/
+/* Container fuer Begriffe und Definitionen "Terms" */
+/*-------------------------------------------------*/
+
+.termContainer{
+  background:#FFF;
+  width:auto;
+  height:auto;
+  display:block;
+  border: 1px solid #41596b;
+  padding:5px 5px 0 5px;
+  margin:0 ;
+  font-family: Arial, sans-serif; font-size: 11pt;
+  page-break-inside:avoid;
+}
+
+.termContainer h2{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
+  margin:0;
+}
+
+.termContainer p:last-child {
+  margin-bottom:3px;
+}
+
+.termContainer p:first-child {
+  margin-top:2px;
+}
+
+/*-------------------------------------------------*/
+/* Container (resizeable) fuer 										 */
+/* Textversionen v. Animationen                    */
+/*-------------------------------------------------*/
+.txtver{
+	display:block !important;
+	background:no-repeat scroll 0 0 #F2F2F2;
+	border: 1px solid #CCC;
+	margin: 20px 0px;
+}
+.txtver_content{
+	margin: 5px 5px;
+}
+.txtver h1{
+	width:100%;
+	color:#00F;
+	}
+.txtver h2{
+	font-size: 		12pt !important;
+	font-weight: 	bold !important;
+	font-style: 	normal !important;
+	line-height:	18px;
+	margin-top:		5px;
+	margin-bottom:15px;
+	width: 				500px;
+	float: 				left;
+	}
+.txtver_headline{
+	float:left;
+	width:500px;
+}
+.txtver_closeOben{
+	float:right;
+}
+.txtver_closeOben a{
+	display:none;
+}
+
+.txtver table.datentabelle{
+	width: 100%;
+}
+
+
+/*-------------------------------------------------*/
+/* Neuer Container speziell fuer Definitionen */
+/*-------------------------------------------------*/
+
+.defContainer{
+     background:#FFF;
+     width:auto;
+     height:auto;
+     display:block;
+     border: 1px solid #9EA03F;
+     padding:5px 5px 0 5px;
+     margin:0 ;
+     font-family: Arial; font-size: 11pt;
+	 page-break-inside:avoid;
+}
+
+.defContainer h2{
+    font-family: Arial; font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    margin:0;
+}
+
+.defContainer p:last-child {
+  margin-bottom:3px;
+}
+
+.defContainer p:first-child {
+  margin-top:2px;
+}
+
+/*-------------------------------------------------*/
+/* Neuer Container speziell fuer Beispiele */
+/*-------------------------------------------------*/
+
+.bspContainer{
+  background:#FFF;
+  width:auto;
+  height:auto;
+  display:block;
+  border: 1px solid #41596b;
+  padding:5px 5px 0 5px;
+  margin:0 ;
+  font-family: Arial; font-size: 11pt;
+  page-break-inside:avoid;
+}
+
+.bspContainer h2{
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height:normal;
+  padding: 10px 0 10px 0;
+  margin:0;
+}
+
+.bspContainer p{
+  padding: 2px 2px 5px 2px;
+  margin:0;
+}
+.bspContainer p:last-child {
+  margin-bottom:3px;
+}
+
+.bspContainer p:first-child {
+  margin-top:2px;
+}
+
+.bspContainer ul{
+  list-style-position: outside;
+  list-style-image: none;
+  font-family: Arial;
+  font-size: 11pt;
+  font-weight: normal;
+  color: #000000; clip: rect( );
+  line-height: normal;
+	padding: 0 0 0 25px;
+  /*margin:2px 2px;*/
+}
+
+.bspContainer li {
+	margin-bottom: 10px;
+}
+
+.bspContainer ol.loweralpha {
+	list-style-position: outside;
+	list-style-image: none;
+	list-style-type: lower-alpha;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000000;
+	margin:2px 2px;
+	padding: 0 0 0 25px;
+}
+
+
+.bspContainer table{
+    margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------------*/
+/* Container fuer Wissenstests 										 */
+/*-------------------------------------------------*/
+
+.uebContainer{
+	page-break-inside:avoid;
+	background:#FFF4CB;
+	width:auto;
+	height:auto;
+	display:block;
+	border: 1px solid #C57E00;
+}
+
+.uebContainerCaption{
+  background:#FBC969;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight:bold;
+  width:auto;
+  height:auto;
+  border-bottom:1px solid #C57E00;
+  padding: 0 0 0 5px;
+}
+
+.uebContainer h2{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height:normal;
+  padding:10px 0 8px 5px;
+  margin:0;
+}
+
+.uebContainerBody{
+  padding:0;
+  margin:0px 5px 5px 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.uebContainerBody p{
+	margin: 5px 0px 5px !important;
+}
+
+/*-------------------------------------------------*/
+/* Container fuer Animationen 										 */
+/*-------------------------------------------------*/
+
+.aniContainer{
+  page-break-inside:avoid;
+  background:#EAEAEA;
+  width:auto;
+  height:auto;
+  display:block;
+  border: 1px solid #005190;
+}
+
+.aniContainerCaption{
+  background:#A8D3F4;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  font-weight:bold;
+  width:auto;
+  height:auto;
+  border-bottom:1px solid #005190;
+  padding: 0 0 0 5px;
+}
+
+.aniContainer h2{
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  line-height:normal;
+  padding:10px 5px 5px 5px;
+  margin:0;
+  z-index:200;
+}
+
+.aniContainerBody{
+  padding:0;
+  margin:0 5px 0 5px;
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+}
+
+.aniContainerBody object {
+  margin-bottom:-4px;
+}
+object{
+	display: block;
+}
+
+/*-------------------------------------------------*/
+/* Container fuer Quellcode   										 */
+/*-------------------------------------------------*/
+div.codeContainer {
+  border:1px solid #CCC;
+  width:100%;
+  height:auto;
+  display:inline-block;
+}
+
+div.codeContainerContent{
+	background:#FFF;
+	padding: 4px 4px 4px 4px;
+}
+
+div.codeContainerCaption{
+  background:#E7E9EE;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight:bold;
+  border-bottom:1px solid #CCC;
+  padding: 1px 0 0 5px;
+}
+
+div.codeContainerContent pre:last-child {
+  margin-bottom:2px;
+}
+
+div.codeContainerContent pre:first-child {
+  margin-top:2px;
+}
+
+/*Zeilennummernn*/
+.numbers{
+	float:left;
+	padding-top:1px;
+	padding-right:10px;
+	color:#999;
+	font-size: 12px;
+	line-height:15px;
+}
+
+.codeKeyword {
+  color: #0000FF;
+}
+
+
+.codeType {
+  color: #000080;
+}
+
+
+.codeLiteral {
+  color: #008080;
+}
+
+.codeComment {
+  color: #008000;
+}
+
+
+.codeBracket {
+  color: #FF0000;
+}
+
+
+.codeLineNumber {
+  color: #808080;
+}
+
+.quellcode_bg {
+  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: normal; background-color: #D6D6D6;
+}
+.quellcode_inline {
+  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: normal;
+}
+.quellcode {
+  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: normal; background-color: #D6D6D6
+}
+
+strong .quellcode_inline{
+	font-family: 	"Courier New", Courier, mono !important;
+	font-size: 		12pt !important;
+	font-weight:  bold;
+}
+
+.quellcode_highlight {
+	background-color: #FFFFCC;
+}
+
+sub {
+  font-size: 8pt
+}
+
+
+sup {
+  font-size: 8pt
+}
+
+.zitate {
+  font-family: "Times New Roman"; font-size: 12pt; font-style: italic
+}
+
+.term_eng {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.courier {
+  font-family: "Courier New"; font-size: 10pt;
+  font-style: normal; line-height: normal; font-weight: bold; color: #000000
+}
+
+/*-------------------------------------------------*/
+/* Container fuer Eingabeaufforderung(CMD) 		   */
+/*-------------------------------------------------*/
+
+.cmdContainer{
+  background:#fff;
+  width:auto;
+  height:auto;
+  display:block;
+  padding: 10px 5px 10px 5px;
+  border-bottom:solid #333333;
+  border-right:solid #333333;
+  border-top:solid #CCCCCC;
+  border-left:solid #CCCCCC;
+}
+.cmdContainerBody{
+    padding:0;
+    margin:0 5px 0 5px;
+}
+
+.cmdText{
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #000;
+}
+
+.cmdContainer p{
+  margin:0px;
+  padding:0px;
+  font-family: "Courier New", Courier, mono;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: bold;
+  color: #000;
+}
+
+/*------------------------*/
+/* Container fuer Formeln QMA*/
+/*------------------------*/
+div.formel {
+	background: none repeat scroll 0 0 #FFF;
+	border: 1px solid #000;
+	display: block;
+	/*float: left;*/
+	margin: 0 0 15px;
+	padding: 5px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+.formel p {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+.formel p:last-child {
+	margin-bottom:2px;
+}
+.formel p:first-child {
+	margin-top:2px;
+}
+.formel table {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 12px;
+}
+
+ /*------------------------------------------------*/
+/* Tooltip allgemein									 						 */
+/*-------------------------------------------------*/
+
+/*ALLGEMEIN*/
+/*Umschließendes Element*/
+.tooltip {
+	display:none;
+	font-family: Verdana, Arial,  Helvetica, sans-serif;
+	color:#fff;
+	z-index:1000;
+}
+/*Überschrift (Signatur)*/
+.tooltip_header{
+	display:block;
+	padding:2px;
+	background-color:#4181B2;
+	font-size:11px;
+	font-weight:bold;
+	width:auto;
+	line-height:10px;
+}
+/*Inhalt des Tooltips*/
+.tooltip_content{
+	display:block;
+	padding:2px 2px;
+	background-color:#E7E9EE;
+	color:#000;
+	border:1px solid #4181B2;
+	font-size:10px;
+	line-height:10px;
+}
+/*Fuss*/
+.tooltip_footer{
+	display:block;
+	background-image:url(../images/IcoTooltipArrow_blue.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:8px;
+}
+
+/*------------------------------------------------*/
+/* Tooltip Literaturlink  						 						 */
+/*-------------------------------------------------*/
+
+/*Umschließendes Element*/
+.lit_tooltip {
+  display:none;
+  font-family: Verdana, Arial,  Helvetica, sans-serif;
+  color:#fff;
+  z-index:1000;
+}
+/*Überschrift (Signatur)*/
+.lit_tooltip_header{
+  display:block;
+  padding:2px;
+  background-color:#4181B2;
+  font-size:11px;
+  font-weight:bold;
+  width:auto;
+  line-height:10px;
+}
+/*Inhalt des Tooltips*/
+.lit_tooltip_content{
+  display:block;
+  padding:2px 2px;
+  background-color:#E7E9EE;
+  color:#000;
+  border:1px solid #4181B2;
+  font-size:10px;
+  line-height:10px;
+}
+/*Fuss*/
+.lit_tooltip_footer{
+  display:block;
+  background-image:url(../images/IcoTooltipArrow_blue.gif);
+  background-repeat:no-repeat;
+  background-position:top;
+  height:8px;
+}
+
+
+/*-----------------------------------------------------*/
+/* Tabellenrahmen fuer Datentabellen im Inhaltsbereich */
+/*-----------------------------------------------------*/
+
+table.datentabelle  {
+  margin:	0 0 10px 0;
+  padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+  border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+                              /* margin in th, td und tr ebenfalls   */
+  font-family: Arial;
+  font-size:12px;
+  width:	100%;
+  page-break-inside:avoid;
+}
+
+/* Tabellenunterschrift*/
+.datentabelle caption {
+    margin-top:	5px;
+    margin-bottom:	15px;
+    caption-side:	bottom;
+    font-size:		10px;
+    text-align:	right;
+}
+
+/* Kopfzeile */
+.datentabelle th {
+    /* text-align:	left;		 default-Wert ist center*/
+    border:		1px solid #404A5A;
+    padding:	        3px 5px;
+    background:	#BBC8D6;
+    font-size:	        12px;
+}
+
+/* Zelle */
+.datentabelle td {
+    border:		1px solid #404A5A;
+    padding:	        3px 5px;
+    vertical-align:	top;
+}
+
+.datentabelle p {
+    margin:		0 0 10px 0;
+		font-size:		12px;
+}
+
+.datentabelle ul {
+    margin:		0;
+    padding:	        0 0 0 16px;
+    font-size:		10pt;
+}
+
+.datentabelle li {
+    margin-bottom:	5px;
+}
+
+/* fuer Listenpunkte in a. b. c. */
+.datentabelle .abc li {
+    list-style:	lower-latin;
+    margin-left:	5px;
+}
+
+.datentabelle .evenTR {
+    background:	#e7e9ee;
+}
+
+.datentabelle .oddTR {
+    background:	#FFF;
+}
+
+.kleinFont {
+    font-size:	        10pt;
+}
+
+.zentriert {
+   text-align:	        center;
+
+}
+
+/*
+	ZUSATZ: Datentabellen
+*/
+/*------------------------------------------------------*/
+/* Tabellenrahmen fuer Berechnungen im Inhaltsbereich */
+/*------------------------------------------------------*/
+
+table.berechnung  {
+    margin:	0 0 10px 0;
+    padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+    border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+                               /* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+    width:	100%;
+}
+
+/* Kopfzeile */
+.berechnung th {
+    /* text-align:	left;		 default-Wert ist center*/
+    border:		0;
+    padding:	        3px 5px;
+    background:	#BBC8D6;
+    font-size:	        12px;
+	font-weight:bold;
+}
+
+/* Zelle */
+.berechnung td {
+    border:		0;
+    padding:	        6px 5px;
+    vertical-align:	top;
+}
+
+.berechnung p {
+    margin:		0 0 10px 0;
+}
+
+.berechnung ul {
+    margin:		0;
+    padding:	        0 0 0 36px;
+    font-size:		10pt;
+}
+
+.berechnung li {
+    margin-bottom:	5px;
+}
+
+.berechnung .rechnen {
+    background:	#FFF;
+}
+
+.berechnung .ergebnis {
+    background:	#EEE;
+	border-top:thin solid #000;
+/*	font-weight:bold;	*/
+}
+
+.berechnung .lastergebnis { /* für Zeilen mit gestrichelter Oberlinie */
+    background:	#EEE;
+	border-top:dashed thin #000;
+/*	font-weight:bold;	*/
+}
+
+.berechnung .ergebnisleer { /* für Einzel-Zellen ohne Oberlinie und farblichen Hintergrund */
+    background:	#FFF;
+	border-top:hidden;
+}
+
+.berechnung .ergebnisende { /* für Einzel-Zellen mit Doppel-Unterstrich */
+	border-bottom:double 3px #000000;
+}
+
+td.borderThickHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: bold; color: #000000;
+  			border: 2px; border-color:#000000; border-style:solid; text-align:center;
+		}
+		td.borderThick {
+			font-family: Arial, Helvetica, sans-serif; font-size: 11pt;
+  			font-style: normal; line-height: normal; font-weight: normal; color: #000000;
+			border: 2px; border-color:#000000; border-style:solid; text-align:center;
+		}
+		td.borderThickTHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: bold; color: #000000;
+  			text-align:center; border-top: 2px;  border-color:#000000; border-top-style:solid;
+		}
+		td.borderThickRTBHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: bold; color: #000000;
+  			text-align:center; border-right: 2px;  border-bottom: 2px; border-top: 2px; border-color:#000000; border-bottom-style:solid; border-right-style:solid; border-top-style:solid;
+			}
+		td.borderThickTRHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: bold; color: #000000;
+  			text-align:center; border-top: 2px; border-right: 2px; border-color:#000000; border-top-style:solid; border-right-style:solid;
+		}
+		td.borderBRHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:center; border-bottom: 2px; border-right: 2px; border-color:#000000; border-bottom-style:solid; border-right-style:solid;
+		}
+		td.borderBHeader {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:center; border-bottom: 2px; border-right: 1px; border-color:#000000; border-bottom-style:solid; border-right-style:solid;
+		}
+		td.contentLRB {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-bottom: 1px; border-right: 2px; border-left: 2px; border-color:#000000;
+			border-bottom-style:solid; border-right-style:solid; border-left-style:solid;
+		}
+		td.contentRBThin {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-bottom: 1px; border-right: 1px; border-color:#000000;
+			border-bottom-style:solid; border-right-style:solid;
+		}
+		td.contentRB {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-bottom: 1px; border-right: 2px; border-color:#000000;
+			border-bottom-style:solid; border-right-style:solid;
+		}
+		td.contentLR {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-left: 2px; border-right: 2px; border-color:#000000;
+			border-left-style:solid; border-right-style:solid;
+		}
+		td.contentR {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-right: 2px; border-color:#000000;
+			border-right-style:solid;
+		}
+		td.contentRThin {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-right: 1px; border-color:#000000;
+			border-right-style:solid;
+		}
+		td.contentRBThick {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-bottom: 2px; border-right: 2px; border-color:#000000;
+			border-bottom-style:solid; border-right-style:solid;
+		}
+		td.contentRBThinThick {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			text-align:left; border-bottom: 2px; border-right: 1px; border-color:#000000;
+			border-bottom-style:solid; border-right-style:solid;
+		}
+
+		td.borders {
+			font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+  			font-style: normal; line-height: 12pt; font-weight: normal; color: #000000;
+  			border: 1px; border-color:#000000; border-style:solid; text-align:center;
+		}
+
+		.copy {
+  font-family: Arial, Helvetica, sans-serif; font-size: 11pt;
+  font-style: normal; line-height: normal; font-weight: normal; color: #000000
+}
+
+/*------------------------------------------*/
+/* Tabellenrahmen fuer Tabellen in Uebungen */
+/*----------------------------------------- */
+table.table_uebung {
+	margin:	0 0 10px 0;
+	padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+	border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+	/* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+	width:	100%;
+}
+
+/* Tabellenunterschrift*/
+.table_uebung caption {
+	margin-top:	5px;
+	margin-bottom:	15px;
+	caption-side:	bottom;
+	font-size:		10px;
+	text-align:	right;
+}
+
+/* Kopfzeile */
+.table_uebung th {
+	/* text-align:	left;		 default-Wert ist center*/
+    border:		    1px solid #EA8C00;
+	padding:	    3px 5px;
+	background:		#F6C677;
+	font-size:	    12px;
+}
+
+/* Zelle */
+.table_uebung td {
+	border:			1px solid #EA8C00;
+	padding:	    3px 5px;
+	vertical-align:	top;
+}
+
+.table_uebung p {
+	margin:			0 0 10px 0;
+}
+
+.table_uebung ul {
+	margin:			0;
+	padding:	    0 0 0 16px;
+	font-size:		10pt;
+}
+
+.table_uebung li {
+	margin-bottom:	5px;
+	font: 	13px Arial, Helvetica, sans-serif;
+}
+
+/* fuer Listenpunkte in a. b. c. */
+.table_uebung .abc li {
+	list-style:	lower-latin;
+	margin-left:	5px;
+}
+
+.table_uebung .evenTR {
+	background:	#F9E3A6;
+}
+
+.table_uebung .oddTR {
+	background:	#FFF4CB;
+}
+
+/* ------------------------------- */
+/* Tabellen für statistische Daten */
+/* ------------------------------- */
+
+table.statistik {
+	margin:	0 0 0 0;
+	padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+	border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+	/* margin in th, td und tr ebenfalls   */
+    font: 	10pt Arial, Helvetica, sans-serif;
+	text-align:	right;
+	width:	100%;
+}
+.statistik th {
+	border-top:		1px solid #404A5A;
+	border-bottom:  1px solid #404A5A;
+	padding:	        3px 5px;
+	background:		#FFF;
+	font-size:	        12px;
+}
+.statistik td {
+	border:			none;
+	padding:	    3px 5px;
+	vertical-align:	top;
+	background:		#FFF;
+}
+.statsitik p {
+	margin:			0 0 10px 0;
+	font-size:	        10pt;
+}
+.statistik tfoot {
+	border-bottom:  1px solid #404A5A;
+	height: 2px;
+}
+
+/***************************************************************
+	LINKS
+***************************************************************/
+/*-----------------
+ Interner Link
+ ----------------*/
+.leListe a,
+a.internerLink{
+  background:url(../images/IcoGoTo.gif) no-repeat left;
+  text-decoration:underline;
+  padding-left:16px;
+}
+/*------------------------------
+ Link f. Zusatzfenster/Overlay
+ ------------------------------*/
+/*-----------------
+ Weblink (extern)
+ ----------------*/
+.weblink, link_extern {
+	background:		url(IcoWeblink.gif) no-repeat left;
+	color:			#009;
+	padding-left:	30px;
+}
+
+/*-----------------------------*/
+/* Weblinks als Aufzählung */
+/*-----------------------------*/
+
+.weblink li, .link_extern li {
+	list-style:			none;
+	background:			url(IcoWeblink.gif) 0px 2px no-repeat;
+	margin:				0 0 0 0;
+	padding:			0 0 10px 30px;
+}
+
+/*-----------------
+ Interner Link (goto)
+ ----------------*/
+.link_intern {
+	background:		url(IcoGoto.gif) no-repeat left;
+  background-position: left;
+	color:			#009;
+	padding-left:	16px;
+}
+
+/*-----------------
+ Vertiefungsfenster (openwin)
+ ----------------*/
+.link_openwin {
+	background:		url(IcoOpenWin.gif) no-repeat left;
+	color:			#009;
+	padding-left:	18px;
+}
+.neuesfensterLink{
+  background:url(IcoOpenWin.gif) no-repeat left;
+  color:#009;
+  padding-left:18px;
+}
+
+/*-----------------
+ Glossarlink
+ ----------------*/
+.glossar{
+  }
+
+a.glossar:link{
+  color:#000000;
+  border-bottom:dotted 1px;
+  text-decoration:none;
+}
+
+a.glossar:hover{
+  background-color:#e4e4e4;
+  border:none;
+}
+
+a.glossar:visited{
+  color:#000000;
+  border-bottom:dotted 1px;
+  text-decoration:none;
+}
+/*-----------------
+ Tooltip allgemein
+ ----------------*/
+.tooltip_link{
+  background:url(IcoFlyWin.gif) no-repeat left;
+  color:#009;
+  padding-left:25px;
+	cursor:pointer;
+}
+
+/*-----------------
+ Literaturlink
+ ----------------*/
+.literaturlink{
+  background:url(IcoFussnote6.gif) no-repeat left;
+  color:#009;
+  padding-left:25px;
+  display: inline-block;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size: 8pt;
+  font-style:normal !important;
+  cursor: pointer;
+/*  line-height: 14px; */
+}
+.literaturlink:before{content:"[ ";color:#666666; font-family: Verdana; font-size: 8pt; line-height: 14px; text-decoration: none !important}
+.literaturlink:after{ content:" ]";color:#666666; font-family: Verdana; font-size: 8pt; line-height: 14px; text-decoration: none !important	}
+
+/*---------------------------
+ Normale Links
+ ---------------------------*/
+
+a:link    {
+  color: #000;
+  border-bottom: 1px solid;
+  text-decoration:none;
+}
+a:visited {
+  color: #000;
+  border-bottom: 1px solid;
+  text-decoration:none;
+}
+
+/*------------------------------------
+ onmousover Links (fliegendes Fenster)
+ -------------------------------------*/
+
+a[onmouseover] {
+  text-decoration: none;
+  border-bottom:hidden;
+  color: #000;
+}
+
+/*------------------------------------
+ Titelbild Link
+ -------------------------------------*/
+
+a[href^="lernziele.shtml"], a[href^="lernziel.shtml"] {
+  text-decoration: none;
+  border-bottom: none;
+  color: #000;
+}
+
+/*-----------------
+ Downloadlink
+ ----------------*/
+a.downloadlink{
+  background:url(IcoDiskette.gif) no-repeat left;
+  padding-left:18px;
+  font-family:"Courier New", Courier, monospace;
+  font-size:14px;
+  color:#000099;
+}
+
+a.downloadlink:visited{
+}
+
+a.downloadlink:hover{
+}
+/*-----------------
+ PDF-link
+ ----------------*/
+a.pdflink{
+  background:url(IcoPdf.gif) no-repeat left;
+  padding-left:22px;
+	padding-top:3px;
+	padding-bottom:2px;
+  color:#000099;
+}
+/*-----------------
+ Quellcodelink
+ ----------------*/
+a.quellcodelink{
+  background:url(IcoDiskette.gif) no-repeat left;
+  padding-left:18px;
+  font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+  font-size:14px;
+  color:#000099;
+}
+
+/*-----------------
+ Link fuer
+ Textversion
+ ----------------*/
+#mainText #main .thickbox {
+	font-family: Verdana, Arial,  Helvetica, sans-serif;
+  font-size: 11px;
+
+	margin: 0px 0px 12px 0px;
+	padding-left:15px;
+
+	background: url(../images/IcoOpenWinS.gif);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#content .thickbox a{
+	cursor:pointer;
+}
+
+#content .thickbox a:link {
+  text-decoration: none;
+  border-bottom: 1px solid #009;
+  color: #009;
+}
+
+#content .thickbox a:hover {
+  text-decoration: none;
+  border-bottom:	1px solid #009;
+  color: #009;
+}
+
+/*------------------------------------
+ Link zur Textversion von Animationen
+ ------------------------------------*/
+
+.anhang:after{
+    content:" (Siehe Anhang)";
+}
+
+.textversion {
+	display: none;
+}
+/* -------------------------------------------------------------------- */
+/* Klappbox für Avatarfragen, zeigt die Textversion unter dem Player an */
+/* -------------------------------------------------------------------- */
+
+div.audiotextcontainer {
+	font-family: Arial;
+    font-size: 11pt;
+    color: #000000;
+	page-break-inside:avoid;
+}
+
+div.audioplayercontainer {
+    display: none;
+}
+
+div.audiotextcontainer img {
+    display: none;
+}
+
+div.audiotextcontainer object {
+    display: none;
+}
+.audiotextlink  {
+    display: none;
+	font-family: Verdana;
+    font-size: 10px;
+    color: #666666;
+	margin-top:0;
+	padding:5px;
+	vertical-align:middle;
+}
+
+div.audiotext {
+	margin:15px 0;
+	padding:10px 5px 5px 15px;
+	background-color:transparent;
+	border:1px solid #4E3E18;
+	display:block !important;
+}
+
+div.audiotext img{
+	display:inline !important;
+}
+
+
+div.audiotext p, div.audiotext li{
+    font-family: "Times New Roman";
+	font-size: 17px;
+	font-style: italic;
+}
+
+.audiotext p:last-child {
+  margin-bottom:3px;
+}
+
+.audiotext p:first-child {
+  margin-top:2px;
+}
+
+
+/* ---------------------------------------------------------*/
+/* Klappbox für Avatarfragen, die noch nicht vertont wurden */
+/* ---------------------------------------------------------*/
+
+div.avatartext {
+    background-color:#transparent;
+	border:1px solid #4E3E18;
+	padding:0px 10px 10px 10px;
+	page-break-inside:avoid;
+	}
+
+div.avatartext p {
+    font-family: "Times New Roman";
+	font-size: 17px;
+	font-style: italic;
+	margin-top:5px;
+}
+
+div.showAnswer {
+  font-family: Arial;
+  font-size: 14px;
+  color: #000000;
+}
+
+div.showAnswer p {
+    font-family: "Times New Roman";
+	font-size: 17px;
+	font-style: italic
+}
+
+.showAnswer p:last-child {
+  margin-bottom:3px;
+}
+
+.showAnswer p:first-child {
+  margin-top:2px;
+}
+
+div.showAnswer img{
+	margin-bottom: 0 !important;
+}
+
+div.answer {
+	margin-top: 10px;
+    padding: 10px;
+    background-color:#transparent;
+	border:1px solid #9d927d;
+	display:block !important;
+}
+
+
+/*-----------------------------------------------*/
+/* Fussnoten */
+/*-----------------------------------------------*/
+
+.fussnote {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #FF6600
+}
+.fussnotentext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt !important;
+	color: #666666;
+	margin-left: 2em !important;
+	text-indent: -2em
+}
+.fussnotentrenner {
+	width: 150px;
+	height: 1px;
+	margin-left:0;
+	margin-top:20;
+	text-align: left;
+	border:none;
+	background-color:#666666
+}
+ /*------------------------------------------------*/
+/* Zusatzklasse fuer breite Container 						 */
+/*-------------------------------------------------*/
+
+.breit{
+	width: 730px;
+	position:relative;
+	left: -192px;
+	}

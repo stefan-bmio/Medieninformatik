@@ -1,0 +1,10 @@
+{
+  "name": "ESA2",
+  "version": "1.0.0",
+  "description": "none",
+  "repository": "none",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ts-loader": "^3.0.5"
+  }
+}

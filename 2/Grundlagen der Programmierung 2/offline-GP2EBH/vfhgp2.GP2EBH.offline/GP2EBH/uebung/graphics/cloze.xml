@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cloze xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cloze.xsd">
+	<text>Alle sichtbaren $1$ der grafischen Benutzeroberfläche können als $2$ dienen. Jedes beliebige Objekt kann als $3$ fungieren. Ein von einer Ereignisquelle ausgeworfenes $4$ bewirkt noch keine Reaktion. Es ist ein reines Mitteilungsobjekt. Erst nach dessen Ankunft beim richtigen Empfängerobjekt ($5$) wertet dieses die eingetroffene $6$ aus und entscheidet über die konkrete Weiterverarbeitung und die Folgeaktionen.</text>
+	<gapword id="1" flexion="Komponenten" word="Komponente"/>
+	<gapword id="2" flexion="Ereignisquellen" word="Ereignisquelle"/>
+	<gapword id="3" word="Ereignisempfänger"/>
+	<gapword id="4" word="Ereignisobjekt"/>
+	<gapword id="5" word="Listener"/>
+	<gapword id="6" word="Nachricht"/>
+	<wrongword word="Objekt" />
+	<wrongword word="Parameter" />
+</cloze>

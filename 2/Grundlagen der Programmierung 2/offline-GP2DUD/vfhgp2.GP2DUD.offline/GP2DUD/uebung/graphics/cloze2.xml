@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cloze xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cloze.xsd">
+	<text>Um Daten aus einer Datei zu lesen bzw. in eine Datei zu schreiben, benutzt Java das Konzept der $1$. Wir unterscheiden in Java zwischen $2$ und zeichenorientierten Ein- bzw. Ausgabeströmen. 
+	Datenströme können untereinander $3$ und verschachtelt werden, so dass spezielle Zusatzfunktionen erzielt werden, wie beispielsweise das Puffern von Zeichen. Pufferklassen, wie $4$ und BufferedWriter , speichern noch nicht verarbeitete Daten temporär. Dadurch werden die Schreib- und Lesezugriffe auf Dateien effizenter. 
+	Wenn die Daten an einen $5$ Datenstrom gerichtet sind, werden sie nicht an ihr Ziel geschickt, ehe der Datenstrom gefüllt ist oder die Methode $6$ des gepufferten Streams aufgerufen wird. Daten können $7$ werden durch sogenannte Filterklassen, die den einfachen Ein- bzw. Ausgabestrom einschließen.</text>
+	<gapword id="1" flexion="Ströme" word="Strom"/>
+	<gapword id="2" flexion="byteorientierten" word="byteorientiert"/>
+	<gapword id="3" flexion="verkettet" word="verketten"/>
+	<gapword id="4" word="BufferedReader"/>
+	<gapword id="5" flexion="gepufferten" word="gepuffert"/>
+	<gapword id="6" word="flush()"/>
+	<gapword id="7" word="gefiltert"/>
+</cloze>

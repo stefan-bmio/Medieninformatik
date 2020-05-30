@@ -1,0 +1,14 @@
+% Written by metapost version 2.00
+begingroup save _p,_r,_s,_n; picture _p; _p=nullpicture;
+string _n[];
+vardef _s(expr _t,_f,_m,_x,_y)(text _c)=
+  addto _p also _t infont _f scaled _m shifted (_x,_y) _c; enddef;
+_n0="cmr10";
+_s("Ein-/",_n0,1.00000,23.1078,6.0772,);
+_s("Ausgab",_n0,1.00000,5.9776,-5.8779,);
+_s("ew",_n0,1.00000,38.6883,-5.8779,);
+_s("erk",_n0,1.00000,50.0347,-5.8779,);
+setbounds _p to (0,-9.4645)--(69.6002,-9.4645)--
+ (69.6002,14.4458)--(0,14.4458)--cycle;
+_p endgroup
+mpxbreak

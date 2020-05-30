@@ -1,0 +1,23 @@
+navPages = new Array(
+'../00einstieg/index.html',
+'../00einstieg/lernziele.html',
+'../01grundlg/grundlg.html',
+'../01grundlg/java.html',
+'../01grundlg/swkom.html',
+'../01grundlg/cockt.html',
+'../02feco/feco.html',
+'../02feco/jframe.html',
+'../02feco/jpanel.html',
+'../03grako/grako.html',
+'../03grako/jlabel.html',
+'../03grako/layma.html',
+'../03grako/jmenu.html',
+'../03grako/jtext.html',
+'../03grako/jbutt.html',
+'../03grako/jlist.html',
+'../03grako/jdial.html',
+'../03grako/threads.html',
+'../zusammen/zusammen.html',
+'../wissen/wissen.html',
+'../einsende/einsende.html'
+ );

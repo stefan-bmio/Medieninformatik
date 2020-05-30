@@ -1,0 +1,45 @@
+#linenumbers {
+	float: left;
+	border-right: 0px solid #000000;
+	margin-right:5px;
+	padding-right:5px;
+	background-color:#EBEBEB;
+	color:#808080;
+	font-family:"Courier New", Courier, monospace;
+}
+
+#htmltext {
+	background-color:#EBEBEB;
+	font-family:"Courier New", Courier, monospace;
+	color:#000000;
+}
+
+div.indention {
+	display:inline;
+}
+
+.doctype {
+	color:#0C4F09;
+}
+
+.attr {
+	color:#000099;
+}
+
+.attrvalue {
+	color:#009933;
+}
+
+.comment {
+	color:#17CBBD
+}
+
+.htmlentity {
+	color:#8F0404;
+}
+
+.element, .html, .title, .head, .meta, .div, .body, .table, .thead, .tbody, .tr, .td, .th, .col, .colgroup, 
+.link, .base, .h1, .h2, .h3, .h4, .h5, .h6, .ul, .ol, .li, .form, .input, .textarea, .select, .option, 
+.fieldset, .frame, .frameset, .noframe, .iframe, .embed, .param, .noscript, .a, .img, .p, .style, .script, .blockquote {
+	color:#E67114;
+}

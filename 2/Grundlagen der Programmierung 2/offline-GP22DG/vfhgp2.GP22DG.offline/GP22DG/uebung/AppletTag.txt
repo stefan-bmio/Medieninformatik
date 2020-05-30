@@ -1,0 +1,16 @@
+<APPLET
+CODEBASE = "."
+ARCHIVE  = "LueckenApplet.jar"
+CODE     = "Luecke.LueckeStart.class"
+WIDTH    = 200
+HEIGHT   = 50
+ALIGN    = middle
+>
+<param name="text" value="Java-Grafiken basieren auf §. Ein Pixel ist ein §, der eine bestimmte Farbe und Intensität ( = Helligkeit ) hat. Die § und damit die Dichte der Pixelrasterung ist hardwareabhängig und bei verschiedenen Bildschirmen unterschiedlich. Grober Anhaltspunkt: 100 Pixel nebeneinander erstrecken sich etwa über 3,5 cm. Die § jedes Pixels wird durch ein § (x | y) (= seine Koordinaten ) in einem § rechtwinkligen kartesischen Koordinatensystem festgelegt, dessen § (0 | 0) in der linken, oberen Ecke des Grafik-Fensters liegt.">
+<param name="luecken_woerter" value="Pixel,Rasterpunkt,Pixelgröße,Position,Zahlenpaar,zweidimensional,Ursprungspunkt,">
+<param name="luecken_loesung" value="Pixel,Rasterpunkt,Pixelgröße,Position,Zahlenpaar,zweidimensionalen,Ursprungspunkt,">
+<param name="woerter" value="Pixel,Rasterpunkt,Pixelgröße,Position,Zahlenpaar,zweidimensional,Ursprungspunkt,">
+<param name="luecken_zeichen" value="§">
+<param name="umbruch_zeichen" value="$">
+<param name="tauschbar" value="">
+</APPLET>

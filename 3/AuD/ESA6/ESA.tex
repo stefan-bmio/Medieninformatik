@@ -1,0 +1,93 @@
+\documentclass{article}
+\renewcommand{\labelitemi}{$\triangleright$}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\alph{subsubsection}.}
+
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\algtext*{EndWhile}
+\algtext*{EndIf}
+\algrenewcommand\alglinenumber[1]{\footnotesize #1}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{<}{\ \leq\ }{#1}} 
+\newcolumntype{e}[1]{D{-}{\ \leftrightarrow\ }{#1}} 
+
+\usepackage{forest}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\title{Einsendeaufgabe 6}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\setcounter{subsection}{2}
+\subsection{}
+Die Methode insert kann unbalancierte Bäume ergeben. Geben Sie eine Reihenfolge von 10 
+Elementen, die einen Baum der Höhe 9 ergibt.  Geben Sie eine Reihenfolge von 10 Elementen, die 
+einen Baum der Höhe 3 ergibt.  (Merke: Die Klasse java.util.TreeMap implementiert die Red-Black 
+Suchbäume, die relativ balanciert bleiben.)\\\\
+\begin{tabular}{ll}
+10 Elemente, Höhe 9: &$1, 2, 3, 4, 5, 6, 7, 8, 9, 10$\\
+10 Elemente, Höhe 3: &$7, 4, 9, 2, 6, 8, 10, 1, 3, 5$\\
+\end{tabular}
+
+\stepcounter{subsection}
+\subsection{}
+Geben Sie  Zeitkomplexität der Methoden insert, search, size,  und height in asymptotischer Notation an, und begründen Sie Ihre Antwort.\\\\\\
+\textsc {insert (T, z)}: \\
+Die grundlegende Anweisung ist der Vergleich $key[z] < key[x]$ in Zeile 5. \\
+Die Eingabegröße ist die Anzahl der Knoten von $T$. \\
+Kann der Knoten $z$ in Ebene 1 eingefügt werden, dann wird die grundlegende Anweisung genau einmal ausgeführt. Hat der Baum mehr als einen Knoten, wird die grundlegende Anweisung höchstens so oft ausgeführt, wie der Baum hoch ist. \\\\
+$B(n) = 1$\\
+$\textsc {insert} \in \Omega(1)$ \\\\
+$W(n) = h, h = \text{Höhe des Baumes}$\\
+$\textsc {insert} \in \mathcal{O}(h)$ \\\\\\
+\textsc {search}:\\
+Der \textsc {search} Algorithmus ist rekursiv. Er hat den Verzweigungsfaktor $b = 1$, weil immer nur in einer Richtung weitergesucht wird. Die Größe der zu durchsuchenden Datenstruktur wird dadurch mit jedem Rekursionsschritt halbiert ($c=2$). Der nicht-rekursive Anteil der Komplexität ist konstant ($k = 0$). Hat der Baum die Größe $0$ findet kein rekursiver Aufruf statt und die Zeitkomplexität ist konstant.\\\\
+$T(n) =
+\begin{cases}
+konstant, &falls\ n = 0\\
+T(n/2) + 1, &falls\ n \geq 1\\
+\end{cases}$\\\\
+$(1/2)^0 = 1$\\
+$T(n) \in \Theta(\log n)$\\\\
+\textsc {size}:\\
+Der \textsc {size} Algorithmus ist rekursiv. Die rekursiven Aufrufe verzweigen sich nach beiden Kindknoten jedes Knoten ($b=2$). Die Größe der zu durchsuchenden Datenstruktur wird dadurch mit jedem Rekursionsschritt halbiert ($c = 2$).  Der nicht-rekursive Anteil der Komplexität ist konstant ($k = 0$). Hat der Baum die Größe $0$ findet kein rekursiver Aufruf statt und die Zeitkomplexität ist konstant.\\\\
+$T(n) =
+\begin{cases}
+konstant, &falls\ n = 0\\
+2T(n/2) + 1, &falls\ n \geq 1\\
+\end{cases}$\\\\
+$2(1/2)^0 > 1$\\
+$ln 2 / ln 2 = 1$\\
+$T(n) \in \Theta(n)$\\\\\\
+\textsc {height}:\\
+Der \textsc {height} Algorithmus ist rekursiv. Die rekursiven Aufrufe verzweigen sich nach beiden Kindknoten jedes Knoten ($b = 2$). Die Größe der zu durchsuchenden Datenstruktur wird dadurch mit jedem Rekursionsschritt halbiert ($c = 2$). Der nicht-rekursive Anteil der Komplexität ist konstant ($k = 0$). Hat der Baum die Größe $1$, also Höhe $0$, findet kein rekursiver Aufruf statt und die Zeitkomplexität ist konstant.\\\\
+$T(n) =
+\begin{cases}
+konstant, &falls\ n = 1\\
+2T(n/2) + 1, &falls\ n \geq 2\\
+\end{cases}$\\\\
+$2(1/2)^0 > 1$\\
+$ln 2 / ln 2 = 1$\\
+$T(n) \in \Theta(n)$
+\end{document}

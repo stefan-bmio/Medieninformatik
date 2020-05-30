@@ -1,0 +1,11 @@
+{
+  "commands" : [
+    "*.tex : pdflatex analyse",
+    "*.tex : makeglossaries analyse",
+    "*.tex : pdflatex analyse",
+    "*.tex : pdflatex analyse",
+
+    "*.mp : mpost -output-directory mps {filename}",
+    "*.mp : pdflatex product-review-webservice.tex"
+  ]
+}

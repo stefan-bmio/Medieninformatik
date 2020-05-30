@@ -1,0 +1,12 @@
+<!--  DTD fuer Adressbuch  -->
+<!ELEMENT Adressbuch (Kontakt*)>
+<!ELEMENT Kontakt (Name, Adresse)>
+<!ATTLIST Kontakt typ (privat | geschaeftlich) "privat">
+<!ELEMENT Name (Vorname, Nachname)>
+<!ELEMENT Vorname (#PCDATA)>
+<!ELEMENT Nachname (#PCDATA)>
+<!ELEMENT Adresse (Strasse, PLZ, Ort, Land)>
+<!ELEMENT Strasse (#PCDATA)>
+<!ELEMENT PLZ (#PCDATA)>
+<!ELEMENT Ort (#PCDATA)>
+<!ELEMENT Land (#PCDATA)>

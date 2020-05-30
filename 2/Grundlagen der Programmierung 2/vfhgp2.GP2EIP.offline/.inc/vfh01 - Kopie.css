@@ -1,0 +1,2419 @@
+/* VFH Stylesheet VFHMMG  - vfhcss1*/
+
+/* erzwingt immer einen rechten Scrollbalken */
+html {
+	height:			100%;
+}
+body {
+	font-family:	Arial, sans-serif;
+	font-size:		11pt;
+	width:				100%;
+	height:				100.001%;
+	display:			block;
+	margin:				0;
+	padding:			0;
+}
+p{
+	margin: 0;
+	padding:0;
+}
+
+/* ==== Zeilenumbruch ==== */
+/* Verhindert bei H1 den Seitenumbruch */
+.no-pg-break {
+}
+.pg-break-before {
+}
+.pg-break-after {
+}
+div.pg-break-after{display:none;}
+div.pg-break-before{display:none;}
+
+/* Aus der hilfe-neu.css */
+
+.inhaltsverzeichnis1 {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 16pt; font-weight: bold; color: #000000}
+.inhaltsverzeichnis2 {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 16pt; font-weight: normal; color: #000000}
+.titel {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 16pt; font-weight: bold; color: #000000}
+.entry {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 16pt; font-weight: normal; color: #000000}
+
+
+/* Allgemeine Einstellungen */
+
+.headline1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #666666;
+	line-height: 16pt
+}
+
+.glossar_headline{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #666666;
+	line-height: 16px;
+}
+
+a:link {
+	color: #000099;
+	text-decoration: underline
+}
+a:visited {
+	color: #7D217B;
+	text-decoration: underline
+}
+/* spezielle Verlinkungen, z.B. Glossar */
+/* im IE noch nicht dargestellt, dort werden die gewoehnlichen Linkunterstreichungen verwendet*/
+a[href^="javascript:openGlossar"], a[href^="javascript: openGlossar"] {
+	text-decoration: none;
+	/*border-bottom: 1px dotted #000;*/
+	color: #000;
+}
+a:hover[href^="javascript:openGlossar"], a:hover[href^="javascript: openGlossar"] {
+	text-decoration: none;
+	border-bottom: 0;
+	color: #000;
+	background: #eee;
+}
+
+.back {
+	background-color: #808080;
+	margin: 0px;
+}
+
+/* Elemente fuer den Druck ausblenden */
+
+.alternativbild {
+	display:none;
+	visibility: hidden;
+}
+.versteckt {
+	position:			absolute;
+	left:				-200em;
+	top:				-200em;
+	display:			none;
+	visibility:			hidden;
+}
+
+.pageno {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #000000
+}
+.noprint {
+}
+
+/***************************************************************
+	.SHELL
+***************************************************************/
+#mainContainer_shell {
+	margin:			5px auto;
+	/*Height Workaround for IE ----*/
+	min-height:	98%;
+	height: 		auto !important;
+	_height:		98%;
+	width: 			760px;
+	position:		relative;
+	background: #fff;
+	/*-----------------------------*/
+	border-top-left-radius: 		7px;
+	border-top-right-radius: 		7px;
+	border-bottom-left-radius: 	7px;
+	border-bottom-right-radius: 7px;
+	background: 	#fff url(../../_src/.inc/images/bgDummyFullHeight_shell.gif) repeat-y 50% 0;
+}
+
+#shellHeader{
+	margin-top: 7px;
+	width: 100%;
+	height: 80px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-color: #E8E8E8;
+	}
+#shellModulLogo{
+	float:	left;
+	width:	160px;
+	height:	80px;
+	background-image:url(../../_src/.inc/images/uebersichtLogo.gif);
+	}
+#shellHeaderMiddle{
+	float: left;
+	height: 59px;	
+	}
+#shellHeadline{
+	height: 59px;
+	/*padding-left: 10px;*/
+	display: table-cell;
+  vertical-align: middle;
+	}
+#shellHeadlineSpacer{
+	height: 21px;
+	width: 310px;
+	background-image: url(../../_src/.inc/images/uebersichtObenSpacer.gif);
+}
+
+#shellHeaderRight{
+	float: right;
+	width: 290px;
+	height: 80px;
+	background-image: url(../../_src/.inc/images/uebersichtObenRechts.gif);
+}
+#shellContent{
+	border-top-width:0;
+	border-bottom-width:0;
+	width:			auto;
+	padding-bottom:	40px;
+}
+
+#shellMainContent{
+	float: left;
+	width: 600px;;
+	}
+#shellMainContentSpacer{
+	width: 359px;
+	height: 10px;
+	background-image:url(../../_src/.inc/images/uebersichtObenUnten.gif);
+	}
+#shellMainText{
+	padding: 20px 20px;
+	}
+#shellMainText p{
+	margin-bottom: 10px !important;
+	}
+
+#shellNavmenu{
+	background-color: #e8e8e8;
+	float:left;
+	width: 160px;
+	height: auto !important;
+	min-height: 100%;
+}
+
+#shellNavmenu a{
+	text-decoration: none;
+}
+
+.shellNavBtns{
+	width:160px;
+	height:22px;
+	border-top: 1px solid white;
+	background-color: #57647A;
+}
+.shellNavBtns:hover{
+	background-color: #7586A2;
+}
+.shell-btn-txt{
+	line-height: 22px;
+	color: white;
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	text-align: left;
+	font-size: 12px;
+  	letter-spacing: 1px;  
+  	text-rendering:auto;
+  	-webkit-font-smoothing:antialiased;
+  	-moz-osx-font-smoothing:grayscale;
+	padding-left: 20px;
+}
+
+/*NAV - Buttons ***************************************************/
+#shellNavBtnStart{
+	background-image:url(../../_src/.inc/images/uebersichtButtonStartseiteNml.gif);
+}
+#shellNavBtnStart:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonStartseiteLit.gif);
+}
+#shellNavBtnLE{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLerneinheitenNml.gif);
+}
+#shellNavBtnLE:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLerneinheitenLit.gif);
+}
+#shellNavBtnZiele{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLernzieleNml.gif);
+}
+#shellNavBtnZiele:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLernzieleLit.gif);
+}
+#shellNavBtnFormen{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLernformenNml.gif);
+}
+#shellNavBtnFormen:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLernformenLit.gif);
+}
+#shellNavBtnSuchen{
+	background-image:url(../../_src/.inc/images/uebersichtButtonSuchenNml.gif);
+}
+#shellNavBtnSuchen:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonSuchenLit.gif);
+}
+#shellNavBtnDownld{
+	background-image:url(../../_src/.inc/images/uebersichtButtonDownloadNml.gif)
+}
+#shellNavBtnDownld:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonDownloadLit.gif);
+}
+#shellNavBtnNachweis{
+	background-image:url(../../_src/.inc/images/uebersichtButtonNachweisNml.gif);
+}
+#shellNavBtnNachweis:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonNachweisLit.gif);
+}
+#shellNavBtnPartner{
+	background-image:url(../../_src/.inc/images/uebersichtButtonAnsprechpartnerNml.gif);
+}
+#shellNavBtnPartner:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonAnsprechpartnerLit.gif);
+}
+#shellNavBtnLit{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLiteraturNml.gif);
+}
+#shellNavBtnLit:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonLiteraturLit.gif);
+}
+#shellNavBtnImpressum{
+	background-image:url(../../_src/.inc/images/uebersichtButtonImpressumNml.gif);
+}
+#shellNavBtnImpressum:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonImpressumLit.gif);
+}
+#shellNavBtnKorrektur{
+	background-image:url(../../_src/.inc/images/uebersichtButtonKorrekturenNml.gif);
+}
+#shellNavBtnKorrektur:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonKorrekturenLit.gif);
+}
+#shellNavBtnTermin{
+	background-image:url(../../_src/.inc/images/uebersichtButtonTermineNml.gif);
+}
+#shellNavBtnTermin:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonTermineLit.gif);
+}
+#shellNavBtnVoraus{
+	background-image:url(../../_src/.inc/images/uebersichtButtonVorausNml.gif);
+}
+#shellNavBtnVoraus:hover{
+	background-image:url(../../_src/.inc/images/uebersichtButtonVorausLit.gif);
+}
+
+	
+/***************************************************************
+	MAIN CONTAINER
+***************************************************************/
+#mainContainer {
+	margin:			5px auto;
+	/*Height Workaround for IE ----*/
+	min-height:	98%;
+	height: 		auto !important;
+	_height:		98%;
+	width: 			760px;
+	position:		relative;
+	background: #fff;
+	/*-----------------------------*/
+	border-top-left-radius: 		7px;
+	border-top-right-radius: 		7px;
+	border-bottom-left-radius: 	7px;
+	border-bottom-right-radius: 7px;
+}
+
+#titleContainer, .lastpage {
+    text-align: center;
+}
+
+/***************************************************************
+	HEADER / NAVIGATION (Top)
+***************************************************************/
+#navMain {
+	margin-top: 7px;
+	width: 100%;
+	height: 89px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background-color: #E8E8E8;
+}
+
+#navMain img {
+	border: none;
+}
+
+#navMain ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+#navMain ul li {
+	display: inline;
+}
+
+#navMain ul li a {
+	padding: 0px 4px 0px 4px;
+	text-decoration: none;
+	color: #fff;
+	float:left;
+	cursor: pointer;
+}
+
+#navLELogo {
+	width: 79px;
+	height: 89px;
+	float:left;
+}
+
+.navLElogo-img{
+	position: absolute; 
+	top: 7px; 
+	z-index: 10; 
+	width: 79px; 
+	height: 89px;
+}
+
+.navLELogo-blue-bar{
+	width: 78px; 
+	height: 20px;
+	background-color: #57647A; 
+	top: 59px; 
+	border-top: 1px solid white; 
+	border-right: 1px solid white; 
+	position: absolute;
+	z-index: 1;
+}
+
+.navLELogo-yellow-bar{
+	width: 79px;
+	height: 9px; 
+	background-color: #FEBB44;  
+	top: 80px; 
+	position: absolute;
+	z-index: 1;
+}
+
+#navContent {
+	height: 89px;
+	width: 475px;
+	float: left;
+}
+
+#navHeadline {
+	height: 59px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#headline {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #5A5A5A;
+	text-decoration: none;
+	text-align: left;
+	line-height: normal !important;
+	margin:0;
+}
+
+#navMenu {
+	height: 21px;
+}
+
+#navMenuSpacer {
+	height: 9px;
+	width:475px;
+	background-image:url(../../_src/.inc/images/menuSpaceYellow.gif);
+}
+
+#navSpacerTop {
+	float:left;
+	width:22px;
+	height: 89px;
+	background-image:url(../../_src/.inc/images/menuSpaceMiddle.gif);
+}
+
+#navSwitch {
+	float: left;
+	width: 184px;
+	height: 89px;
+}
+
+/* ID für den Seitenzähler in der Navigation *****/
+#navSwitch #aktuelleSeite {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#navSwitch #aktuelleSeite A {
+	text-decoration:none;
+}
+
+#navSwitch .ZaehlerLink {
+	color: #FFFFFF;
+}
+
+#navSwitchSpacer {
+	float: left;
+	width:183px;
+	height: 55px;
+	background-image:url(../../_src/.inc/images/menuSpaceGrey.gif);
+}
+
+#navControls {
+	float:left;
+	z-index:5;
+	height: 34px;
+	background-color:#fff;
+	position: relative;
+}
+
+#navControls div {
+	float: left;
+}
+
+#navPageNumber {
+	width: 42px;
+	height:20px;
+	background-color: #646464;
+	color: #ffffff;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	padding-top:5px;
+}
+
+/* ---- Navigationsmenue-Buttons ---- */
+
+.nav-btn:hover, #navButtonGlossarNeu:hover{
+	background-color: #7586A2;
+}
+
+.nav-skip:hover{
+	background-color: #909090 ;
+}
+
+.nav-btn{
+	height: 20px;
+  	border-top: 1px solid white; 
+  	border-right: 1px solid white;
+  	background-color: #57647A;  
+  	text-align: center;
+}
+
+.nav-btn-txt{
+  	font-family: "Trebuchet MS", sans-serif;
+  	font-size: 11px;
+  	line-height: 21px;
+  	letter-spacing: 1px;  
+  	text-rendering:auto;
+  	-webkit-font-smoothing:antialiased;
+  	-moz-osx-font-smoothing:grayscale;
+}
+
+.nav-grad-stripe{
+  	border-style: solid;
+  	border-bottom:0;
+  	border-left:0;
+  	border-right: 0;
+  	border-right-color: transparent;
+  	border-width: 20px 0px 0px 0px;
+  	border-color: #57647A;
+  	-moz-border-image: -moz-linear-gradient(left, #57647A 0%, #8790A0 100%);
+  	-webkit-border-image: -webkit-linear-gradient(left, #57647A 0%, #8790A0 100%);
+  	border-image: linear-gradient(to right, #57647A 0%, #8790A0 100%);
+  	border-image-slice: 1;
+}
+
+.nav-white-tri{
+  	border-width: 0px 0px 22px 22px; 
+  	border-color: transparent transparent #ffffff transparent; 
+  	border-style: solid; 
+  	z-index:2;
+  	float: right;
+    position: relative;
+    top: -21px;
+    left: 1.5px;
+}
+
+.nav-grey-tri{
+  	border-width: 0px 0px 15px 15px;
+  	border-color: transparent transparent #646464 transparent; 
+  	border-style: solid; 
+  	z-index:2;
+  	float: right;
+  	top: -21px;
+  	position: relative;
+    left: 24.5px;
+}
+
+/* Dreieck für Navigationsskipper--Buttons */
+.nav-skip{
+	cursor: pointer;
+	width: 30px;
+	height: 25px;
+	background-color: #646464;
+}
+
+.prev-chap{
+	width:32px;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px; 
+}
+
+.chap-arrow{
+	margin-left: 5px;
+}
+
+.next-chap{
+	width:32px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px; 
+}
+
+.border-lr{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.arrow-chap-right{
+	border-style: solid;
+	margin-top: 8px;
+    border-width: 4px 0 4px 10px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.arrow-nav-right{
+	border-style: solid;
+    width: 0px;
+    height: 0px;
+    top: 6px;
+	left: 8px;
+	position: relative;
+    border-width: 6px 0 6px 14px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.turn-left{
+    -webkit-transform:  rotate(180deg);
+    -moz-transform:     rotate(180deg);
+    -ms-transform:      rotate(180deg);
+    -o-transform:       rotate(180deg);
+    transform:          rotate(180deg);
+}
+
+/* -------- konkrete Navi - Buttons -------- */
+
+#navButtonHomeNeu{
+	width: 27px; height: 20px;
+}
+
+/* fuer SVG Grafik */
+#homeSVG{
+	width: 21px; 
+	height: 21px;
+	font-size:11px; 
+	position: relative;
+}
+
+#navButtonInhaltNeu{
+	width: 50px;
+}
+
+#navButtonIndexNeu{
+	width: 49px;
+}
+
+#navButtonGlossarNeu{
+	width: 63px;
+}
+
+#navButtonSuchenNeu{
+	width: 63px;
+}
+
+#navButtonHilfeNeu{
+	width: 45px; 
+}
+
+.navButton-wrapper{
+	float: left; height: 20px; background-color: white;border-top: 1px solid white;
+}
+
+.navButton-filler{
+	float: left; width: 124px; height: 20px; background-color: white; z-index: 1; position: relative;
+}
+
+.navMenu-bottom-wrapper{
+	height: 9px; width: 475px; background: #fff; position: absolute;
+}
+
+.navMenu-bottom-yellow-gradient{
+	height: 9px; width: 455px; background: #FEBB44; position: absolute; background: linear-gradient(to right, #FEBB44 0%, #ffffff 97%);
+}
+
+.navMenu-spacer{
+	float: left; position: relative;
+}
+
+.navMenu-spacer-back{
+	width: 22px; height: 90px;  background-color: #ffffff; position: relative;
+}
+
+.navMenu-spacer-top{
+	width: 22px; height: 59px; background-color: #E8E8E8; position: absolute;
+}
+
+.navMenu-spacer-grey-triangle{
+	border-width: 0px 0px 22px 22px; border-color: transparent transparent #57647A transparent; border-style: solid; position: absolute; top: 39px;
+}
+
+.navMenu-spacer-white-triangle{
+	border-width: 0px 0px 22px 22px; border-color: transparent transparent #ffffff transparent; border-style: solid;top: 40px; float: right; position: relative;
+    left: 1px;
+}
+
+.navMenu-spacer-grey-bar{
+	width: 27px; height: 14px; background-color: #646464; position: relative; top: 60px; left: -3px;
+}
+
+/* HOME - Moduluebersicht */
+#navButtonHome{
+	width: 28px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonHomeNml.gif);
+	text-decoration:none !important;
+}
+
+#navButtonHome:hover{
+	background-image:url(../../_src/.inc/images/buttonHomeLit.gif);
+}
+
+/* Inhaltsverzeichnis */
+#navButtonInhalt{
+	width: 51px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonInhaltNml.gif);
+	text-decoration:none !important;
+}
+
+#navButtonInhalt:hover{
+	background-image:url(../../_src/.inc/images/buttonInhaltLit.gif);
+}
+
+/* Index */
+#navButtonIndex{
+	width: 50px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonIndexNml.gif);
+	text-decoration:none !important;
+}
+
+#navButtonIndex:hover{
+	background-image:url(../../_src/.inc/images/buttonIndexLit.gif);
+}
+
+/* Glossar */
+#navButtonGlossar{
+	width: 64px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonGlossarNml.gif);
+	text-decoration:none !important;
+	border: none !important;
+}
+
+#navButtonGlossar:hover{
+	background-image:url(../../_src/.inc/images/buttonGlossarLit.gif);	
+}
+
+/* Suchen */
+#navButtonSuchen{
+	width: 64px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonSuchenNml.gif);
+	text-decoration:none !important;
+	border: none !important;
+}
+#navButtonSuchen:hover{
+	background-image:url(../../_src/.inc/images/buttonSuchenLit.gif);	
+}
+
+/* Hilfe */
+#navButtonHilfe{
+	width: 46px;
+	height: 21px;
+	display:inline-block;
+	background-image:url(../../_src/.inc/images/buttonHilfeNml.gif);
+	text-decoration:none !important;
+	border: none !important;
+}
+#navButtonHilfe:hover{
+	background-image:url(../../_src/.inc/images/buttonHilfeLit.gif);
+}
+
+/* Seite vor --- oben */
+.navButtonFwd{
+	width: 33px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonFwdNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonFwd:hover{
+	background-image:url(../../_src/.inc/images/buttonFwdLit.gif);
+}
+/* Seite vor --- unten */
+.navButtonBottomFwd{
+	width: 32px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonBottomFwdNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonBottomFwd:hover{
+	background-image:url(../../_src/.inc/images/buttonBottomFwdLit.gif);
+}
+
+/* Kapitel vor --- oben */
+.navButtonFFwd{
+	width: 31px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonFFwdNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonFFwd:hover{
+	background-image:url(../../_src/.inc/images/buttonFFwdLit.gif);
+}
+/* Kapitel vor --- unten */
+.navButtonBottomFFwd{
+	width: 31px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonBottomFFwdNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonBottomFFwd:hover{
+	background-image:url(../../_src/.inc/images/buttonBottomFFwdLit.gif);
+}
+
+/* Seite zurueck --- oben */
+.navButtonRew{
+	width: 32px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonRewNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonRew:hover{
+	background-image:url(../../_src/.inc/images/buttonRewLit.gif);
+}
+/* Seite zurueck --- unten */
+.navButtonBottomRew{
+	width: 32px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonBottomRewNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonBottomRew:hover{
+	background-image:url(../../_src/.inc/images/buttonBottomRewLit.gif);
+}
+/* Kapitel zurueck --- oben */
+.navButtonFRew{
+	width: 32px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonFRewNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonFRew:hover{
+	background-image:url(../../_src/.inc/images/buttonFRewLit.gif);
+}
+/* Kapitel zurueck --- unten */
+.navButtonBottomFRew{
+	width: 32px;
+	height:25px;
+	background-image:url(../../_src/.inc/images/buttonBottomFRewNml.gif);
+	display:inline-block;
+	text-decoration:none !important;
+}
+.navButtonBottomFRew:hover{
+	background-image:url(../../_src/.inc/images/buttonBottomFRewLit.gif);
+}
+/***************************************************************
+	FOOTER 
+***************************************************************/
+#footerContainer {
+	position:		absolute;
+	bottom:			-20px;
+	width:			100%;
+	height:			60px;
+	left:0;
+}
+#navBottom {
+	width: 760px;
+	height: 44px;
+	float: left;
+	background-color: #ffffff;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+}
+#navBottomSwitch {
+
+	/* width: 163px; */
+	position: relative;
+	height: 31px;
+	float:right;
+/*
+    -webkit-transform:  scale(1.1);
+    -moz-transform:     scale(1.1);
+    -ms-transform:      scale(1.1);
+    -o-transform:       scale(1.1);
+	transform: scale(1.1); */
+}
+#navBottomSwitch ul {
+	margin: 0;
+	float: left;
+	padding: 0px;
+	list-style-type: none;
+}
+#navBottomSwitch ul li {
+	float: left;
+}
+#navBottomSwitch ul:last-child {
+	margin-top: 6px;
+}
+#navBottomInfo {
+	clear:both;
+	width:587px;
+	position:absolute;
+	bottom: 1px;
+	left:10px;
+}
+
+#anchorsToTop{
+	height: 13px;
+	width: 760px;
+}
+
+.clearTheFloats {
+	clear:both !important;
+}
+
+/*------------*/
+/* Fusszeile  */
+/*------------*/
+.footertext {
+	color:#57647a;
+	font-size:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	display:inline;
+}
+.shellfooter {
+	background-image: url(../.inc/../../_src/.inc/images/uebersichtAbschluss.gif);
+	padding: 28px 15px 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #57647A;
+}
+
+/***************************************************************
+	CONTENT / Inhaltsbereich 
+***************************************************************/
+#content {
+	border-top-width:0;
+	border-bottom-width:0;
+	width:			auto;
+	margin: 0px 15px;
+	padding-bottom:	40px;
+}
+
+#content p {	
+	line-height:1.4em;
+}
+
+
+img{
+	border: none;
+}
+
+iframe{
+	border: none;
+	display: block;
+}
+
+/* == Bildquelle nach Abbildungen und Animationen == */
+
+div.bildquelle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 0px 15px 0px;
+}
+div.bildquellelink {
+	margin: 3px 0px 5px 0px;
+	background: url(IcoSource.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:25px;
+}
+div.bildquellelink a:link {
+	text-decoration: none;
+	border-bottom:	1px dotted #009;
+	color: #009;
+}
+div.bildquellelink a:hover {
+	text-decoration: none;
+	border-bottom:	1px solid #009;
+	color: #009;
+}
+/* == Abbildungsmarginalie (auch fuer Tabellen anwendbar -> .tabellentitel)== */
+
+div.bildtitel, div.tabellentitel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	margin: 5px 2px 0px 0px;
+	/*background-color:#FFCC00;*/
+}
+/*Leere Klasse für Grafiken, welche in der 
+  fancybox dargestellt werden sollen.*/
+.imagezoom{}
+
+/* Definitionen fuer Standardtags zur Textformatierung */
+#content p{
+	line-height: 20px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: 20px;
+	font-weight: normal;
+	color: #000000;
+	margin-bottom: 14px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	padding: 25px 0px 10px 0px;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: bold
+}
+ul {
+	list-style-position: outside;
+	list-style-image: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: normal;
+	color: #333333;
+	clip: rect( );
+	line-height: 20px;
+}
+li.download {
+	list-style-image: url(IcoDiskette.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+}
+li.download_pdf {
+	list-style-image: url(icon_pdf.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+}
+li.download_na {
+	list-style-image: url(IcoDisketteX.gif);
+	padding-left:0px;
+	text-indent:0px;
+	margin-left:-11px;
+}
+ol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 20px;
+	list-style-position: outside;
+	list-style-type: decimal
+}
+.ol_loweralpha {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: normal;
+	list-style-position: outside;
+	list-style-type: lower-alpha
+}
+sub {
+	font-size: 8pt
+}
+sup {
+	font-size: 8pt
+}
+img.frame1 {
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #999;
+}
+/* Definitionen f?r den Fusszeilenbereich */
+
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #666666
+}
+/* Shell */
+
+.shellbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 10pt
+}
+.shellmenue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt
+}
+
+/******************** Tabelleninhalte *********************/
+
+/* == Content Table-Formatierung NEU (12.05.15) ==*/
+
+.table_main {
+	width: 730px;
+	border: 0; 
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+
+.table_row{
+	vertical-align:top;
+	border: 0; 
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0;
+}
+
+.table_margin{
+	width:150px;
+	vertical-align: top;
+	border: 0;
+	border-collapse: collapse; 
+	padding:0;
+	border-spacing: 0;
+}
+
+
+.talign{
+	vertical-align:top;
+	}
+	
+.balign{
+	vertical-align:bottom;
+	}	
+	
+.table_content{
+	width:580px;
+	border: 0;
+	border-collapse: collapse;
+	padding:0;
+	border-spacing: 0; 
+}
+
+
+
+/* for <hr> */
+.trenner{
+	width: 578px;
+	background-color: #333;
+  border: none; 
+  color: #333333; 
+  height: 1px; 
+	width: 290px;
+	float:left;
+	}
+	
+
+/* Tabelleninhalte */
+TABLE.main {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #F9AD4C;
+	text-decoration: none;
+	text-align: left;
+	BACKGROUND-COLOR: #424142;
+	BORDER-BOTTOM: #424142 1px solid;
+	BORDER-LEFT: #424142 1px solid;
+	BORDER-RIGHT: #424142 1px solid;
+	BORDER-TOP: #424142 1px solid;
+	WIDTH: 90%
+}
+TD.anihead {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: bold;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #A8D3F4;
+	text-decoration: none;
+	text-align: left;
+}
+DIV.anihead {
+	border-left:#005190 1px solid;
+	border-top:#005190 1px solid;
+	border-right:#005190 1px solid;
+	padding-top:1px;
+	padding-left:2px;
+	padding-right:1px;
+	padding-bottom:1px;
+	margin:0;
+	width: 315px;
+ width*: 320px;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: bold;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #A8D3F4;
+	text-decoration: none;
+	text-align: left;
+}
+TD.aufgabenhead {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: bold;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #FBC969;
+	text-decoration: none;
+	text-align: left;
+}
+TD.head {
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+}
+TD.LI.content {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+}
+TD.content {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: left;
+}
+TD.UebungBorder {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	Background-Color: #EE9C00;
+	text-decoration: none;
+	text-align: left;
+}
+TD.UebungHeader {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #A8D3F4;
+	text-decoration: none;
+	text-align: left;
+}
+TD.UebungContent {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #EAEAEA;
+	Background-Color: #EAEAEA;
+	text-decoration: none;
+	text-align: left;
+}
+TD.UebersichtHead {
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	Background-Color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+}
+TD.UebersichtContent {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	Background-Color: #FFFFFF;
+	text-decoration: none;
+	text-align: left;
+}
+/* Tabelle fuer Quiz-Inhalte */
+table.quiz {
+	margin-top: 5px;
+	text-align: left;
+	width: 565px;
+	table-layout: auto;
+	border-collapse: separate;
+}
+table.quiz tr td {
+	margin: 4px;
+}
+th.quizQuestion {
+	font-familiy:	Verdana, Arial, Helvetica, sans-serif;
+	font-size:		11pt;
+	text-align:		left;
+	font-style:		normal;
+	font-weight: 	normal;
+	padding:		8 0 5 5;
+}
+td.quizTdRightWrong {
+	width: 16px;
+	text-align: right;
+}
+td.quizTdInput {
+	width: 28px;
+}
+td.loesungskasten {
+	font-family:		Verdana, Arial, Helvetica, sans-serif;
+	font-size:			8pt;
+	background-color:	#FFFFFF;
+	border-width:		1px;
+	border-style:		solid;
+	padding: 		    2 0 2 5;
+	border-color: 		#ff9933;
+	width: 522px;
+}
+/* Zusammenfassung */	
+
+.zusammen {
+	background:			url(checked.gif) 0px 17px no-repeat;
+	height:				13px;
+	width:				23px;
+	margin:				0;
+	padding:			0;
+}
+UL.zusammenfassung {
+	margin:				0;
+	padding:			0;
+}
+.zusammenfassung li {
+	list-style:			none;
+	background:			url(checked.gif) 0px 2px no-repeat;
+	margin:				0;
+	padding:			0 0 15px 26px;
+}
+.zusammenfassung li li {
+	list-style:			disc;
+	background:			none;
+	padding:			0;
+}
+.zusammenfassung p {
+	margin:			0;
+}
+/*-----------------------------------------------------*/
+/* Tabellenrahmen fuer Datentabellen im Inhaltsbereich */
+/*-----------------------------------------------------*/
+
+table.datentabelle {
+	padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+	border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+	/* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+	width:	100%;
+}
+/* Tabellenunterschrift*/
+.datentabelle caption {
+	margin-top:	5px;
+	margin-bottom:	15px;
+	caption-side:	bottom;
+	font-size:		10px;
+	text-align:	right;
+}
+/* Kopfzeile */
+.datentabelle th {
+	/* text-align:	left;		 default-Wert ist center*/
+    border:		1px solid #404A5A;
+	padding:	        3px 5px;
+	background:	#BBC8D6;
+	font-size:	        12px;
+}
+/* Zelle */
+.datentabelle td {
+	border:		1px solid #404A5A;
+	padding:	        3px 5px;
+	vertical-align:	top;
+}
+.datentabelle p {
+	margin:		0 0 10px 0;
+}
+.datentabelle ul {
+	margin:		0;
+	padding:	        0 0 0 36px;
+	font-size:		10pt;
+}
+.datentabelle li {
+	margin-bottom:	5px;
+}
+/* fuer Listenpunkte in a. b. c. */
+.datentabelle .abc li {
+	list-style:	lower-latin;
+	margin-left:	5px;
+}
+.datentabelle .evenTR {
+	background:	#e7e9ee;
+}
+.datentabelle .oddTR {
+	background:	#FFF;
+}
+.kleinFont {
+	font-size:	        10pt;
+}
+.zentriert {
+	text-align:	        center;
+}
+/*------------------------------------------*/
+/* Tabellenrahmen fuer Tabellen in Uebungen */
+/*----------------------------------------- */
+
+table.table_uebung {
+	margin:	0 0 10px 0;
+	padding:	0; /* bei border-collapse hat padding keine Auswirkung */
+	border-collapse: collapse;	/* Zellzwischenraum wird auf 0 gesetzt,*/
+	/* margin in th, td und tr ebenfalls   */
+    font: 	13px Arial, Helvetica, sans-serif;
+	width:	100%;
+}
+/* Tabellenunterschrift*/
+.table_uebung caption {
+	margin-top:	5px;
+	margin-bottom:	15px;
+	caption-side:	bottom;
+	font-size:		10px;
+	text-align:	right;
+}
+/* Kopfzeile */
+.table_uebung th {
+	/* text-align:	left;		 default-Wert ist center*/
+    border:		    1px solid #EA8C00;
+	padding:	    3px 5px;
+	background:		#F6C677;
+	font-size:	    12px;
+}
+/* Zelle */
+.table_uebung td {
+	border:			1px solid #EA8C00;
+	padding:	    3px 5px;
+	vertical-align:	top;
+}
+.table_uebung p {
+	margin:			0 0 10px 0;
+}
+.table_uebung ul {
+	margin:			0;
+	padding:	    0 0 0 16px;
+	font-size:		10pt;
+}
+.table_uebung li {
+	margin-bottom:	5px;
+	font: 	13px Arial, Helvetica, sans-serif;
+}
+/* fuer Listenpunkte in a. b. c. */
+.table_uebung .abc li {
+	list-style:	lower-latin;
+	margin-left:	5px;
+}
+.table_uebung .evenTR {
+	background:	#F9E3A6;
+}
+.table_uebung .oddTR {
+	background:	#FFF4CB;
+}
+/*-------------------------------------------------*/
+/* Container für Begriffe und Definitionen "Terms" */
+/*-------------------------------------------------*/
+
+.termContainer {
+	background:#E7E9EE;
+	width:auto;
+	height:auto;
+	display:block;
+	overflow:auto;
+	border: 1px solid #41596b;
+	padding:5px 5px 0 5px;
+	margin:0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+.termContainer h2 {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	padding: 7px 0 3px 0;
+	margin:0;
+}
+.termContainer p:last-child {
+	margin-bottom:3px;
+}
+.termContainer p:first-child {
+	margin-top:2px;
+}
+/*-------------------------------------------------*/
+/* Container für Begriffe und Definitionen "Terms" */
+/*-------------------------------------------------*/
+
+.defContainer {
+	background: #f4f4d9;
+	background: -moz-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4d9), color-stop(39%, #fcfff4), color-stop(100%, #fcfff4));
+	background: -webkit-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -o-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: -ms-linear-gradient(top, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	background: linear-gradient(to bottom, #f4f4d9 0%, #fcfff4 39%, #fcfff4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4d9', endColorstr='#fcfff4', GradientType=0 );
+	width:auto;
+	height:auto;
+	display:block;
+	overflow:auto;
+	border: 1px solid #9EA03F;
+	padding:5px 5px 0 5px;
+	margin:0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+.defContainer h2 {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height:normal;
+	padding: 0px 0px 5px;
+	margin:0;
+}
+.defContainer p {
+	padding:0px 0px 5px 0px;
+	margin:0;
+}
+/*--------------------------------*/
+/* == Container fuer Beispiele == */
+/*--------------------------------*/
+
+.bspContainer {
+	background: #f7f9fc;
+	width:auto;
+	height:auto;
+	display:block;
+	overflow:auto;
+	border: 1px dashed #6caee1;
+	padding:5px 5px 0 5px;
+	margin:0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+.bspContainer h2 {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height:normal;
+	padding:2px 0 5px 2px;
+	margin:0;
+}
+.bspContainer p {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height:normal;
+	padding: 2px 2px 5px 2px;
+	margin:0;
+}
+.bspContainer ul {
+	list-style-position: outside;
+	list-style-image: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: normal;
+	color: #000000;
+	clip: rect( );
+	line-height: normal;
+	margin:2px 2px;
+}
+.bspContainer table {
+	margin: 5px 0 0 0;
+}
+/*----------------------------*/
+/* Container für Wissenstests */
+/*----------------------------*/
+
+.uebContainer {
+	background:#FFF4CB;
+	width:auto;
+	height:auto;
+	display:block;
+	border: 1px solid #C57E00;
+}
+.uebContainerCaption {
+	background:#FBC969;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-weight:bold;
+	width:auto;
+	height:auto;
+	border-bottom:1px solid #C57E00;
+	padding: 0 0 0 5px;
+}
+.uebContainer h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	line-height:normal;
+	padding:10px 0 0 5px;
+	margin:0;
+}
+.uebContainerBody {
+	padding:0;
+	margin:0 5px 0 5px;
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+}
+.uebContainer p:last-child {
+	margin-bottom:4px;
+}
+.uebContainer p:first-child {
+	margin-top:6px;
+}
+/*----------------------------*/
+/* Container für Animationen */
+/*----------------------------*/
+
+.aniContainer {
+	background:#EAEAEA;
+	width:auto;
+	height:auto;
+	display:block;
+	border: 1px solid #005190;
+}
+.aniContainerCaption {
+	background:#A8D3F4;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-weight:bold;
+	width:auto;
+	height:auto;
+	border-bottom:1px solid #005190;
+	padding: 0 0 0 5px;
+}
+.aniContainer h2 {
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-weight: bold;
+	line-height:normal;
+	padding:10px 5px 5px 5px;
+	margin:0;
+}
+.aniContainerBody {
+	padding:0;
+	margin:0 5px 0 5px;
+	font-family: Arial, sans-serif;
+	font-size: 11pt;
+}
+object{
+	display: block;
+}
+
+video{
+	display:block;
+}
+
+/*----------------------------*/
+/* Container für Quellcode(CG)*/
+/*----------------------------*/
+
+.codeContainer {
+	background:#005190;
+	width:auto;
+	height:auto;
+	display:block;
+ 	padding: 1px 1px 1px 1px;
+}
+.codeContainerCaption {
+	background:#A8D3F4;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	font-weight:bold;
+	width:auto;
+	height:auto;
+	border-bottom:1px solid #005190;
+	padding: 0 0 0 5px;
+}
+.codeContainerContent {
+	background:#EBEBEB;
+	padding: 5px 5px 5px 5px;
+	margin:0 0px 0 0px;
+	font-family: "Courier New", Courier, mono;
+	font-size: 10pt;
+}
+
+/*Zeilennummernn*/
+.numbers{
+	float:left;
+	padding-top:1px;
+	padding-right:10px;
+	color:#999;
+	font-size: 12px;
+	line-height:15px;
+}
+
+/*Abkuerzungen - bitte nicht acronym verwenden*/
+acronym, abbr {
+	text-decoration: none;
+	border-bottom: 1px dashed #aaa;
+}
+
+
+/* == Link zur Textversion von Animationen == */
+
+.textversion {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 5px 0px 12px 0px;
+	background: url(IcoOpenWinS.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left:15px;
+}
+.textversion a:link {
+	text-decoration: none;
+	border-bottom:	1px dotted #009;
+	color: #009;
+}
+.textversion a:hover {
+	text-decoration: none;
+	border-bottom:	1px solid #009;
+	color: #009;
+}
+
+/* == Typographische Anfuehrungszeichen Start == */
+q {
+ 
+}
+:lang(de) {
+	quotes:"\201E" "\201C" "\201A" "\2018";
+}
+:lang(de-DE) {
+	quotes:"\00BB" "\00AB" "\203A" "\2039";
+}
+:lang(de-CH) {
+	quotes:"\00AB" "\00BB" "\2039" "\203A";
+}
+:lang(en) {
+	quotes:"\201C" "\201D" "\2018" "\2019";
+}
+:lang(fr) {
+	quotes:"\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A";
+}
+/* == Typographische Anfuehrungszeichen Ende == */
+
+/* altes VFH Stylesheet */
+
+.bu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666
+}
+.copy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000
+}
+.courier {
+	font-family: "Courier New", Courier, mono;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #000000
+}
+.inhaltsverzeichnis {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+	padding-top:5px
+}
+.tableheader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 12pt;
+	font-weight: bold;
+	color: #000000
+}
+.quellcode {
+	font-family: "Courier New", Courier, mono;
+	font-size: 10pt;
+	font-weight: normal;
+	background-color: #E7E9EE
+}
+.zitate {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12pt;
+	font-style: italic
+}
+.MargTextOrange {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #D98B02;
+	display: table-cell; 
+	line-height: 8px;
+	height: 12px;
+}
+.MargTextBlau, .MargTextAni {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #468EC6;
+	display: table-cell; 
+	line-height: 8px;
+	height: 12px;
+}
+.MargTextGrau {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #666666;
+	display: table-cell; 
+	line-height: 8px;
+	height: 12px;
+}
+.markerGelb {
+	background-color: #FFFF99
+}
+.tiefstellen {
+	vertical-align: sub
+}
+.Autorenhinweis {
+	display: none;
+	font-weight: normal;
+	color: #000000;
+	background-color: #FFFF00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.Autorenname {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333333;
+}
+.bearbeitungszeit {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666
+}
+
+
+/*-----------------------------------------------*/
+/* Fussnoten */
+/*-----------------------------------------------*/
+
+.fussnote {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #FF6600
+}
+.fussnotentext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #666666;
+	margin-left: 2em;
+	text-indent: -2em
+}
+.fussnotentrenner {
+	width: 150px;
+	height: 1px;
+	margin-left:0;
+	margin-top:20;
+	text-align: left;
+	border:none;
+	background-color:#666666
+}
+.fussnotentrenner_full {
+	width: 100%;
+	height: 1px;
+	margin-left:0;
+	margin-top:20;
+	text-align: left;
+	border:none;
+	background-color:#666666
+}
+/*-----------------------------------------------*/
+/*  Style-Anweisungen fuer XML- HTML Quelltexte  */
+/*-----------------------------------------------*/
+#linenumbers {
+	float: left;
+	border-right: 0px solid #000000;
+	margin-right:5px;
+	padding-right:5px;
+	background-color:#EBEBEB;
+	font-size: 10pt;
+	color:#808080;
+	font-family:"Courier New", Courier, monospace;
+}
+#htmltext {
+	background-color:#EBEBEB;
+	font-family:"Courier New", Courier, monospace;
+	color:#000000;
+	font-size: 10pt;
+}
+div.indention {
+	display:inline;
+}
+.doctype {
+	color:#0C4F09;
+}
+.attr {
+	color:#000099;
+}
+.attrvalue {
+	color:#009933;
+}
+.comment {
+	color:#17CBBD
+}
+.htmlentity {
+	color:#8F0404;
+}
+.element, .html, .title, .head, .meta, .div, .body, .table, .thead, .tbody, .tr, .td, .th, .col, .colgroup, .link, .base, .h1, .h2, .h3, .h4, .h5, .h6, .ul, .ol, .li, .form, .input, .textarea, .select, .option, .fieldset, .frame, .frameset, .noframe, .iframe, .embed, .param, .noscript, .a, .img, .p, .style, .script, .blockquote {
+	color:#E67114;
+}
+/*Ende der Quellcode-Formatierungen*/
+/*--------------------------------*/
+	
+
+/*---------------------------------------------*/
+/* - Container fuer Textversionen              */
+/*   (resizeable)                              */
+/*---------------------------------------------*/
+.txtver {
+	display:		none;
+}
+.txtver_content {
+	background:		no-repeat scroll 0 0 #F2F2F2;
+	width:			auto;
+	padding: 		5px 5px;
+	border: 		1px solid #CCC;
+}
+.txtver_closeOben {
+	float:			right;
+}
+.txtver_closeOben a {
+	background-image:url(../.inc/../../_src/.inc/images/button_closeResizeable_normal.gif);
+	text-decoration:none !important;
+	width: 						20px;
+	height: 					20px;
+	display:					block;
+}
+.txtver_closeOben a:hover {
+	background-image:url(../.inc/../../_src/.inc/images/button_closeResizeable_over.gif);
+}
+.txtver h2 {
+	font-size:		14px !important;
+	font-weight:	bold !important;
+	font-style:		normal !important;
+	line-height:	18px;
+	margin-top:		5px;
+	margin-bottom:	15px;
+	width:				540px;
+	float:				left;
+}
+.txtversion_link {
+	cursor:			pointer;
+	color: 			#009;
+}
+.txtversion_link :hover {
+	cursor:			pointer;
+	color: 			#C30;
+}
+
+/*---------------------------------------------*/
+/* - Container fuer Avatarfragen               */
+/*   (resizeable)                              */
+/*---------------------------------------------*/
+div.avatartextContainer {
+	background-color:#ECE4D5;
+	border:					1px solid #4E3E18;
+	padding:				5px;
+}
+div.avatartextContainer p {
+	font-family:	"Times New Roman", Times, serif !important;
+	font-size:		17px;
+	font-style:		italic;
+	margin-top:		5px;
+}
+div.avatartextContainer h2 {
+	font-family:	"Times New Roman", Times, serif !important;
+	font-style:		italic;
+	font-size:		18px;
+	margin-bottom:10px;
+}
+.showAnswerTxtver{
+	font-family:	Arial, Helvetica, sans-serif;
+	font-style:		normal;
+}
+div.answer{
+	background-color:		  #fbf6ee;
+	border:			1px solid #9d927d;
+	padding:					 10px;
+}
+/*-----------------
+ Tooltip allgemein
+ ----------------*/
+.tooltip_link {
+	/* background:url(../../_src/.inc/images/IcoFlyWin.gif) no-repeat left; */
+  color:#009;
+	width: 100%;
+	padding-left:0px;
+	cursor:pointer;
+	text-align:center;
+}
+/*ALLGEMEIN*/
+/*Umschließendes Element*/
+.tooltip {
+	display:none;
+	font-family: "Helvetica Neue", "Nimbus Sans L", Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	z-index:1000;
+	//width:300px;
+	text-align:right;
+}
+/*Überschrift (Signatur)*/
+.tooltip_header {
+	display:block;
+	padding:2px;
+	/*background-color:#E8E8E8;*/
+	font-size:11px;
+	font-weight:bold;
+	width:auto;
+	line-height:10px;
+}
+/*Inhalt des Tooltips*/
+.tooltip_content {
+	display:block;
+	/* background-color:rgba(140,22,240,1);*/
+	color:#000;
+	font-size:10px;
+	line-height:10px;
+	float: left;
+}
+/*Fuss*/
+.tooltip_footer {
+	display:block;
+	/* background-image:url(../../_src/.inc/images/IcoTooltipArrow_blue.gif); */
+	background-repeat:no-repeat;
+	background-position:top;
+	height:8px;
+}
+.tooltip_button {
+}
+/*-----------------
+ Container fuer
+ die Anzeige von
+ Schlagworten
+ ----------------*/
+#container_buzzwords {
+	margin: 0px auto;/*zentriert das div*/
+	width:728px;
+	color:#CCC;
+	display:none;
+}
+#buzzwords_h1 {
+	font-size:11px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	margin:0;
+	padding: 15px 0 5px;
+	color:#EBEBEB;
+}
+#buzzwords_p {
+	font-size:11px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#EBEBEB;
+	margin:0;
+	padding: 0px 2px 5px;
+}
+
+/* 
+Css für InhaltsSlide - neues Inhaltsverzeichnis
+und Rotes Schliessen-Kreuz (Close X)
+*/
+.contentSlide
+{
+	opacity:1;
+	border-right: solid 5px #57647a;
+	width:360px;
+	height:100%;
+	position:fixed;
+	left:-360px;
+	top:0px;
+	background-color:white;
+	z-index: 100;
+}
+
+.contentSlide iframe
+{/*
+	height: 100% !important;*/
+	border:none;
+	width: 360px;
+}
+
+.closeSlide
+{
+	z-index:9000;
+	top:5px;
+	left:333px;
+	position:absolute;
+	cursor: pointer;
+}
+
+#slideShadow
+{
+	width: 100%; 
+	height: 100%; 
+	position: fixed;
+	opacity: 0;
+	background-color: rgba(1,1,1,0.3); 
+	top: 0px; 
+	z-index: 10;
+}
+
+.slideTitle
+{
+	width: 90%;
+}
+
+.slideSpacer
+{
+	position: relative;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+.slideSpacer p
+{
+	padding: 8px 7px 0px 8px;
+	margin-bottom: 3px;
+}
+
+#inhaltFrameHash
+{
+	margin-bottom: 8px;
+	margin-left: 2px;
+	font-size: 9pt;
+    background-color: white;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#close-cross
+{
+	width:25px;
+	height:25px;
+	background-color: #fff;
+}
+
+.close-line-one
+{
+	height:25px;
+	width:2px;
+	margin-left:12px;
+	background-color:red;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	z-index:1;
+}
+
+.close-line-two
+{
+	height:25px;
+	width:2px;
+	background-color:red;
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	z-index:2;
+}
+
+.scroll-wrapper
+{
+	-webkit-overflow-scrolling: touch !important; 
+	overflow: auto !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important; 
+}
+
+
+#indexList
+{/*
+	border-bottom: 1px solid black;*/
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	top: 0px;
+	left: 0px;
+	z-index:9000;
+	list-style: none;
+	letter-spacing: 2px;
+	background-color: white;
+}
+
+#indexList li.active a
+{
+	color: black;
+	cursor: pointer;
+}
+
+#indexList li
+{
+	display: inline;
+	text-align: center;
+	font-size: 16pt;
+	color: #9E9A9A;
+}
+
+frame
+{
+	position: relative;
+}
+
+#glossarList
+{
+  list-style: none;
+  letter-spacing: 4px;
+  margin: 0px 0px;
+  background-color: rgb(88, 101, 123);
+  padding-bottom: 3px;
+  z-index: 9;
+}
+
+#glossarList li
+{
+	cursor: pointer;
+  display: inline;
+  color: white;
+  text-align: center;
+}
+
+#glossarList a
+{
+	padding-left: 3px;
+	padding-bottom: 3px;
+	text-decoration: none;
+	color: white;
+}
+#glossarList li a:hover
+{
+	background-color: white;
+	color: rgb(88, 101, 123);
+}
+
+.indexABC, #glossarList
+{
+	font-family: monospace;
+	padding: 0px 4px;
+}
+
+#indexList li:nth-child(15)
+{
+	margin-left: 22px;
+}
+
+#indexList li:nth-child(14):after 
+{ 
+	content:"\A"; white-space:pre; 
+}
+
+#indexList li.active a:hover
+{
+	color: white;
+	background-color: #646464;
+}
+
+/* VFH style sheet Studienmodul Controlling I - Vertiefungsfenster*/
+.win {
+	margin:				0px;
+	font-family:		Arial,Verdana, sans-serif;
+	color:				black;
+	background-color: 	#FFFFFF;
+	width:				100%;
+	position:			relative;
+}
+
+.win h1 {
+	padding:			5px 0 5px 0;
+	color:				#000000;
+    font-size: 			12pt; 
+  	font-style: 		normal; 
+	font-weight: 		bold; 
+}
+
+.nachOben {
+    margin:				0 0 0 7px;
+}
+	
+div.headline {
+    
+    position:			relative;
+    top:				15px;
+    left:				23px;
+    font-size: 			14px; 
+    font-style: 		normal; 
+    font-weight:		bold; 
+    color: 				#5A5A5A;
+	width:				80%;
+    text-decoration:	none;
+    text-align: 		left;
+}
+
+div.header {
+	position:			relative;
+	width:				100%;
+	height:				53px;
+	background: 		#EAEAEA;
+	clear:				both;
+	
+}
+    
+div.buttons {
+    position:			absolute;
+    top:				15px;
+    right:				10px;
+}
+
+
+div.trenner_1 {
+    position:			relative;
+	top:				1px;
+	left:				0px;
+	width: 				100%;
+	background: 		#586578;
+    height:				20px;
+	
+ }
+ 
+div.trenner_2 {
+ 	position:			relative;
+	top:				2px;
+	left:				0px;
+	width: 				100%;
+	background: 		#FEBE4D;
+    height:				8px;
+ } 
+
+ div.content {
+    margin: 			10px 7px 0 7px; 
+	position:			relative;
+	min-height:			300px;
+}
+
+div.fusszeile{
+	position:			relative;
+}
+
+div.balkenFusszeile1{
+	position:			relative;
+	background-color:	#FEBE4D;
+	height:				8px;
+}
+
+div.balkenFusszeile2{
+	position:			relative;
+	background-color:	#586578;
+	top:				1px;
+	height:				2px;
+	margin-bottom:		2px;
+}
+
+@media screen and (max-width: 1024px) {
+	#navControls{
+		position: absolute;
+		top: 54px;
+		height: 35px;
+
+    }
+    .prev-chap {
+   	 	width: 33px;
+	}
+	.nav-skip{
+		width: 32px;
+		height: 27px;
+	}
+	.arrow-nav-right{
+		border-width: 7px 0px 7px 15px;
+	}
+	.arrow-chap-right {
+		border-width: 5px 0px 5px 11px;
+	}
+	#navPageNumber {
+	    width: 44px;
+	    height: 22px;
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+	#navBottomSwitch{
+		top: -1px;
+	}
+}

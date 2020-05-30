@@ -1,0 +1,32 @@
+h1        {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt
+; clip:   rect(   ); line-height: 17pt; font-weight: bold; color: #000000}
+p         {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 17pt; color: #000000}
+ul        {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 17pt; color: #000000}
+table     {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 17pt; color: #000000}
+option    {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+.courier  {  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: normal; color: #000000; line-height: 15pt}
+a:link    {  color: #000099; text-decoration: underline}
+a:visited {  color: #003399} text-decoration: underline}
+.inhaltsverzeichnis1 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 16pt; font-weight: bold; color: #000000}
+.inhaltsverzeichnis2 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 16pt; font-weight: normal; color: #000000}
+.titel    {  font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 16pt; font-weight: bold; color: #000000}
+.entry    {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 16pt; font-weight: normal; color: #000000}
+.headline {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #333333; line-height: 16pt}
+.TopHeadline { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #999999; line-height: 24px }
+.Literaturhinweis {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFF00;
+}
+.autoren {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #666666;
+}
+.tabHintergrund {
+	background-color: #F3F3F3;
+}

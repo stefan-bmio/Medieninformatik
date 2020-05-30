@@ -1,0 +1,9 @@
+{
+  "commands" : [
+    "*.tex : latex {name}",
+    "*.tex : bibtex {name}",
+    "*.tex : latex {name}",
+    "*.tex : latex {name}",
+    "*.tex : dvipdfmx {name}.dvi"
+  ]
+}

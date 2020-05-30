@@ -1,0 +1,23 @@
+navPages = new Array(
+'../00einstieg/index.html',
+'../00einstieg/lernziele.html',
+'../01stroeme/stroeme.html',
+'../01stroeme/beispiel.html',
+'../01stroeme/paket.html',
+'../01stroeme/exception.html',
+'../02byte/byte.html',
+'../02byte/ausgabe.html',
+'../02byte/eingabe.html',
+'../02byte/bytesAendern.html',
+'../03object/object.html',
+'../04character/character.html',
+'../04character/writer.html',
+'../04character/reader.html',
+'../04character/zeichSchreiben.html',
+'../05file/file.html',
+'../05file/erzeugen.html',
+'../05file/verschieben.html',
+'../zusammen/zusammen.html',
+'../uebung/uebung.html',
+'../einsende/einsende.html'
+ );

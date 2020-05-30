@@ -1,0 +1,1 @@
+<a href="javascript:openwin2('../../.inc/iconinfo/WinIconInfo.html',550,380)"><img src="../../.inc/iconinfo/IcoHZK3.svg"  alt="Kernwissen" width="16" height="16" style="padding-top:27px;"></a>

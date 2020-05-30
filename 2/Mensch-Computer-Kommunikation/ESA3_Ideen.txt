@@ -1,0 +1,12 @@
+Smart Watch
+- Vibration am Handgelenk
+- Nachrichtenweiterleitung, z.B. mTan fuer Packstation
+- Anpassbare Ziffernblaetter
+
+SAAS Office
+- ohne Installation / Updates
+- Cloud based
+
+Sprachsteuerung
+- Siri, Cortana
+- Googlen, Anwendung öffnen

@@ -1,0 +1,25 @@
+Punkte: 88 aus 92
+Zensur: Bestanden
+
+Frage:   11
+Punkte:  3
+Bemerkung: ... GLEICHE Größe der Speicherzellen ...
+
+Frage:   18
+Punkte:  3
+Bemerkung: noch "Verdrahtung"
+
+Frage:   21
+Punkte:  4
+Bemerkung: Erste Zeile: 1, 1
+
+Frage:   30
+Punkte:  1
+Bemerkung: Antwort A, C, F
+
+Frage 32 habe ich bei Ihnen nicht ausgewertet, weil wir sie nicht so richtig besprochen haben. Alle Studenten haben dafür volle Punktzahl bekommen, obwohl manchmal war es richtig daneben :-)
+
+Ausnahme (Exeption) wird von Prozessor selbst ausgelöst (Division durch 0, Überlauf, Zugriffsschutz), alle anderen Interrupts kommen von Geräten oder von Programmen (NIC, Festplatte).
+
+
+

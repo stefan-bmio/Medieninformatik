@@ -1,0 +1,16 @@
+<APPLET
+CODEBASE = "."
+ARCHIVE  = "LueckenApplet.jar"
+CODE     = "Luecke.LueckeStart.class"
+WIDTH    = 200
+HEIGHT   = 50
+ALIGN    = middle
+>
+<param name="text" value="Um Daten aus einer Datei zu lesen bzw. in eine Datei zu schreiben, benutzt Java das Konzept der §. Wir unterscheiden in Java zwischen § und zeichenorientierten Ein- bzw. Ausgabeströmen. Datenströme können untereinander § und verschachtelt werden, so dass spezielle Zusatzfunktionen erzielt werden, wie beispielsweise das Puffern von Zeichen. Pufferklassen, wie § und BufferedWriter , speichern noch nicht verarbeitete Daten temporär. Dadurch werden die Schreib- und Lesezugriffe auf Dateien effizenter. Wenn die Daten an einen § Datenstrom gerichtet sind, werden sie nicht an ihr Ziel geschickt, ehe der Datenstrom gefüllt ist oder die Methode § des gepufferten Streams aufgerufen wird. Daten können § werden durch sogenannte Filterklassen, die den einfachen Ein- bzw. Ausgabestrom einschließen.">
+<param name="luecken_woerter" value="Ströme,byteorientiert,verkettet,BufferedReader,Paket,gepuffert,flush(),gefiltert ,">
+<param name="luecken_loesung" value="Strömen,byteorientierten,verkettet,BufferedReader,Paket,gepufferten,flush(),gefiltert ,">
+<param name="woerter" value="Ströme,byteorientiert,verkettet,BufferedReader,Paket,gepuffert,flush(),gefiltert ,">
+<param name="luecken_zeichen" value="§">
+<param name="umbruch_zeichen" value="$">
+<param name="tauschbar" value="">
+</APPLET>

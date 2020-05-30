@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage[shellescape]{gmp}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+\begin{mpost}[use,mpsettings={input metauml;}]
+draw (0, 0)--(300, 0)--(300, -150)--(0, -150)--cycle;
+draw (0, 0)--(5, 5)--(305, 5)--(305, -145)--(300, -150);
+draw (300, 0)--(305, 5);
+label ("<<first>>" infont "ptmr8r" scaled .8, (150, -9));
+label ("My Node" infont "ptmb8r", (150, -21));
+
+Component.comp("My Component")();
+comp.nw = (40, -40);
+drawObject(comp);
+\end{mpost}
+\caption{My Deployment Diagram}
+\end{figure}
+
+% \guillemotright
+
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{margin=3cm}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*6}{*1.5}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\algtext*{EndWhile}
+\algtext*{EndIf}
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{>}{\ >\ }{#1}} 
+
+\begin{document}
+\title{\Large Einsendeaufgabe 3}
+\author{\normalsize Stefan Berger}
+\date{}
+\maketitle
+
+\subsection{}
+Show how the algorithm works with the array (2, 4, 11, 12, 7, 15, 19) . In particular show how the
+values of m, i and k are changing, which elements are compared and which elements are exchanged,
+see script p. 50 example 4.7.\\
+\begin{center}
+\begin{tabular}{C|C|C|d{-1}|c|C}
+m & i & A & \multicolumn{1}{c|}{A[i] $>$ A[i + 1]} & Vertauschen & k \\ \hline
+5 & 1 & (2, 4, 11, 12, 7, 15) & 2 > 4 & nein &  \\ \hline
+  & 2 & (2, 4, 11, 12, 7, 15) & 4 > 11 & nein & \\ \hline
+  & 3 & (2, 4, 11, 12, 7, 15) & 11 > 12 & nein & \\ \hline
+  & 4 & (2, 4, 11, 12, 7, 15) & 12 > 7 & ja & 4 \\ \hline
+  & 5 & (2, 4, 11, 7, 12, 15) & 12 > 15 & nein & \\ \hline
+3 & 1 & (2, 4, 11, 7, 12, 15) & 2 > 4 & nein & \\ \hline
+  & 2 & (2, 4, 11, 7, 12, 15) & 4 > 11 & nein & \\ \hline
+  & 3 & (2, 4, 11, 7, 12, 15) & 11 > 7 & ja & 3 \\ \hline
+2 & 1 & (2, 4, 7, 11, 12, 15) & 2 > 4 & nein & \\ \hline
+  & 2 & (2, 4, 7, 11, 12, 15) & 4 > 7 & nein & \\ \hline
+\end{tabular}
+\end{center}
+\stepcounter{subsection}
+\subsection{}
+Test your method with the file QuickSort.txt Copyright Tim Roughgarden, Stanford
+University.
+For that used the 2 static methods in the class called UtilitiesArraysFiles. You can also write
+your own methods if you wish. One method reads the numbers from the textfile in an array, and the
+other writes the numbers of the array in a textfile whose name is given as a parameter. Theses
+methods have the following headers:
+public static int[] readInArray(String filename)
+public static void writeArrayToFile(int [] ir, String filename).
+How many comparisons do you get? Does this number fit the theoretical result O(n2) (in fact n(n-
+1)/2, see script p. 50) in the worst case or O(n) in the best case? \\\\
+The implementation makes 49916606 comparisons when sorting the numbers in the file
+QuickSort.txt. That's within the theoretical numbers for the best case 
+and the worst case. \\\\
+In the best case, the algorithm needs n-1 comparisons, (9999 with the numbers 1 - 9999 presorted).\\
+$B(n) = n - 1$ \\
+$B(n) \in \Omega(n)$ \\\\
+In the worst case, the algorithm needs $n(n-1)/2$ comparisons (49995000 with the numbers 1 - 9999 sorted
+in descending order). \\
+$W(n) = n(n - 1) / 2$ \\
+$W(n) \in  \mathcal{O}(n^2)$ \\
+\end{document}

@@ -1,0 +1,11 @@
+
+color mygreen;
+mygreen := (.0, .8, .0);
+color myblue;
+myblue := (.73, .8, .9);
+color mydarkblue;
+mydarkblue := (0, .33, .53);
+color mydarkerblue;
+mydarkerblue := (.12, .22, .33);
+color orange;
+orange := (1, .4, 0);

@@ -1,0 +1,83 @@
+This is MetaPost, version 2.000 (TeX Live 2017) (kpathsea version 6.2.3)  6 MAY 2018 22:54
+**activity.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/mpost.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./activity.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_infrastructure.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_log.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_object.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_commons.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_margins.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_picture.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/base/boxes.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_group.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_picture_stack.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_positioning.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/util_shade.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_base.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_links.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_paths.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_note.mp
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_defaults.mp))
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_stereotype.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_clipart.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_instance.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_relations.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_class_assoc.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_package.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_package_relations.
+mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_behavioral_common.
+mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_activity.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_state.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_behavioral_common.
+mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_activity.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_state.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase_clipart.mp
+) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_usecase.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_component.mp)
+(/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_component_relation
+s.mp) (/usr/local/texlive/2017/texmf-dist/metapost/metauml/metauml_templates.mp
+))
+! Inconsistent equation (off by 395.57468).
+<to be read again> 
+                   ;
+Activity_layout->...nfo.right+2*(SUFFIX2)info.fat;
+                                                  (SUFFIX2)height=(SUFFIX2)s...
+<to be read again> 
+                   ;
+layoutObject->...;scantokens(methodName)(SUFFIX2);
+                                                  endgroup
+<for(discard)> ...X0))<>"":layoutObject((SUFFIX0))
+                                                  ;fi; ENDFOR
+layoutObjects->...o)<>"":layoutObject(o);fi;endfor
+                                                  ;endgroup
+drawObjects->begingroup.layoutObjects((TEXT2))
+                                              ;forsuffixes.o=(TEXT2):if(str....
+l.25 ..., audit, publish, discard, pubreview, age)
+                                                  ;
+? 
+! Emergency stop.
+<to be read again> 
+                   ;
+Activity_layout->...nfo.right+2*(SUFFIX2)info.fat;
+                                                  (SUFFIX2)height=(SUFFIX2)s...
+<to be read again> 
+                   ;
+layoutObject->...;scantokens(methodName)(SUFFIX2);
+                                                  endgroup
+<for(discard)> ...X0))<>"":layoutObject((SUFFIX0))
+                                                  ;fi; ENDFOR
+layoutObjects->...o)<>"":layoutObject(o);fi;endfor
+                                                  ;endgroup
+drawObjects->begingroup.layoutObjects((TEXT2))
+                                              ;forsuffixes.o=(TEXT2):if(str....
+l.25 ..., audit, publish, discard, pubreview, age)
+                                                  ;
+End of file on the terminal!
+
+

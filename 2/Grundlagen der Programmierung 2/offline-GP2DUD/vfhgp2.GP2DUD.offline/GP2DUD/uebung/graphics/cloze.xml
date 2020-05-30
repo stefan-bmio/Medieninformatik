@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cloze xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cloze.xsd">
+	<text>Meistens sind die $1$ und Ziele byteorientierter Ströme $2$, in die $3$ geschrieben bzw. aus denen Bytefolgen gelesen werden können. $4$-bzw. zeichenorientierte Ströme werden verwendet, um Daten in einer von Menschen $5$ Form ausgeben zu können. In manchen Fällen ist es bequemer, statt der einzelnen Bytes, die $6$ als Ganzes mit ihren aktuellen Daten aus einer $7$ einzulesen bzw. in einer $8$ auszugeben. 
+	Unter $9$ wird ein $10$ verstanden , indem ein Objekt leicht und sicher in einen Datenstrom und wieder zurück $11$ werden kann. 
+	$12$ sind Klassen, bei denen neue $13$ aus vorhandenen erzeugt werden, indem die einzelnen $14$ der Datenströme beliebig verarbeitet werden.</text>
+	<gapword id="1" flexion="Quellen" word="Quelle"/>
+	<gapword id="2" flexion="Dateien" word="Datei"/>
+	<gapword id="3" flexion="Bytefolgen" word="Bytefolge"/>
+	<gapword id="4" word="Character"/>
+	<gapword id="5" flexion="lesbaren" word="lesbar"/>
+	<gapword id="6" flexion="Objekte" word="Objekt"/>
+	<gapword id="7" word="Datenquelle"/>
+	<gapword id="8" word="Datensenke"/>
+	<gapword id="9" word="Serilisation"/>
+	<gapword id="10" word="Mechanismus"/>
+	<gapword id="11" flexion="verwandelt" word="verwandeln"/>
+	<gapword id="12" flexion="Filterklassen" word="Filterklasse"/>
+	<gapword id="13" flexion="Datenströme" word="Datenstrom"/>
+	<gapword id="14" flexion="Elemente" word="Element"/>
+	<wrongword word="geworfen" />
+</cloze>

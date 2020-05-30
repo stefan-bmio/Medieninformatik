@@ -1,0 +1,15 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{controller}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{model}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{solid}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossentry{view}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}}}%
+\end{theglossary}\glossarypostamble

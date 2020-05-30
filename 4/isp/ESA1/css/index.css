@@ -1,0 +1,8 @@
+.input-error {
+  border: 1px solid #d75745;
+}
+
+.error-message {
+  color: #d75745;
+  text-align: left;
+}

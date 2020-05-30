@@ -1,0 +1,24 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=mptopdf 2018.5.17)  24 JUN 2018 15:24
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\relax model-1.mps
+ (./model-1.mps{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdfte
+x.map}) [warning: the height is less than 1in] [1] 
+Here is how much of TeX's memory you used:
+ 54 strings out of 496704
+ 457 string characters out of 6201021
+ 4019429 words of memory out of 9004636
+ 1708 multiletter control sequences out of 15000+600000
+ 3276 words of font info for 3 fonts, out of 8000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 10i,3n,7p,123b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texm
+f-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb>
+Output written on model-1.pdf (1 page, 19879 bytes).
+PDF statistics:
+ 17 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 7 words of extra memory for PDF output out of 10000 (max. 10000000)
+

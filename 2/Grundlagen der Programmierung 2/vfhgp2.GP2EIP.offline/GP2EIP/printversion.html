@@ -1,0 +1,4147 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<!-- jQuery library -->
+	  <script src="../.inc/js/lib/jquery-1.8.3.js" type="text/javascript"></script>
+	<!-- Dynamische Ausgabe von Bearbeitungszeit von Dorian Wojda -->
+	<script src="../.inc/js/bearbeitungszeit.js" type="text/javascript"></script>
+  <!-- Code highlighting per rainbow.js -->
+  <script src="../.inc/js/highlight/rainbow.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/generic.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/java.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/javascript.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/html.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/css.js" type="text/javascript"></script>
+  <script src="../.inc/js/highlight/linenumbers.js" type="text/javascript"></script>
+
+<title>EIP - Einstieg in Programmieren II</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="../.inc/vfh01p_div.css">
+<link rel="stylesheet" type="text/css" media="all" href="../.inc/css/highlight/themes/tricolore.css">
+
+</head>
+
+<body class="back">
+
+<p class="bu">
+    <b>Hinweis:</b><br>Diese Druckversion der Lerneinheit stellt aufgrund der Beschaffenheit des Mediums eine
+    im Funktionsumfang stark eingeschr&auml;nkte Variante des Lernmaterials dar. Um alle
+    Funktionen, insbesondere Animationen und Interaktionen, nutzen zu k&ouml;nnen, ben&ouml;tigen Sie die On- oder Offlineversion.<br />
+    Die Inhalte sind urheberrechtlich gesch&uuml;tzt. <br />&copy;<script type="text/javascript">
+        var d = new Date();
+        document.write(d.getFullYear()); </script>
+    Beuth Hochschule f&uuml;r Technik Berlin</p><br /><br />
+<h1 class="modulTitel">EIP - Einstieg in Programmieren II</h1>
+<div id="content">
+  <div id="mainText" class="clearfix">
+    <div id="main">
+
+<span class="noprint">Startseite</span>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p class="alignCenter"><a href="lernziele.shtml"><img src="0einstieg/graphics/IluTitelLe01.gif" alt="Titelbild Lerneinheit Einstieg in Programmieren II" width="420" height="341"></a></p>
+
+            <p>&nbsp;</p>
+<!--#include virtual="../../.inc/button_lastpage.inc" -->
+<div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>Überblick und Lernziele</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	
+
+	
+
+</div>
+
+
+
+<p>In dieser ersten Lerneinheit des Moduls Programmieren II
+                    wiederholen wir zunächst kurz die wesentlichen Inhalte
+                    aus dem Modul Programmieren I. Programmierkenntnisse
+                    in der objektorientierten Programmiersprache Java und
+                    entsprechende Programmierfertigkeiten aus Programmieren I
+                    sind die Voraussetzung für die Bearbeitung des Moduls
+                    Programmieren II. In diesem Modul wird die  Java Version SE7 oder höher verwendet. Außerdem wird in dieser Lerneinheit in
+                    die integrierte <a href="javascript:openGlossar('ide')">Entwicklungsumgebung</a>
+                    Eclipse anhand eines Programmbeispiels eingeführt.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="29" src="../.inc/IcoLernziele.gif" width="28"/>
+</div>
+<div class="termContainer">
+<h2>Lernziele</h2>
+<ul>
+<li>
+<p> Die Kenntnisse aus dem Kurs Programmieren
+                        I werden aufgefrischt.</p>
+</li>
+<li>
+<p> Sie können Eclipse zum Editieren,
+                        Übersetzen und Ausführen von Java-Programmen
+                        benutzen.</p>
+</li>
+<li>
+<p> Sie können die wesentlichen Fenster von Eclipse,
+                        in Bezug auf deren  Funktionalität,
+                        erklären.</p>
+</li>
+</ul>
+</div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Gliederung" src="../.inc/IcoGliederung.gif"/>
+</div>
+<div class="termContainer">
+<h2>Gliederung</h2>
+<ol>
+<li><b>Was Sie beherrschen<br/>
+</b>In diesem Kapitel werden stichpunktartig
+                      die Inhalte aus dem Modul Programmieren I wiederholt,
+                      welche die Voraussetzung für die Bearbeitung
+                      des Moduls Programmieren II sind: Übersetzung
+                      und Ausführung von Java-Programmen, Programmierung
+                      von Klassen und Objekten sowie Attributen und Methoden,
+                      Konzepte von Vererbung und Paketen.<br/>
+                        </li>
+<li><b>Einführung in Eclipse<br/>
+</b>Die Arbeitsschritte in der integrierten
+                      Entwicklungsumgebung Eclipse zum Laden, Editieren,
+                      Übersetzen und Ausführen des bereits bekannten
+                      Taschenrechner-Programms aus der Lerneinheit
+                      09 im Modul Programmieren I werden Schritt für Schritt
+                      erklärt.</li>
+</ol>
+</div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="30" src="../.inc/IcoUhr.gif" width="29"/>
+</div>
+<div class="termContainer">
+<h2>Zeitbedarf</h2>
+<p>Für die Bearbeitung dieser Lerneinheit benötigen
+                    Sie etwa 120 Minuten zuzüglich der Zeit,
+                    die Sie für die Bearbeitung der Tutorien
+                    von Eclipse aufwenden. </p>
+</div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>1 Was Sie beherrschen</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+
+
+
+<p>Das <a href="javascript:openGlossar('modul')">Modul</a> Grundlagen der Programmierung
+                    II baut auf dem Wissen und den Programmierfertigkeiten aus
+                    dem Modul Grundlagen der Programmierung I auf. Das heißt die Grundlagen der
+                    <a href="javascript:openGlossar('objekt_programmierung')">objektorientierten
+                    Programmierung</a> in <a href="javascript:openGlossar('java')">Java</a>
+                    beherrschen Sie. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Melanie" height="66" src="../.inc/IcoMelanie.gif" width="68"/>
+	 
+</div>
+<div class="audiotextcontainer">
+<section class="audioContainer"></section>
+<img alt="" height="13" src="../.inc/IcoAnswerAudioShow.gif" width="15"> <a class="audiotextlink" href="JavaScript: toggleAudio('audiotext1');" id="audiotext1">Textversion</a>
+<div class="audiotext" style="display: none;">
+<p><strong>Frage von Melanie:</strong><br/>
+                      Ich möchte sehr zügig das Programmieren erlernen und              habe deshalb beide Module belegt, die ich parallel bearbeiten werde.          Wie sollte ich meinen Lernprozess organisieren?</p>
+<p><strong>Antwort: </strong><br/>
+                      Die beiden Module bauen sequentiell aufeinander auf. Programmieranfänger        sollten die Kurse deshalb nacheinander bearbeiten. </p>
+<p>Wenn Sie beide Kurse in einem Semester bearbeiten, dann sollten        Sie sich in jedem Fall für eine sequentielle Bearbeitung        entscheiden, erst Modul I, danach Modul II. Für die Bearbeitung        der Lerneinheiten beider Module empfehlen wir einen etwa 16        wöchigen Bearbeitungszeitraum, mit einer 6- bis 8-stündigen        wöchentlichen Arbeitszeit. Die Abgabetermine für        die Einsendeaufgaben und die Präsenztermine sind darauf        abgestimmt. Wenn Sie beide Module bearbeiten wollen, bedeutet        das, dass Sie pro Woche zwei Lerneinheiten schaffen müssten        und mit Ihrer Abgabe deutlich vor den gesetzten Terminen liegen.        Eine solche Organisation Ihres Studiums ist durchaus möglich,        bedarf jedoch einer Absprache mit den Mentorinnen und Mentoren        an der Hochschule, an der Sie eingeschrieben sind.</p>
+</div>
+</div>
+
+ 
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Zum <q lang="de">Warmwerden</q> wollen wir in dieser Lerneinheit
+                    einige wesentliche Inhalte kurz wiederholen. Die meisten
+                    von Ihnen hatten das Modul Grundlagen der Programmierung I belegt und können
+                bei Bedarf zur Wiederholung die jeweilige Lerneinheit nochmals anschauen.<br/>
+<br/>
+</p>
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	
+
+	<div class="bildtitel">Abb.: <br/>
+                    Übersicht Lerneinheiten Programmieren I</div>
+	
+
+</div>
+<img alt="Übersicht Lerneinheiten GP1" class="imagezoom" height="481" src="1einstieg/graphics/AbbGP1Le.gif" width="578"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p><br/>
+                  Die Links in der Abbildung sind nicht anklickbar.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1>1.1 Wie arbeitet die Programmiersprache Java?</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+<p>Java-Programme werden, wie alle Programme einer <a href="javascript:openGlossar('hoehere_programmiersprachen')">höheren
+            Programmiersprache</a> <span class="term_eng">(higher level programming language)</span>, in einer vom Menschen lesbaren Form
+            nach den Regeln der <a href="javascript:openGlossar('syntax')">Syntax</a> und <a href="javascript:openGlossar('semantik')">Semantik</a> der jeweiligen Programmiersprache im <a href="javascript:openGlossar('editor')">Editor</a> erfasst.</p>
+
+
+
+
+<p>Computerprogramme werden vom <a href="javascript:openGlossar('prozessor')">Prozessor</a> ausgeführt. Die meisten Programme werden zu diesem Zweck in <a href="javascript:openGlossar('maschinensprache')">Maschinensprache</a> übersetzt &#8211; sie ist abhängig vom jeweiligen <a href="javascript:openGlossar('computer')">Computer</a> und Betriebssystem.  Um <a href="javascript:openGlossar('plattform_unabh')">Plattformunabhängigkeit</a> <span class="term_eng">(platform independence)</span> für Java-Programme zu erreichen, werden sie in einen Zwischencode, den <a href="javascript:openGlossar('byte_code')">Byte-Code</a> übersetzt, der vom  &#8211; für jede Plattform unterschiedlichen &#8211; Java-<a href="javascript:openGlossar('interpreter')">Interpreter</a>, der sogenannten <a href="javascript:openGlossar('jvm')">virtuellen
+            Maschine (VM oder JVM)</a> ausgeführt wird.</p>
+
+
+
+
+<p> Die folgende <a href="javascript:openGlossar('animation')">Animation</a>,
+            die Ihnen aus dem Studienmodul <q lang="de">Grundlagen der Programmierung I</q> aus der Lerneinheit
+            PJA vom Abschnitt 2.2 bekannt ist, veranschaulicht diese Arbeitsweise: </p>
+</div><div class="box_large">
+	<img alt="" height="25" src="../.inc/IcoDiashow.gif" width="26"><br/> <span class="MargTextAni">Diashow</span> <span class="bu">(vgl. Programmieren I
+            Lerneinheit PJA / Kap. 2) </span>
+<div class="aniContainer">
+<div class="aniContainerCaption">Ausführung und Übersetzung eines Java-Programms</div>
+<div class="aniContainerBody">
+
+</div>
+<div><img alt="Screenshot - Ausführung und Übersetzung eines java-Programms" class="alternativbild" height="430" src="1einstieg/graphics/DiaJavaVm4.gif" width="728">
+
+</div>
+</div>
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="textversion"><a class="showTxtver" href="#">Textversion</a></div>
+
+
+
+
+
+
+
+
+
+
+<div class="txtver" style="display:none">
+<div class="txtver_content">
+<div class="txtver_heading">
+<h2>Textversion: Ausführung und Übersetzung eines Java-Programms</h2>
+<div class="txtver_closeOben"> <div class="txtver_closeBtn"><div class="closeCross"></div></div> </div>
+<div class="clearTheFloats"></div>
+</div>
+<p>Der Compiler (javac) übersetzt den Quelltext (.java) in plattformunabhängigen Bytecode (.class). </p>
+<hr class="fussnotentrenner"/>
+<p>Der Bytecode kann  von einem Java-Interpreter, der Virtuellen Maschine,  auf dem Windows-PC ausgeführt werden.</p>
+<hr class="fussnotentrenner"/>
+<p>Der Bytecode kann  von einem Java-Interpreter, der Virtuellen Maschine,  auf  dem Macintosh ausgeführt werden.</p>
+<hr class="fussnotentrenner"/>
+<p>Der Bytecode kann  von einem Java-Interpreter, der Virtuellen Maschine,  auf einer UNIX-Workstation ausgeführt werden.</p>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Die Programmiersprache Java wurde für und mit dem Internet
+            entwickelt. Aus der <a href="javascript:openGlossar('client-server')">Client-Server</a>-Struktur des
+            Internets resultieren spezielle Programmtypen in Java. Das
+            folgende Rolloverbild symbolisiert die Programmiersprache
+            Java als mächtigen Strom, dessen Arme die verschiedenen Programmarten
+            sind. Eine Beschreibung der Programmarten wird beim Überfahren
+            mit der Maus sichtbar: </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoRollover.gif" width="26"><br/>
+<span class="MargTextAni">Rolloverbild<br/>
+</span><span class="bu">(vgl. Programmieren I<br/>
+          Lerneinheit PJA / Kap. 1) </span>
+</div>
+
+
+
+<div class="aniContainer">
+<div class="aniContainerCaption">Java-Programmarten</div>
+<div class="aniContainerBody">
+
+</div>
+<div><img alt="Screenshot - Java Programmarten" class="alternativbild" height="400" src="1einstieg/graphics/RollDelta.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="textversion"><a class="showTxtver" href="#">Textversion</a></div>
+
+
+
+
+
+
+
+
+
+
+<div class="txtver" style="display:none">
+<div class="txtver_content">
+<div class="txtver_heading">
+<h2>Textversion: Java-Programmarten</h2>
+<div class="txtver_closeOben"> <div class="txtver_closeBtn"><div class="closeCross"></div></div> </div>
+<div class="clearTheFloats"></div>
+</div>
+<br/>
+<p><strong>Servlets </strong> sind in Java geschriebene Serverkomponenten,
+                die Daten vom Client aus einem HTML-Formular
+                oder Applet erhalten, diese verarbeiten und
+                gegebenenfalls an den Client zurückschicken.</p>
+<p><strong>Applikationen</strong> sind Java-Anwendungsprogramme, die auf
+                einem lokalen Computer ausgeführt werden.</p>
+<p><strong>Applets</strong> sind Java-Programme für die Integration in
+                HTML-Seiten. Sie werden aus dem Netz
+                geladen und lokal im Browser ausgeführt.</p>
+<p><strong>Java für embedded Systems</strong> ist ein Compiler mit der zugehörigen virtuellen Maschine, der optimiert ist für Mikrocomputer,
+                die einen sehr kleinen Arbeitsspeicher besitzen. </p>
+<p><strong>Beans</strong> sind fertige Programmkomponenten, die speziell die visuelle Entwicklung von Oberflächen unterstützen. Applikationen können bausteinartig zusammengesetzt werden. Zahlreiche weitere Programmarten sind denkbar und am Entstehen.</p>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1>1.2 Was sind Klassen in Java?</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+<p>Die <a href="javascript:openGlossar('klasse')">Klasse</a> (Schlüsselwort <span class="courier">class</span> in Java) ist der zentrale Begriff in
+                    der objektorientierten Programmierung. In Klassen werden die
+                    vom Programm zu realisierenden Aufgabenstellungen modelliert.
+                    Jedes Programm besteht aus mindestens einer Klasse. </p>
+
+
+
+
+<p>Klassen enthalten Attribute <span class="term_eng">(fields)</span> und Methoden. In den Methoden
+                    wird das Verhalten oder die <a href="javascript:openGlossar('funktion')">Funktion</a>alität der Klasse
+                    programmiert. Die Attribute dienen zur Beschreibung von Variablen,
+                    die verschiedene <a href="javascript:openGlossar('wert')">Werte</a> im Programm speichern können. </p>
+
+
+
+
+<p>Klassen sind typischerweise Beschreibungen, vorstellbar als Schablonen
+                    oder Baupläne, um Objekte zu erzeugen. Erst die <a href="javascript:openGlossar('objekt')">Objekte</a> existieren im Programm real und können benutzt werden.</p>
+
+
+
+
+<p>Ein Objekt wird anhand einer Klasse mittels <span class="courier"><a href="javascript:openGlossar('newoperator')">new</a></span><a href="javascript:openGlossar('newoperator')">-Operator</a> und <a href="javascript:openGlossar('konstruktor')">Konstruktor</a> erzeugt. Diesen Vorgang bezeichnet man auch als Instanziieren
+                oder Generieren: </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">meinObjekt = new Klasse();</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Schauen Sie sich die folgende Animation an, in der eine Klasse
+                  als <q lang="de">Objekt-Fabrik arbeitet</q>.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAnimation.gif" width="26"><br/>
+<span class="MargTextAni">Animation</span> 
+</div>
+<span class="bu">(vgl. Programmieren I Lerneinheit PJA / Kap. 3.4)</span>
+</div><div class="box_large">
+	
+
+	
+
+	<div class="aniContainer">
+<div class="aniContainerCaption">Von der Klasse zum Objekt</div>
+<div class="aniContainerBody">
+
+</div>
+<div><img alt="Screenshot - Von der Klasse zum Objekt" class="alternativbild" height="400" src="1einstieg/graphics/AniKlasseObjekt.gif" width="728">
+
+</div>
+</div>
+	
+
+</div><div class="box_large">
+	
+
+	
+
+	<div class="textversion"><a class="showTxtver" href="#">Textversion</a></div>
+	
+
+	
+
+	
+
+	<div class="txtver" style="display:none;">
+<div class="txtver_content">
+<div class="txtver_heading">
+<h2>Textversion: Ausführung und Übersetzung eines Java-Programms</h2>
+<div class="txtver_closeOben"> <div class="txtver_closeBtn"><div class="closeCross"></div></div></div>
+<div class="clearTheFloats"></div>
+</div>
+<p><span class="quellcode">new Uhr(form, farbe);</span></p>
+<ul>
+<li>ein Konstruktor</li>
+</ul>
+<hr class="fussnotentrenner"/>
+<p><span class="quellcode">meineUhr = new Uhr(quadrat, gelb);</span></p>
+<ul>
+<li>Der Konstruktor der Klasse Uhr wird aufgerufen. </li>
+<li>Die Klasse produziert nun eine Instanz der Klasse Uhr.</li>
+<li>Die Instanz erhält den Instanznamen <q lang="de">meineUhr</q>.</li>
+</ul>
+<hr class="fussnotentrenner"/>
+<p><span class="quellcode">meineUhr = new Uhr(kreis, blau);</span></p>
+<ul>
+<li>Der Konstruktor wird erneut aufgerufen, um diesmal eine runde und blaue Uhr zu erzeugen</li>
+<li>Die Klasse produziert nun noch eine, dem neuen Konstruktoraufruf entsprechende Instanz der Klasse Uhr.</li>
+<li>Die Instanz erhält den Instanznamen <q lang="de">deineUhr</q>.</li>
+</ul>
+<hr class="fussnotentrenner"/>
+<p><span class="quellcode">unsereUhr = new Uhr(oktaeder, orange);</span></p>
+<ul>
+<li>Der Konstruktor soll jetzt für die Produktion einer dritten Instanz der Klasse Uhr benutzt werden.</li>
+<li>Die Klasse produziert nun noch eine orange und oktaederförmige insanz der Klasse Uhr.</li>
+<li>Die Instanz erhält den Instanznamen <q lang="de">unsereUhr</q>.</li>
+</ul>
+<hr class="fussnotentrenner"/>
+<p>Nach diesem Muster können theoretisch beliebig verschiedene Instanzen der Klasse Uhr geschaffen werden.</p>
+</div>
+<br/>
+</div>
+	
+
+	
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Diese Grundidee der objektorientierten Programmierung hört
+                    sich für Programmieranfänger zunächst umständlich
+                    an: Erst soll man eine Klasse programmieren, um davon ein
+                    Objekt zu erzeugen. Warum programmiert man nicht sofort ein
+                    Objekt?</p>
+
+
+
+
+<p>Die Beziehung zwischen Klasse und Objekt ermöglicht
+                    die <b>Wiederverwendbarkeit des <a href="javascript:openGlossar('programmcode')">Programmcodes:</a></b></p>
+
+
+
+
+<ul>
+<li> Von einer Klasse können mehrere, verschiedene Objekte
+                      erzeugt werden.<br/>
+<br/>
+</li>
+<li> Objekte können von bereits ausprogrammierten Klassen
+                      erzeugt werden, die oftmals von fremden Programmierern bereits implementiert
+                      und in <a href="javascript:openGlossar('paket')">Paketen</a> <span class="term_eng">(packages)</span> archiviert wurden. <br/>
+<br/>
+</li>
+<li>Zwischen Klassen können Vererbungshierarchien <span class="term_eng">(depth of inheritance)</span> aufgebaut
+                      werden. Beerbende Klassen erben die <a href="javascript:openGlossar('komponente')">Komponenten</a> der Superklasse.</li>
+</ul>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>1.3 Was für Arten von Datentypen gibt es?</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+
+
+
+<p>In Java unterscheidet man zwei Arten von <a href="javascript:openGlossar('datentyp')">Datentypen</a>:</p>
+
+
+
+
+<ul>
+<li>primitive Datentypen <span class="term_eng">(primitive data types)</span><br/>
+</li>
+<li>referentielle Datentypen <span class="term_eng">(reference  data types)</span></li>
+</ul>
+
+
+
+
+<p>Die primitiven Typen sind in Java vordefiniert und werden
+                    mit Hilfe von <a href="javascript:openGlossar('schluesselw')">Schlüsselwörtern</a> <span class="term_eng">(keywords)</span>
+                    deklariert: </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	
+
+	<div class="bildtitel">Abb.:<br/>
+                    primitive <br/>
+                    Datentypen</div>
+	
+
+</div>
+<img alt="" height="206" src="1einstieg/graphics/AbbPrimitiveTypen.gif" width="465"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Man bezeichnet sie auch als <b>einfache</b> oder <b>atomare</b>
+                    Datentypen. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p><a href="javascript:openGlossar('zeichenkette')">Zeichenketten</a> <span class="term_eng">(string)</span>
+                    gehören nicht zu den primitiven Typen. Solche komplexen
+                    Typen programmiert man in Java in Form von referentiellen
+                    Typen.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                  referentielle <br/>
+                  Datentypen</div>
+</div>
+<img alt="" height="83" src="1einstieg/graphics/AbbRefTypen.gif" width="289"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Markus" src="../.inc/IcoMarkus.gif"/>
+</div>
+<div class="audiotextcontainer">
+<section class="audioContainer"></section>
+<img alt="" height="13" src="../.inc/IcoAnswerAudioShow.gif" width="15"> <a class="audiotextlink" href="JavaScript: toggleAudio('audiotext_datentyp');" id="audiotext_datentyp">Textversion</a>
+<div class="audiotext" style="display: none;">
+<p><strong>Frage von Markus:</strong><br/>
+                      Gehören String-Variablen auch zu den referentiellen          Datentypen?                      </p>
+<p><strong>Antwort: </strong><br/>
+                      Ja, für Strings wurde in Java eine Klasse programmiert.</p>
+<p>Für referentielle Typen wird mit der        Deklaration  Speicherplatz für eine Adresse im Speicher bereitgestellt.        Erst mit dem Erzeugen des String-Objektes mittels Konstruktor wird der        String-Variablen eine Adresse zugewiesen. Diese Adresse verweist in den        Speicher, dorthin wo die Speicherung der <q lang="de">eigentlichen Zeichenkette</q>        beginnt. Die String-Variable ist also eine Referenz in den Speicher.</p>
+</div>
+</div>
+
+ 
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Zwischen primitiven und referentiellen Typen gibt es eine
+                Reihe von Unterschieden. Beispielsweise enthalten primitive <a href="javascript:openGlossar('variable')">Variablen</a> ihre Daten selber, während referentielle Variablen  auf Objekte verweisen, die die Daten enthalten.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>1.4 Wie programmiert man Methoden und ruft diese auf?</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+
+
+
+<p><a href="javascript:openGlossar('methode')">Methoden</a>
+                    beinhalten die Funktionalität eines Programms. </p>
+
+
+
+
+<p>Die allgemeine Syntax einer Methodendeklaration lautet: </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">[Modifizierer] Typ Bezeichner([Parameter]) {
+    // Anweisungen
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p><a href="javascript:openGlossar('modifizierer')">Modifizierer</a> <span class="term_eng">(modifier)</span>
+                    und <a href="javascript:openGlossar('parameter')">Parameter</a>
+                    müssen nicht in jedem Methodenkopf enthalten sein.  <a href="javascript:openGlossar('datentyp')">Typ</a> <span class="term_eng">(data type)</span>,
+                    <a href="javascript:openGlossar('bezeichner')">Bezeichner</a> <span class="term_eng">(identifier)</span>
+                    und Klammerpaar <span class="term_eng">(brackets)</span> dagegen immer.</p>
+
+
+
+
+<p>In Java muss in der Methodendeklaration der Typ des Rückgabewertes <span class="term_eng">(return type)</span> angeben werden. Eine Ausnahme bilden Methoden vom Typ <span class="courier">void</span>, die keinen  Wert zurückgeben.<br/>
+</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p><br/>
+                  Das bekannteste Beispiel ist:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">public static void main(String args[]) { }</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Methoden werden über ihren Bezeichner angesprochen.
+                    Sollen an eine Methode Werte zur weiteren Bearbeitung übergeben
+                    werden, dann sind Parameter im Methodenkopf <span class="term_eng">(method header)</span> anzuführen.
+                  </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">public float rundeFloat(float wert, int zahl)</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Die Methode <span class="courier">rundeFloat</span> gibt einen Wert
+                    vom Typ <span class="courier">float</span> zurück. Im Methodenrumpf <span class="term_eng">(method body)</span> muss demzufolge
+                    hinter dem <a href="javascript:openGlossar('schluesselw')">Schlüsselwort</a>
+<span class="courier">return</span> ein <a href="javascript:openGlossar('ausdruck')">Ausdruck</a> <span class="term_eng">(expression)</span> stehen, der denselben
+                    Typ hat wie der Rückgabewert <span class="term_eng">(return value)</span> im Methodenkopf. Dieser
+                    Wert wird als Ergebnis an die aufrufende Methode zurückgegeben.
+                  </p>
+
+
+
+
+<br/>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>In objektorientierten Sprachen können Objekt-Methoden nur über
+                    Ihre Objekte aufgerufen  <span class="term_eng">(invoke)</span> werden. Der Punkt trennt Objektnamen
+                    und Methodenamen:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">meinObjekt.eineMethode();</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Im Zusammenhang mit der Programmierung von Methoden unterscheidet
+                    man zwischen</p>
+
+
+
+
+<ul>
+<li>der Programmierung der Methode, d. h. die Methode wird
+                      deklariert und </li>
+<li>dem Aufruf der Methode, d. h. die <a href="javascript:openGlossar('anweisung')">Anweisungen</a> der Methode
+                      sollen ausgeführt werden.</li>
+</ul>
+
+
+
+
+<p>Erinnern Sie sich noch daran, was unter dem Mechanismus des <a href="javascript:openGlossar('ueberladen')">Überladens</a> <span class="term_eng">(overload)</span> von Methoden verstanden wird? </p>
+
+
+
+
+<p>Wenn nicht, dann schauen Sie sich einfach noch einmal die
+                    entsprechenden Kapitel in der Lerneinheit MET im Modul <q lang="de">Grundlagen der Programmierung I</q> an.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1 class="no-pg-break">1.5 Was für Kontrollstrukturen gibt es?</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+<p>Kontrollstrukturen sind Anweisungen <span class="term_eng">(statement)</span>, mit denen der Ablauf
+            eines Programms gesteuert werden kann. Das Wort Kontrollstruktur ist eigentlich eine falsche Übersetzung des engl. control structure (Steuerstruktur) hat sich jedoch als Standard durchgesetzt. <br/>
+<br/>
+</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<div class="pg-break-after"> </div>
+
+
+
+
+<p>Wir unterscheiden:</p>
+
+
+
+
+<ul>
+<li><b>Sequenz</b> <span class="term_eng">(sequence)</span><br/>
+              Die Anweisungen werden nacheinander ausgeführt. </li>
+<li><b>Selektion</b> (Verzweigungen) <span class="term_eng">(branching)</span><br/>
+              In Abhängigkeit von einer Bedingung werden verschiedene
+              Programmzweige abgearbeitet.</li>
+<li><b>Iteration</b> (Schleife) <span class="term_eng">(loop)</span><br/>
+              Anweisungen werden wiederholt abgearbeitet (Programmschleifen).</li>
+<li><b>Ausnahmen</b> <span class="term_eng">(exceptions)</span><br/>
+              Beim Auftreten von Ausnahmesituationen werden bestimmte
+              Anweisungen ausgeführt. </li>
+<li><b>Methodenaufruf</b> <span class="term_eng">(method invocation)</span><br/>
+              Beim Aufruf einer Methode wird die Programmsteuerung
+              an die aufgerufene Methode übergeben. Nach dem Ende
+              der gerufenen <a href="javascript:openGlossar('methode')">Methode</a> wird die Abarbeitung mit der Anweisung nach dem Aufruf fortgesetzt. </li>
+</ul>
+
+
+
+
+<p>Bei der <b>Verzweigung</b> unterscheidet man zwischen:</p>
+
+
+
+
+<ul>
+<li>Alternativen (bedingte Anweisungen) und</li>
+<li>Mehrfachverzweigungen</li>
+</ul>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p class="bu"> </p>
+</div>
+<p>Alternativen <span class="term_eng">(conditional branching)</span> werden in Java mit der <span class="courier">if</span>-Anweisung programmiert.<br/>
+              </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="bu">if-<b>Anweisung</b></span>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">if (Bedingung) {
+    // Anweisungen
+} else {
+    // Anweisungen
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p class="bu"> </p>
+</div>
+<p>Für Mehrfachverzweigung <span class="term_eng">(multiple branch statement)</span> verwendet man in Java die <span class="courier">switch</span>-Anweisung.<br/>
+              </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p><span class="bu">switch-<b>Anweisung</b></span></p>
+	
+
+	<p> </p>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">switch (auswahl) {
+    case auswahl_1:
+        // Anweisungen
+        break;
+    case auswahl_2:
+        // Anweisungen
+        break;
+    case auswahl_3:
+        // Anweisungen
+        break;
+    default:
+        // Anweisungen
+        break;
+}
+
+// Beispiel
+switch (eingabe) {
+    case 1:
+        System.out.println("Eingabe 1");
+        break;
+    case 2:
+        System.out.println("Eingabe 2");
+        break;
+    case 3:
+        System.out.println("Eingabe 3");
+        break;
+    default:
+        System.out.println("ungueltige Eingabe");
+        break;
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p> </p>
+
+
+
+
+<p>Bei <b>Schleifen</b> unterscheidet man vorprüfende, nachprüfende
+            und Zählschleifen. In Java werden die <span class="courier">while-</span>, <span class="courier">do-while-</span> und <span class="courier">for-</span>Anweisung verwendet.<br/>
+              </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="courier">while-</span>
+	<b>Anweisung</b>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">while (Bedingung) {
+    // Anweisungen
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p> <br/>
+            Die Wiederholung erfolgt hier mit vorausgehender Bedingungsprüfung.
+            Diese Art der Schleife wird auch als kopfgesteuerte Schleife <span class="term_eng">(pre-test loop)</span> bezeichnet. </p>
+
+
+
+
+<p>Bei der nächsten Anweisung erfolgt die Wiederholung mit nachfolgender Bedingungsprüfung (fußgesteuerte
+            Schleife) <span class="term_eng">(post-test loop)</span>.<br/>
+             </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p class="bu"><span class="courier">do-while-</span><b>Anweisung</b></p>
+	
+
+	<p> </p>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">do {
+    // Anweisungen
+} while (Bedingung);</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="courier">for-</span>
+	<b>Anweisung</b>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">for (Initialisierung; Bedingung; Aktualisierung) {
+    // Anweisungen
+}
+
+
+// Beispiel
+for (int i=1; i&lt;=10; i++) {
+    // Anweisungen
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><br/>
+            Oberhalb die Zählschleife mit vorausgehender Bedingungsprüfung
+            (kopfgesteuerte Schleife) und unterhalb eine verbesserte Zählschleife <span class="term_eng">(for loop)</span> (seit Java 1.5) mit vorausgehender Bedingungsprüfung
+            (kopfgesteuerte Schleife)<br/>
+              </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<strong>Verbesserte</strong>
+	 
+	<br/>
+	
+
+	<span class="courier">for-</span>
+	<b>Anweisung</b>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">for (Element : Collection) {
+    // Anweisungen
+}
+
+// Beispiel
+Collection&lt;String&gt; stringColl = new ArrayList&lt;String&gt;();
+
+// Collection mit Daten fuellen
+stringColl.add("Text1");
+stringColl.add("Text2");
+
+// Collection mit verbesserter for-Schleife durchlaufen
+for (String text : stringColl) {
+    System.out.println(text);
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Die Wirkungsweise der Kontrollstrukturen kann man sich mit
+            den Bausteinen der Nassi-Shneiderman-Diagramme, auch als <a class="anhang link_openwin" href="javascript:openwin2('winNassi_scheid.html',750,500)">Struktogramm</a>-Notation
+            bezeichnet, besonders gut erschließen. </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Die Programmiersprache Java verfügt über ein leistungstarkes <b>Ausnahmekonzept</b> mit den entsprechenden Ausnahmeklassen.</p>
+
+
+
+
+<p> Geprüfte <strong>Ausnahmen</strong> müssen, ungeprüfte Ausnahmen können entweder sofort in der Methode behandelt, oder an aufrufende Methoden weitergereicht werden.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Ausnahmen werden im Programm mit <span class="courier">try</span> und <span class="courier">catch</span> aufgefangen.<br/>
+              </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="courier">try</span>
+	 und 
+	<span class="courier">catch</span>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">try {
+    // Anweisungen
+} catch (Exception e) {
+    // Anweisungen, die ausgefuehrt werden,
+    // wenn Ausnahmesituation eintritt
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<div class="pg-break-after"> </div>
+
+
+
+
+<p>Oder sie werden einfach weitergeleitet, wenn der Methodenkopf mit dem Schlüsselwort <span class="courier">throws</span> erweitert wird.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="courier">throws</span>
+</div>
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">public static void main(String[] args) throws IOException {</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Wenn Sie das Modul Programmieren I belegt hatten, dann können Sie sich in Ihren Unterlagen
+            noch einmal die entsprechenden Kapitel in den Lerneinheiten <q lang="de">Sequenz und Selektion</q>, <q lang="de">Iterationen</q> und <q lang="de">Ausnahmen</q> ansehen.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1 class="no-pg-break">1.6 Wie programmiert man Vererbung?</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Mit Vererbung wird die Fähigkeit einer Klasse beschrieben,
+                    <a href="javascript:openGlossar('attribut')">Attribute</a> <span class="term_eng">(fields)</span>
+                    und <a href="javascript:openGlossar('methode')">Methoden</a>
+                    einer anderen bereits existierenden <a href="javascript:openGlossar('klasse')">Klasse</a>
+                    zu verwenden.  Die Superklasse (Oberklasse) vererbt ihre Attribute und Methoden an die Subklasse (Unterklasse), die Unterklasse beerbt die Oberklasse.</p>
+
+
+
+
+<p>Die Vererbungsbeziehung zwischen <a href="javascript:openGlossar('superklasse')">Superklasse</a>
+                    und <a href="javascript:openGlossar('subklasse')">Subklasse</a>
+                    wird durch das<a href="javascript:openGlossar('schluesselw')">
+                    Schlüsselwort</a> <span class="term_eng">(keyword)</span> <span class="courier">extends</span> gekennzeichnet.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoBeispiele.gif" width="26"><br/>
+<span class="MargTextBlau">Beispiel</span> 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">public class A extends B {
+    // Attribute und Methoden
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Achtung </span>
+</div>
+
+
+
+<p>Java erlaubt nur die <a href="javascript:openGlossar('einfachvererb')">Einfachvererbung</a>.</p>
+
+
+
+
+<p> </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<br/>
+	
+
+</div>
+
+
+
+<p>Ordnet man Klassen in einer graphischen Darstellung so an,
+                    dass die erbenden Klassen unterhalb der vererbenden dargestellt
+                    sind, dann entsteht durch Vererbung eine <b>Klassenhierarchie</b>.
+                  </p>
+
+
+
+
+<p>Die Klassenhierarchie stellt die Beziehungen zwischen den Klassen (wer erbt von wem, wer steht mit wem in Beziehung) dar. Sie können in einem Klassendiagramm dargestellt werden. Hier werden Klassen als Rechtecke, ihre Beziehungen als Linien zwischen den Klassen und ihre Vererbungsbeziehung durch offene Pfeile - an einem Ende der Linien - dargestellt. Die Pfeilspitzen zeigen auf die erbenden Klassen (Unterklassen, die von den Oberklassen erben). Der Pfad von einer Klasse zu ihren Vorgängern wird als Vererbungskette bezeichnet.                  </p>
+
+
+
+
+<p>Die Vererbung wird durch eine Verbindungslinie gekennzeichnet,
+                    wobei die Pfeilspitzen auf die vererbenden Klassen zeigen.
+                    Der Pfad von einer Klasse zu ihren Vorgängern wird als
+                    <b>Vererbungskette</b> bezeichnet. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	
+
+	<div class="bildtitel">Abb.:<br/>
+                    Klassenhierarchie </div>
+	
+
+</div>
+<img alt="DiagrammKlassenhierachie" height="236" src="1einstieg/graphics/AbbKlassenhierachie.gif" width="444"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Die Klasse <span class="courier">Object</span> ist die Superklasse
+                    aller Java-Klassen.</p>
+
+
+
+
+<p>Warum Objekte <a href="javascript:openGlossar('polymorphismus')">polymorph</a>
+                    sind und wie Methoden in einem Programm überschrieben
+                    werden, können Sie in der Lerneinheit VRB im Modul Programmieren
+                    I noch einmal nachlesen.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>1.7 Wie organisiert man die vielen Klassen?</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+
+
+
+<p>Aus dem Modul Programmieren I wissen Sie, dass ein Java-Programm
+                    auch mehrere Klassen umfassen kann. Das Konzept der Objektorientierung
+                    besteht darin ausprogrammierte Klassen zur Verfügung
+                    zu stellen, von denen Objekte erzeugt werden können.
+                  </p>
+
+
+
+
+<p>Diese vielen Klassen, die auch auf verschiedenen <a href="javascript:openGlossar('computer')">Computern</a>
+                    im Internet gespeichert sein können, müssen so organisiert
+                    werden, dass die Virtuelle Maschine diese zur Ausführung
+                    finden kann!</p>
+
+
+
+
+<p>In Java werden inhaltlich zusammengehörende Klassen
+                    in Paketen <a href="javascript:openGlossar('package')"><span class="term_eng">(packages)</span></a> zusammengefasst. Das <a href="javascript:openGlossar('standardpakete')">Standardpaket</a>
+<span class="courier">java.io</span> enthält beispielsweise Klassen für die Ein-
+                    und Ausgabe, während in <span class="courier">java.awt</span> und <span class="courier">java.swing </span>Klassen für die
+                    Gestaltung von Benutzeroberflächen zu finden sind. Neben
+                    Klassen enthalten Pakete auch <a href="javascript:openGlossar('interface')">Interfaces</a>.</p>
+
+
+
+
+<p>Pakete können in Java hierarchisch strukturiert sein,
+                    wie Sie es von der Verzeichnisstruktur im Explorer kennen:
+                  </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+<a href="javascript:openGlossar('Pakethierarchie')">Pakethierarchie</a> </div>
+</div>
+<img alt="Pakethierachie" height="280" src="1einstieg/graphics/AbbPakethierarchie.gif" width="258"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Aus der Verzeichnisstruktur leitet sich die <a href="javascript:openGlossar('punktnotation')">Punktnotation</a>
+                    bei den Bezeichnern <span class="term_eng">(identifier)</span> von Paketen ab. </p>
+
+
+
+
+<p>Mit der Anweisung <span class="term_eng">(statement)</span></p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">package paketname;</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>wird jede Quell<a href="javascript:openGlossar('datei')">datei</a> <span class="term_eng">(source file)</span> eindeutig einem Paket zugeordnet.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Mit der <a href="javascript:openGlossar('import')"><span class="courier">import</span>-Anweisung</a> werden Klassen aus Paketen für
+                    das Programm sichtbar. Mit </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">import paketName.KlassenName;</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>wird eine Klasse aus einem Paket sichtbar. Programmiert man
+                    folgende Anweisung, dann sind alle Klassen des Paketes sichtbar:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">import paketName.*;</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Mit der Umgebungsvariablen <a href="javascript:openGlossar('classpath')">CLASSPATH</a> des <a href="javascript:openGlossar('betriebssystem')">Betriebssystems</a>
+                    können Pfade zu verschiedenen Laufwerken und Verzeichnissen
+                    des lokalen Rechners gesetzt werden. Der <a href="javascript:openGlossar('compiler')">Compiler</a> und die
+                    Virtuelle Maschine suchen in den dort benannten Verzeichnissen
+                    nach den Paketen. </p>
+
+
+
+
+<div class="pg-break-after"> </div>
+
+
+
+
+<p>Falls Sie Ihre Kenntnisse über die Programmierung von
+                    Paketen auffrischen wollen, dann wiederholen Sie die Lerneinheit
+                    PKG im Modul Programmieren I.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1 class="no-pg-break">2 Einführung in Eclipse</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Im Modul Programmieren I hatten wir <a class="weblink" href="http://www.textpad.com" target="_blank">TextPad</a> als Editor zum Erfassen und Darstellen der Java-Quellprogramme
+      empfohlen. Die Ein- und Ausgaben erfolgten in der <a href="javascript:openGlossar('eingabeaufforderung')">MS-DOS-Konsole</a>.
+      Solche <a href="javascript:openGlossar('kommando')">Kommandozeileneingaben</a> <span class="term_eng">(command line input)</span> sind für oberflächenverwöhnte Programmbenutzer
+      recht anstrengend. </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+      MS-DOS-Konsole </div>
+</div>
+<img alt="Screenshot MS-Dos Konsole" height="138" src="2einfuehrung/graphics/ScUebClockman.gif" width="525"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Deshalb fanden Sie bald heraus, wie man
+      TextPad so konfigurieren kann, dass die Programme auf Knopfdruck
+      übersetzt und ausgeführt werden. </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+      TextPad </div>
+</div>
+<img alt="TextPad" height="371" src="2einfuehrung/graphics/ScTextPad_java.gif" width="578"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p> <a href="javascript:openGlossar('ide')">Integrierte Entwicklungsumgebungen</a> <span class="term_eng">(Integrated Development
+      Environment, IDE)</span> entlasten den Programmentwickler von Routinearbeiten
+      und bieten viele nützliche Extrafunktionen.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p> </p>
+</div>
+<div class="pg-break-after"> </div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Im Abschnitt 5.2 der Lerneinheit PJA im Modul Programmieren
+      I hatten wir verschiedene Entwicklungsumgebungen für
+      Java vorgestellt. Wir empfehlen Ihnen für die Programmentwicklung
+      im Modul Programmieren II, die Java IDE <a class="weblink" href="http://www.eclipse.org" target="_blank">Eclipse</a> als Entwicklungsumgebung zu benutzen. </p>
+
+
+
+
+<p> </p>
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+      Aufbau Eclipse</div>
+</div>
+<img alt="Aufbau Eclipse" height="571" src="2einfuehrung/graphics/AbbFenster.gif" width="578"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Eclipse ist ein freie Entwicklungsumgebung für die Programmiersprache Java. Durch die offene plugin-basierte Struktur ist es aber auch  möglich   in anderen Programmiersprachen zu entwickeln (zum Beispiel C, C++, PHP). </p>
+
+
+
+
+<p> Eclipse ist in Java geschrieben und aus diesem Grund für sehr viele Plattformen verfügbar. </p>
+
+
+
+
+<p>In diesem Kapitel beschreiben wir, wie Sie Eclipse installieren und konfigurieren und geben  eine kurze Einführung in die
+        Programmerstellung mit  Eclipse. Keinesfalls ist es das
+        Ziel, die Funktionalität dieser Entwicklungsumgebung vollständig
+        zu erläutern. </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Achtung</span> 
+</div>
+<p class="copy">Die Entwicklungsumgebung wird  von der <em>Eclipse Foundation</em> ständig weiterentwickelt. Da es uns nicht möglich sein wird, die
+      Screenshots von den Bildschirmausgaben unserer Beispielprogramme
+      und von den Fehlermeldungen permanent für die aktuelle
+      Eclipse-Version einzupflegen, werden wir diese teilweise weiterhin
+      in der MS-DOS-Konsole darstellen. </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.1 Eclipse Download</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Die Eclipse Entwicklungsumgebung wird  kostenlosen zum  <a class="weblink" href="http://www.eclipse.org/downloads" target="_blank">Download</a>
+                    angeboten. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<br/>
+	<img alt="" height="26" src="../.inc/IcoLinux.gif" width="26"><br/>
+<span class="bu">Linux</span>
+</div>
+<p><br/>Für die <a href="javascript:openGlossar('installation')">Installation</a> von Eclipse unter Linux finden Sie hier eine <a class="anhang link_openwin" href="javascript:openwin2('lixEclipseInstallation.html',700,580)">Installationsanleitung</a>.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Achtung</span> 
+</div>
+<p class="">Eclipse benötigt ein installiertes Java SE Development Kit (kurz <a href="javascript:openGlossar('jdk')">JDK</a>) ab Version  1.4, Java 6 wird empfohlen.
+      Wir arbeiten mit der derzeit aktuellen Version  JDK 7.0. Wenn Sie nicht mindestens das JDK 1.4 installiert  haben oder  gern auf das JDK 7.0 aktualisieren wollen, finden Sie hier eine <a class="anhang link_openwin" href="javascript:openwin2('winJDKInstallation.html',700,580)">Installationsanleitung</a>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Laden Sie <q lang="de">Eclipse IDE for Java Developers</q> für das gewünschte Betriebssystem herunter:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Download</div>
+</div>
+<img alt="Abb. Eclipse Download Website " height="371" src="2einfuehrung/graphics/AbbEclipseDownloadWebsite.gif" width="580"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Nach abgeschlossenem Download wechseln Sie im Datei-Explorer in das Verzeichnis, in das Sie die Datei heruntergeladen haben. Bei der Datei handelt es sich um ein <a href="javascript:openGlossar('zip_dateien')">Zip-Datei</a>, die nur in ein von Ihnen gewünschtes Programmverzeichnis entpackt werden muß. Eine Installation ist nicht notwendig.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Windows Explorer: heruntergeladene<br/>
+                Zip-Datei</div>
+</div>
+<img alt="" height="240" src="2einfuehrung/graphics/AbbEclipseDownloadDatei.gif" width="517"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.2 Eclipse starten</h1>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Nach dem Entpacken können Sie Eclipse aus dem Programmverzeichnis mittels Doppelklick auf die Datei <q lang="de">eclipse.exe</q> starten.</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Windows Explorer:<br/>
+                Eclipse starten</div>
+</div>
+<img alt="Abb. Eclipse starten" height="415" src="2einfuehrung/graphics/AbbEclipseStarten.gif" width="518"> 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Ist das JDK korrekt installiert, wird folgender Startbildschirm angezeigt und Eclipse gestartet.</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Startbildschirm</div>
+</div>
+<img alt="Abb. Eclipse Startbildschirm" height="295" src="2einfuehrung/graphics/AbbEclipseStartbildschirm.gif" width="455"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Hinweis</span> 
+</div>
+<p>Kann Eclipse die Java Runtime Umgebung (<a href="javascript:openGlossar('jre')">JRE</a>) oder das <abbr title="Java Development Kit">JDK</abbr> nicht finden, wird beim Start eine Fehlermeldung angezeigt. Hier finden Sie eine <span class=""></span><a class="anhang link_openwin" href="javascript:openwin2('winEclipseJDKFehler.html',700,580)">Anleitung</a> wie sie diesen Fehler beheben können.</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Workspace einstellen</strong></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Der Eclipse-Workspace ist das Verzeichnis in dem Ihre erstellten Projekte gespeichert werden. Nach dem Start wird Ihnen ein Dialog angezeigt in dem Sie das Verzeichnis für den Workspace einstellen können.</p>
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Workspace einstellen</div>
+</div>
+<img alt="Abb. Eclipse Workspace" height="244" src="2einfuehrung/graphics/AbbEclipseWorkspace.gif" width="438"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Willkommen bei Eclipse</strong></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Wenn Sie Eclipse das erste Mal starten, wird Ihnen der <q lang="de">Welcome</q> Bildschirm angezeigt. Hier haben Sie die Möglichkeit Eclipse erst einmal kennenzulernen oder sofort mit dem Arbeiten zu beginnen.<br/>
+</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Welcome</div>
+</div>
+<img alt="Abb. Eclispe Welcome" src="2einfuehrung/graphics/AbbEclipseWelcome.gif" style="width:386; height:289"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Welcome Icons</div>
+</div>
+
+
+
+<table>
+<tr class="">
+<td style="width:236">
+<p><img alt="Abb. Eclipse Welcome Overview" src="2einfuehrung/graphics/AbbEclipseWelcomeOverview.gif" style="width:202; height:146"/></p></td>
+<td style="width:332">
+<p> </p>
+<p> </p>
+<p>Über diesen Link erhalten Sie einen Überblick über die Möglichkeiten von Eclipse.</p></td>
+</tr>
+<tr class="">
+<td style="width:236; height:121">
+<p><img alt="Abb. Eclipse Welcome Tutorials" height="113" src="2einfuehrung/graphics/AbbEclipseWelcomeTutorials.gif" width="202"/></p></td>
+<td style="width:332">
+<p> </p>
+<p><br/>
+                  Hier haben Sie die Möglichkeit einige Lerneinheiten zum Kennenlernen von Eclipse durchzuarbeiten.</p>
+</td>
+</tr>
+<tr class="">
+<td style="width:236">
+<p><img alt="Abb. Eclipse Welcome Workbench" height="112" src="2einfuehrung/graphics/AbbEclipseWelcomeWorkbench.gif" width="202"/></p></td>
+<td style="width:332">
+<p> </p>
+<p><br/>
+                  Dieser Link wechselt in die Arbeitsumgebung von Eclipse, in der Sie die Entwicklung eigener Java Programme beginnen können.</p>
+</td>
+</tr>
+</table>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.3 Eclipse konfigurieren</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Nachdem Sie sich einen kurzen Überblick über Eclipse verschafft haben, wechseln Sie in die Arbeitsumgebung.</p>
+
+
+
+
+<p>Eclipse erkennt das installierte <abbr title="Java Development Kit">JDK</abbr> automatisch, trotzdem sollten Sie kurz prüfen, ob das JDK korrekt eingestellt ist. Unter Mac OSX wird das JDK momentan (03/2012) noch nicht automatisch erkannt. </p>
+
+
+
+
+<p><a class="pdflink" href="Konfiguration_eclipseIDE_MacOSX.pdf">Konfiguration JDK7 für Eclipse unter Mac OSX</a> <span class="bu">(0.2 MB)</span></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>JDK Einstellung prüfen</strong></p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Wechseln Sie im Menü <span class="courier">Window</span> in den Menüpunkt <span class="courier">Preferences</span>. Es öffnet sich das Fenster in dem Sie die Einstellungen von Eclipse vornehmen können.</p>
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+        Preferences Menü</div>
+</div>
+<img alt="Abb. Eclipse Menuepunkt Prferences" height="318" src="2einfuehrung/graphics/AbbEclipseMenuePreferences.gif" width="524"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>In der Navigation auf der linken Seite wählen Sie den Punkt <span class="courier">Java</span> und darunter den Punkt <span class="courier">Installed JREs</span> aus. In dem rechten Fensterbereich werden Ihnen, die auf Ihrem Rechner installierten Java Umgebungen (<abbr title="Java Runtime Environment">JRE</abbr>) angezeigt.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+        Java Preferences</div>
+</div>
+<img alt="Abb. Eclipse Java Preferences" height="369" src="2einfuehrung/graphics/AbbEclipseJavaPreferences.gif" width="563"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<div class="pg-break-after"> </div>
+
+
+
+
+<p>Die selektierte JRE, ist die JRE die Eclipse als Standard Java Umgebung verwendet. Hier sollte das JRE7, dass Sie im vorherigen Schritt installiert haben angezeigt werden und selektiert sein. Sollte eine andere Java Umgebung selektiert sein, deselektieren Sie diese und selektieren Sie den Eintrag für  das JRE7
+    </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Eclipse Java Preferences2" height="369" src="2einfuehrung/graphics/AbbEclipseJavaPreferences2.gif" width="563"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>JRE hinzufügen</strong></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Sollte das JRE7 nicht in dem Fenster angezeigt werden, können Sie es mit den folgenden Schritten manuell hinzufügen:</p>
+
+
+
+
+<p>Betätigen Sie den Button <span class="courier">Add</span>. Im erscheinenden Fenster wählen Sie für Windows-Systeme <q lang="de">Standard VM</q> und klicken Sie <q lang="de">Next</q><span class="courier"></span>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Add JRE" height="298" src="2einfuehrung/graphics/AbbEclipseAddJRE.gif" width="458"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p> </p>
+
+
+
+
+<p>Nun müssen Sie den Pfad zum JDK-Ordner angeben. Klicken Sie auf <q lang="de">Directory</q>.</p>
+
+
+
+
+<p><img alt="JRE auswählen" height="198" src="2einfuehrung/graphics/AbbEclipseAddJRE1.gif" width="458"/></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p> </p>
+
+
+
+
+<p>Selektieren Sie im Fenster <span class="courier">Ordner suchen</span> das Verzeichnis in welches Sie das JDK 7.0 installiert haben. Hier im Beispiel ist das Update 3 die aktuellste Version. Betätigen Sie anschließend den Button <span class="courier">OK</span>.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Browse JRE" height="368" src="2einfuehrung/graphics/AbbEclipseAddJRE2.gif" width="326"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Der Inhalt des Fensters <span class="courier">Add JRE</span> sollte nun dem unten abgebildeten Fenster ähneln. Bestätigen Sie anschließend dieses Fenster ebenfalls mit <span class="courier">OK</span>.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Selected JRE" height="515" src="2einfuehrung/graphics/AbbEclipseAddJRE3.gif" width="500"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Selektieren sie anschließend den Eintrag für das hinzugefügte JDK und bestätigen Sie das <span class="courier">Preferences </span>Fenster ebenfalls mit <span class="courier">Finish</span>.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1>2.4 Die Oberfläche von Eclipse</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Die Arbeitsumgebung (Workbench) von Eclipse besteht aus mehreren Fenstern. </p>
+
+
+
+
+<p>Die folgende Abbildung zeigt, wie die einzelnen Fenster und Komponenten
+                    benannt werden. Diese Darstellung erhalten Sie, wenn Sie im Fenster <span class="courier">Package Explorer </span>auf eine  Java Datei doppelklicken.<br/>
+                      </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoRollover.gif" width="26"><br/> <span class="MargTextAni">Rolloverbild</span> 
+</div>
+ 
+</div><div class="box_large">
+	
+
+	<div class="aniContainer">
+<div class="aniContainerCaption">Elemente der Eclipse Oberfläche</div>
+<div class="aniContainerBody">
+
+</div>
+<div><img alt="Screenshot - Elemente der Eclipse Oberfläche" class="alternativbild" height="662" src="2einfuehrung/graphics/RollEclipse.gif" width="728">
+
+</div>
+</div>
+	
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Projekte verwalten</strong></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>In Eclipse werden alle Programme in Form von <b>Projekten</b> bearbeitet.
+                    Das hat insbesondere für Java den Vorteil, dass alle zusammengehörenden
+                    Klassen in einem Projekt gemeinsam verwaltet werden. Darüber hinaus
+                    können auch Java und HTML-Dateien zusammengefasst werden. Auch dann,
+                    wenn Sie nur ein einfaches Programm erstellen, müssen Sie dieses
+                    als Projekt verwalten. Eclipse legt für jedes Projekt das Sie erstellen ein Verzeichnis in Ihrem <strong>Workspace</strong>-Verzeichnis an. Der Verzeichnisname entspricht dabei dem Projektnamen. In diesem Verzeichnis werden alle Java Dateien und interne Informationen zur Projektverwaltung gespeichert.</p>
+
+
+
+
+<p>In der obigen Abbildung sehen Sie das Fenster <span class="courier">Package Explorer</span>. Darin werden alle in Eclipse erstellten Projekte angezeigt. Jedes Projekt ist als <strong>Projektstruktur<a href="javascript:openGlossar('baueme')">baum</a></strong>, einen Dateibaum
+                    wie Sie ihn vom Windows-Explorer kennen, aufgebaut. Der erste Eintrag ist der jeweilige Projektnamen, darunter finden Sie alle Dateien, welche
+                    zu diesem Projekt gehören.</p>
+
+
+
+
+<p>Nach dem  Start von Eclipse
+                    wird die Arbeitsumgebung automatisch wieder genauso hergestellt wie Sie sie beim Schließen verlassen haben.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Ansichten umstellen</strong></p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>In der obigen Abbildung sehen Sie die Symbolleiste <q lang="de">Perspektivenwechsel</q>. Das Inhaltsfenster kann mit Hilfe dieser Symbolleiste in verschiedenen Ansichten-Modi (Perspektiven) dargestellt werden.
+                    Zu den Standard-Perspektiven gehören:</p>
+
+
+
+
+<ul>
+<li>Java - Der Java-Modus ist der Standardmodus für das erstellen von Java Programmen.</li>
+<li>Debug - Im Debug-Modus können Sie Ihre erstellten Programm mit Hilfe des <a href="javascript:openGlossar('debugger')">Debuggers</a> schrittweise testen. Das Testen von Java Programmen mit Eclipse werden wir später  noch genauer kennenlernen.</li>
+</ul>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="MargTextOrange"><img alt="" src="../.inc/IcoUebungProgrammieren.gif"><br/>
+                  Programmieren</span>
+</div>
+<table style="width:100%; border:0;">
+<tr>
+<td style="width:100%">
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-01</div>
+<h2>Eclipse entdecken</h2>
+<div class="UEB" minuten="60"></div>
+<div class="uebContainerBody">
+
+<p>Nehmen Sie sich jetzt die Zeit eines der mit Eclipse gelieferten <a href="javascript:openGlossar('tutorium')">Tutorien</a> durchzuarbeiten, die Sie aus dem <q lang="de">Welcome</q> Fenster starten können.</p>
+<p>Zum <q lang="de">Welcome</q> Fenster kommen Sie zurück über das Menü <q lang="de">Help</q> und dem Menüpunkt <q lang="de">Welcome</q>.</p>
+<p class="bearbeitungszeit">Bearbeitungszeit: 60 Minuten</p>
+</div>
+
+</div>
+
+</td></tr></table>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Eclipse-Hilfe</div>
+</div>
+<img alt="Abb. Eclipse Help" height="254" src="2einfuehrung/graphics/AbbEclipseHelp.gif" width="233"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Der Menüpunkt <span class="courier">Help</span> enthält außerdem eine umfangreiche
+                    Liste weiterer Hilfen, die für Sie sicherlich bald eine gern genutzte
+                    Unterstützung bei der Programmentwicklung sein wird.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1 class="no-pg-break">2.5 Ein neues Projekt erstellen</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>In diesem Abschnitt zeigen wir, wie man mit Eclipse  ein neues
+                    Projekt erstellt, Programmcode schreibt und diesen zur Ausführung
+                    bringt.</p>
+
+
+
+
+<p>Dazu benutzen wir das bekannte Taschenrechner-Programm aus
+                    der Lerneinheit SEQ in Programmieren I. Laden Sie sich die
+                    Dateien <a class="downloadlink" href="code/Gui.java" target="_blank">GUI.java</a>
+                    und <a class="downloadlink" href="code/Rechenwerk.java" target="_blank">Rechenwerk.java</a>
+                    in ein Verzeichnis auf Ihrer Festplatte herunter. Wir werden
+                    diese gleich in Eclipse benötigen.</p>
+
+
+
+
+<p>Als erstes müssen wir in Eclipse ein neues Projekt
+                    erstellen. Wählen Sie im Menüpunkt <span class="courier">File</span> die Option
+                    <span class="courier">New &gt; Java Project</span>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="pg-break-after"> </div>
+
+
+
+
+
+
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                  Eclipse Menü <q lang="de">New Project</q></div>
+</div>
+<img alt="Abb. New Project" height="342" src="2einfuehrung/graphics/AbbEclipseNewProject.gif" width="404"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Es erscheint folgender Dialog:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                Eclipse <q lang="de">New Java Project</q></div>
+</div>
+<img alt="Abb. New Java Project" height="565" src="2einfuehrung/graphics/AbbEclipseNewJavaProject.gif" width="506"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Geben Sie Ihrem Projekt, wie in der Abbildung gezeigt, den
+                  Namen <q lang="de">Taschenrechner</q>. Alle anderen Voreinstellungen können Sie beibehalten. Klicken Sie dann auf <span class="courier">Finish</span>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Achtung </span>
+</div>
+
+
+
+<p>Wir brechen den Dialog mit <span class="courier">Finish</span> ab, weil wir in
+                    den nachfolgenden Schritten keine Einstellungen mehr vornehmen
+                    wollen. Selbstverständlich können Sie mit dem Knopf
+                    <span class="courier">Next</span> die folgenden Schritte des Dialogs ansehen.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<div class="pg-break-after"> </div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Nun haben Sie in Eclipse ein leeres Projekt mit Namen  <q lang="de">Taschenrechner</q> erstellt. Das Projekt wird im <span class="courier">Package Explorer</span> angezeigt.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                Eclipse <q lang="de">Package Explorer</q></div>
+</div>
+
+
+
+<img alt="Abb. New Java Project - Package Explorer" height="221" src="2einfuehrung/graphics/AbbEclipseNewJavaProject2.gif" width="261">
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1 class="no-pg-break">2.6 Dateien zum Projekt hinzufügen</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Die beiden Dateien, die Sie herunter geladen haben, müssen
+                    Sie  in das Projekt einfügen. Dazu fügen Sie
+                    in das aktuelle Projekt  zwei neue <a href="javascript:openGlossar('klasse')">Klassen</a>
+                    ein. Wählen Sie im Menüpunkt <span class="courier">File</span>
+                    die Option  <span class="courier">New &gt; Class</span>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Eclipse Menü <q lang="de">New Class</q></div>
+</div>
+<img alt="Abb. Eclipse New Class" height="339" src="2einfuehrung/graphics/AbbEclipseNewClass.gif" width="406"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Im folgenden Dialog können Sie  Eigenschaften
+                    für die einzufügende Klasse eintragen. Beschränken
+                    Sie sich darauf den <a href="javascript:openGlossar('paket')">Paket</a>namen und Klassennamen festzulegen. Die restlichen
+                    Eigenschaften können Sie unverändert lassen. Nennen
+                    Sie das Paket <span class="courier">taschenrechner</span> und Ihre Klasse  <span class="courier">Gui</span>. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  JBuilder <br/>
+                  Klassen-Experte</div>
+	
+
+</div>
+<img alt="Abb. New Class Dialog" height="592" src="2einfuehrung/graphics/AbbEclipseNewClass2.gif" width="500"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Wenn Sie auf <span class="courier">Finish </span>geklickt haben, erscheint die neue Klasse
+                    im Projektstrukturbaum. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Eclipse Klasse GUI" height="529" src="2einfuehrung/graphics/AbbEclipseKlasseGUI.gif" width="574"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="MargTextOrange"><img alt="" height="25" src="../.inc/IcoUebungProgrammieren.gif" width="26"><br/>
+                   Programmieren</span>
+</div>
+
+
+
+<table style="width:100%; border:0">
+<tr>
+<td style="width:100%">
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-02</div>
+<h2>Taschenrechner erweitern</h2>
+<div class="UEB" minuten="10"></div>
+<div class="uebContainerBody">
+<p>Fügen Sie eine weitere Klasse
+                              in das Projekt Taschenrechner ein.
+                            Diese soll den Namen <span class="courier">Rechenwerk</span> tragen und  ebenfalls im Paket <span class="courier">taschenrechner</span> liegen.</p>
+<p class="bearbeitungszeit">Bearbeitungszeit: 10 Minuten</p>
+</div>
+
+</div>
+
+</td></tr></table>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1 class="no-pg-break">2.7 Programmcode einfügen</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Zu ihrem Projekt gehören jetzt zwei Java-Dateien bzw.
+                    -Klassen. Eclipse erzeugt bereits ein Programmgerüst ohne Funktionalität. Programmierarbeit können Sie sparen, wenn Sie die heruntergeladenen Klassen in Eclipse übertragen. </p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<span class="MargTextOrange"><img alt="" height="25" src="../.inc/IcoUebungProgrammieren.gif" width="26"><br/>
+                  Programmieren</span>
+</div>
+
+
+
+<table style="width:100%; border:0">
+<tr>
+<td style="width:100%">
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-03</div>
+<h2>Quellcode in Eclipse übertragen</h2>
+<div class="UEB" minuten="10"></div>
+<div class="uebContainerBody">
+<p>Öffnen Sie die beiden heruntergeladenen Dateien <span class="courier">Gui.java</span> und <span class="courier">Rechenwerk.java</span> im Texteditor, beispielsweise in TextPad. Kopieren
+                              Sie den gesamten Quellcode der Dateien in die entsprechenden
+                              Dateien im Eclipse. Ersetzen Sie
+                              den Quellcode  in den jeweiligen Dateien im Eclipse
+                              mit Ausnahme der <span class="courier">package</span>-Anweisung in der ersten Zeile,
+                            diese lassen Sie unberührt.</p>
+<p class="bearbeitungszeit">Bearbeitungszeit: 10 Minuten</p>
+</div>
+
+</div>
+
+</td></tr></table>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Die folgende Abbildung zeigt beispielhaft das Inhaltsfenster nachdem der Code in die Klasse <span class="courier">Gui</span> hineinkopiert
+                    wurde.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: Eclipse Klasse <q lang="de">Gui</q></div>
+</div>
+<img alt="Abb. Eclipse Klasse GUI Quellcode" height="599" src="2einfuehrung/graphics/AbbEclipseKlasseGUIQuellCode.gif" width="574"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.8 Die Klasse Taschenrechner implementieren</h1>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Den Quellcode für die Klassen <span class="courier">Rechenwerk</span>
+                    und <span class="courier">Gui</span> haben Sie  per Copy
+                    und Paste eingefügt.  Die Klasse <span class="courier">Taschenrechner</span>
+                    muss erzeugt und programmiert werden, damit Ihr Programm läuft.</p>
+
+
+
+
+<p>Die Klasse <span class="courier">Gui</span> erzeugt die
+                    Oberfläche des Taschenrechners und benutzt dabei die
+                    Klasse <span class="courier">Rechenwerk</span>. Mit der Klasse
+                    <span class="courier">Taschenrechner</span> muss  ein Objekt der Klasse <span class="courier">Gui</span>
+                    erzeugt werden. Da es sich  um die Startklasse handelt, besitzt
+                    sie die <span class="courier"><a href="javascript:openGlossar('main')">main</a></span><a href="javascript:openGlossar('main')">-Methode</a>.</p>
+
+
+
+
+<p>Des weiteren müssen Sie einen Konstruktor in die Klasse implementieren. Sie können die <span class="courier">main</span>-Methode und den Konstruktor nach dem Erstellen der Klasse von Hand <a href="javascript:openGlossar('implementieren')">implementieren</a> oder die entsprechenden Optionen beim Erstellen der Klasse mit angeben.</p>
+
+
+
+
+<p>In der nachfolgenden Abbildung sehen Sie die Einstellungen um die Methoden automatisch beim Erstellen generieren zu lassen:</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Klasse <q lang="de">Taschenrechner</q> erzeugen</div>
+</div>
+<img alt="Abb. Eclipse Klasse Taschenrechner" height="592" src="2einfuehrung/graphics/AbbEclipseKlasseTaschenrechner.gif" width="500"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Nach dem Erstellen sollte Ihre Klasse <span class="courier">Taschenrechner </span>folgendermaßen aussehen:</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+              	Eclipse Klasse <q lang="de">Taschenrechner</q></div>
+</div>
+<img alt="Abb. Eclipse Klasse Taschenrechner 2" height="599" src="2einfuehrung/graphics/AbbEclipseKlasseTaschenrechner2.gif" width="574"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Fügen Sie in den Konstruktor der
+                    Klasse <span class="courier">Taschenrechner</span> folgende
+                Zeile ein:</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">rechner = new Gui();</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p><span class="courier">rechner</span> ist  eine Variable,
+                    die ein Objekt der Klasse<span class="courier"> Gui</span>
+                    aufnimmt. <br/>
+<br/>
+                    Ihnen wird auffallen, dass die eingefügte Codezeile mit einer roten Wellenlinie unterstrichen wird. Eclipse erkennt das hier ein Fehler im Quelltext vorliegt. Vorerst ignorieren wir den Fehler, um auf den nachfolgenden Seiten die Fehlerbehandlung von Eclipse zu testen.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Als nächstes sollen Sie die <span class="courier">main</span>-Methode
+                    ausprogrammieren:</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">public static void main(String[] args) {
+    new Taschenrechner();
+    
+}</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Sie erzeugen in der <span class="courier">main</span>-Methode ein Objekt der Klasse <span class="courier">Taschenrechner</span>,
+                    welches im Konstruktor ein Objekt der Klasse <span class="courier">Gui</span> erzeugt.
+                    Der Konstruktor dieser Klasse sorgt für das Erzeugen
+                    des Fensters für den Taschenrechner.</p>
+
+
+
+
+<p>Die Klasse <span class="courier">Taschenrechner</span> ist nun fertig. Den <a class="anhang link_openwin" href="javascript:openwin2('winQuellcode.html',550,480)">Quellcode</a>
+                    der gesamten Klasse können Sie sich gern noch einmal
+                    anschauen.</p>
+
+
+
+
+<p>Speichern Sie Ihr Arbeit über  <span class="courier">File &gt; Save All</span>.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.9 Kompilieren und Starten</h1>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Nachdem  alle Klassen ausprogrammiert sind,
+                    können Sie das Programm starten. </p>
+
+
+
+
+<p>Wählen Sie im Projektstrukturbaum Ihr Projekt aus und klicken Sie in der Symbolleiste  den Knopf <span class="courier">Run</span> an. </p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Knopf <q lang="de">Run</q></div>
+</div>
+<img alt="Abb. Eclipse Run Button" height="80" src="2einfuehrung/graphics/AbbEclipseRunButton.gif" width="273"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Eclipse fragt Sie, ob Sie Ihr Programm als Java Application, also als normales Java Programm, oder als Java Applet starten wollen:</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Java Application ausführen</div>
+</div>
+<img alt="Abb. Eclipse Runs As" height="114" src="2einfuehrung/graphics/AbbEclipseRunAs.gif" width="247"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Selektieren Sie <span class="courier">Java Application</span> und betätigen Sie anschließend den <span class="courier">OK</span>-Button. Eclipse kompiliert alle Dateien des Projektes und startet die Klasse mit der <span class="courier">main</span>-Methode.</p>
+
+
+
+
+<p>In unserem Beispiel erhalten Sie eine Hinweismeldung, da noch Fehler im Quellcode vorhanden sind:</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Fehlerhinweis</div>
+</div>
+<img alt="Abb. Eclipse Error in workspace" height="193" src="2einfuehrung/graphics/AbbEclipseErrorInWorkspace.gif" width="441"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Wenn Sie in dem Dialog den Knopf <span class="courier">Proceed</span> betätigen bricht Eclipse die Übersetzung ab, wie Sie im Hilfsfenster mit den Konsolenausgaben sehen können:</p>
+
+ 
+</div><div class="box_large">
+	<img alt="Abb. Eclipse Console Error" height="169" src="2einfuehrung/graphics/AbbEclipseConsoleError.gif" width="671"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Im Unterschied zum <abbr title="Java Development Kit ">JDK</abbr> bekommen Sie hier eine sehr genaue Fehlerdiagnose. Durch Klick auf die Links in den roten Zeilen gelangen Sie sofort in den
+                  Quellcode an die Stelle, wo der Fehler gefunden wurde.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.10 Fehlererkennung und Fehlerbehebung</h1>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Fehler im Quellcode werden Ihnen zum einen in dem Hilfsfenster <span class="courier">Problems</span> bzw. direkt in der Statusleiste des Inhaltsfensters angezeigt:</p>
+
+
+
+
+<p><strong>Hilfsfenster <q lang="de">Problems</q></strong></p>
+
+
+
+
+<p>Dieses Hilfsfenster zeigt alle Fehler in Ihrem Java-Projekt mit einer  kurzen Beschreibung des jeweiligen Fehlers an. Durch Doppelklick auf den Fehlereintrag gelangen  sie genau an die Stelle im Quellcode an der der Fehler auftritt.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Hilfsfenster <q lang="de">Problems</q></div>
+</div>
+<img alt="Abb. Eclipse Problems" height="146" src="2einfuehrung/graphics/AbbEclipseProblems.gif" width="413"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Quellcode-Fenster</strong></p>
+
+
+
+
+<p>In der Statusleiste des Inhaltsfensters werden Ihnen Fehlersymbole vor den Zeilen, in denen Fehler enthalten sind, angezeigt. Durch Klick auf das Fehlersymbol  werden Ihnen  verschiedene Hinweise zur Behebung des Fehlers angezeigt.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.:<br/>
+                  Inhaltsfenster - Hinweise zur Fehlerbehebung</div>
+</div>
+<img alt="Abb. Eclipse Fehler Lsg Hinweise" height="488" src="2einfuehrung/graphics/AbbEclipseFehlerLsgHinweise.gif" width="568"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<p> </p>
+</div>
+<div class="pg-break-after"> </div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p><strong>Fehler beheben</strong></p>
+
+
+
+
+<p>Der <a href="javascript:openGlossar('compiler')">Compiler</a> kennt die Variable <span class="courier">rechner</span> nicht,
+                    da wir vergessen haben sie zu vereinbaren.</p>
+
+
+
+
+<p>Fügen Sie  die folgende Zeile nach der Klassendeklaration
+                ein:<br/>
+<br/>
+</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+
+
+
+<div class="codeContainer">
+<div class="codeContainerContent">
+<pre><code data-language="java">private Gui rechner;</code></pre>
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Alternativ können Sie auch in den Hinweisen zur Fehlerbehebung den Punkt <q lang="de"><span class="courier">Create field <q lang="de">rechner</q></span></q> auswählen. Wenn Sie sich für diese Option entscheiden, wird die Zeile mit den oben angegebenen Quellcode automatisch eingefügt.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Starten Sie nun das Projekt erneut.</p>
+
+
+
+
+<p>Ihr Programm wird fehlerfrei übersetzt und ausgeführt.
+                Sie sehen  die Oberfläche des Taschenrechners.</p>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Schließen Sie  das Fenster des Taschenrechners.
+                    Dann können Sie Ihren Quellcode in Eclipse weiter bearbeiten.                    </p>
+
+
+
+
+<p><a class="anhang link_openwin" href="javascript:openwin2('winQuellcode2.html',550,480)">Quellcode der Klasse Taschenrechner</a> </p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>2.11 Projektkonfiguration</h1>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Da Ihr Projekt aus mehreren Java-Dateien besteht müssen
+                    Sie  Eclipse  mitteilen, welche
+                    Java-Klasse  die <span class="courier">main</span>-Methode
+                    enthält. Des weiteren haben Sie die Möglichkeit Übergabeparameter für Ihre <span class="courier">main</span>-Methode zu vereinbaren. Dazu klicken Sie im Menü  <span class="courier">Run </span>auf
+                  den Menüpunkt <span class="courier">Run Configurations ...</span>.</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Klicken Sie in der Liste in der linken Seite des Fensters doppelt auf den Eintrag <span class="courier">Java Application</span> und wählen Sie die Applikation <span class="courier">Taschenrechner</span> aus.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                  Eclipse Menü Laufzeiteigenschaften</div>
+</div>
+<img alt="Abb. Eclipse KOnfiguration main-Methode" height="547" src="2einfuehrung/graphics/AbbEclipseKonfigMainMethode.gif" width="570"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<p>Über den Button <span class="courier">Search</span> kommen Sie in den Dialog in dem Sie die Klasse mit der <span class="courier">main</span>-Methode auswählen können. Wählen Sie die Klasse <span class="courier">Taschenrechner </span>aus und bestätigen Sie  die Auswahl mit <span class="courier">OK</span>.</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>In dem Reiter <span class="courier">Arguments</span> können Sie Übergabeparameter für Ihre <span class="courier">main</span>-Methode vereinbaren:</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                  Eclipse Menü Laufzeit­eigenschaften Arguments</div>
+</div>
+
+
+
+<img alt="Abb. Eclipse Konfiguration main-Metjode Arguments" height="547" src="2einfuehrung/graphics/AbbEclipseKonfigMainMethodeArguments.gif" width="570"> 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoAusrufezeichenBlau.gif" width="26"><br/>
+<span class="MargTextBlau">Hinweis</span> 
+</div>
+
+
+
+<p>Gibt es in Ihrem Projekt nur eine Klasse mit einer <span class="courier">main</span>-Methode erkennt Eclipse diese automatisch. Die Beschreibung dient für Sie als Verständnis und Hilfestellung, falls Sie hier einmal Änderungen vornehmen wollen.<br/>
+</p>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1>2.12 Projekt testen</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Der in Eclipse integrierte Debugger bietet Ihnen die Möglichkeit Ihre Java-Programme effektiv zu testen sowie Fehler zu diagnostizieren, aufzufinden und zu beheben.</p>
+
+
+
+
+<p>Das Java Programm kann bei diesen Tests schrittweise ausgeführt werden oder die Ausführung kann an gesetzten Stoppunkten, sogenannten Breakpoints, gestoppt werden.</p>
+
+
+
+
+<p><strong>Breakpoints setzen</strong></p>
+
+
+
+
+<p>Um in Ihrem Java-Programm einen Breakpoint zu setzen, klicken Sie doppelt in die Statusleiste vor die entsprechende Programmzeile. Der Breakpoint wird Ihnen an der entsprechenden Stelle durch einen blauen Punkt angezeigt. Um den Breakpoint wieder zu entfernen klicken Sie nochmals doppelt auf dieselbe Stelle.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphBottomDesc">
+	<div class="bildtitel">Abb.: <br/>
+                  Eclipse Breakpoints</div>
+</div>
+<img alt="Abb. Eclipse Breakpoint" height="638" src="2einfuehrung/graphics/AbbEclipseBreakpoint.gif" width="574"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Setzen Sie in Ihrem Programm in der Klasse <span class="courier">taschenrechner</span> einen Breakpoint in die <span class="courier">main</span>-Methode und einen in den Konstruktor.</p>
+
+
+
+
+<p><strong>Debug starten</strong></p>
+
+
+
+
+<p>Anstatt des <span class="courier">Run</span>-Buttons betätigen Sie jetzt den <span class="courier">Debug</span>-Button: </p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Eclipse Debug Button" height="81" src="2einfuehrung/graphics/AbbEclipseDebugButton.gif" width="275"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Eclipse zeigt Ihnen eine Hinweismeldung mit der Empfehlung in die <span class="courier">Debug-Perspective</span> zu wechseln. Die <span class="courier">Debug-Perspective</span> ist die Perspektive, die für den Debug-Vorgang optimiert ist.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<img alt="Abb. Eclipse Hinweis Debug-Perspective" height="232" src="2einfuehrung/graphics/AbbEclipseDebugPerspectiveHinweis.gif" width="441"/>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Setzen Sie in der Meldung das Häckchen in <span class="courier">Remember my decision</span> und bestätigen Sie anschließend mit <span class="courier">Yes</span>.</p>
+
+
+
+
+<p>Die <span class="courier">Debug-Perspective</span> wird geöffnet und die Programmausführung stoppt in Ihrer <span class="courier">main</span>-Methode, da diese als erstes ausgeführt wird. Schauen Sie sich folgendes Rollover-Bild an um mehr über die Möglichkeiten des Debuggers zu erfahren.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="" height="25" src="../.inc/IcoRollover.gif" width="26"><br/> <span class="MargTextAni">Rolloverbild</span>
+</div>
+ 
+</div><div class="box_large">
+	
+
+	<div class="aniContainer">
+<div class="aniContainerCaption">Elemente der Eclipse Debug Perspective</div>
+<div class="aniContainerBody">
+
+</div>
+<div><img alt="Screenshot - Elemente der Eclipse Debug Perspective" class="alternativbild" height="517" src="2einfuehrung/graphics/RollDebug.gif" width="728">
+
+</div>
+</div>
+	
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+
+
+
+<h1>Zusammenfassung</h1>
+
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+</div>
+
+
+
+<p>Im Kapitel 1 dieser Lerneinheit wird der Stoff des Kurses Programmieren
+        I bereits komprimiert zusammengefasst und deshalb hier nicht noch einmal
+        wiederholt.</p>
+
+
+
+
+<ul class="zusammenfassung">
+<li>Eine <strong>integrierte Entwicklungsumgebung</strong> für die Programmierung in Java ist
+					 Eclipse, das von der <em>Eclipse Foundation</em> entwickelt wird.</li>
+<li>Eclipse  entlastet die ProgrammiererIn von vielen Routinearbeiten. Beispielsweise können Sie
+					mit Hilfe eines Assistenten Klassenfragmente und Standardmethoden wie zum Beispiel die
+					<span class="courier">main</span>-Methode erstellen lassen.</li>
+<li>Eclipse verfügt über eine offene plugin-basierte Struktur, somit ist es  möglich die
+					 Entwicklungsumgebung ganz nach den Wünschen des  Programmierers anzupassen und auch in anderen
+					  Programmiersprachen zu  entwickeln.</li>
+<li>Die wesentlichen Fenster von Eclipse sind der <strong>Projektstrukturbaum</strong>,
+					das <strong>Inhaltsfenster</strong> und die <strong>Hilfsfenster</strong></li>
+<li>Jedes Java-Programm muss in Eclipse als <strong>Projekt</strong> angelegt werden. Eclipse speichert
+					 neben den Java-Dateien mit der Endung <span class="courier">java</span> und
+					 <span class="courier">class</span> projektbezogene  Dateien. Alle Dateien werden in dem Verzeichnis,
+					 dass Sie Beim  Erstellen des Projektes angegeben haben gespeichert.</li>
+<li>Das Kompilieren und Ausführen Ihres Java-Programms erfolgt per Knopfdruck. </li>
+<li>Laufzeiteigenschaften und der CLASSPATH können komfortabel eingestellt werden.</li>
+</ul>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<h1>Wissensüberprüfung</h1>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+<p>Nutzen Sie die folgenden Aufgaben, um Ihr Wissen zu testen.</p>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-04</div>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung EIP-04" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_04.gif" width="578">
+
+
+</div></div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-05</div>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung EIP-05" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_05.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Uebung Interaktion" src="../.inc/IcoUebInteraktion.gif"><br/>
+<span class="MargTextOrange">Freitext</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-06</div>
+<h2>Ausgabe im Quellcode erkennen</h2>
+<div class="UEB" minuten="5"></div>
+<div class="uebContainerBody">
+
+<p>Folgende Programmzeilen sind in einem Java-Programm enthalten:<br/>
+                         <span class="quellcode">int gZahl1 = 25;</span><br/>
+                         <span class="quellcode">int gZahl2 = 12;</span><br/>
+                         <span class="quellcode">gZahl2 = gZahl1 * 2;</span><br/>
+                         <span class="quellcode">gZahl1 = gZahl2 + gZahl1;</span><br/>
+                         <span class="quellcode">gZahl2++; </span></p>
+<p> <span class="quellcode">System.out.println(gZahl1 + gZahl2);</span></p>
+<p>a) Tragen Sie die von <span class="quellcode">System.out.println</span> erzeugte Ausgabe ein: </p>
+</div>
+<div> <img alt="Screenshot - Übung EIP-06" class="alternativbild" height="151" src="4wissen/graphics/ueb_EIP_06.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-07</div>
+<h2>Vereinbarung eindimensionaler Reihungen</h2>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+<p>
+Welche der folgenden Vereinbarungen für eindimensionale Reihungen sind korrekt? </p>
+</div>
+<div> <img alt="Screenshot - Übung 01-07" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_07.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-08</div>
+<h2>String-Objekt erzeugen</h2>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+<p>
+Sie wollen ein <span class="courier">String</span>-Objekt erzeugen,
+                        das folgenden Wert hat.<br/>
+                         <span class="quellcode"> str05 = <q lang="de">1015</q>;</span>  <br/>
+                         Welche der folgenden Programmzeilen führt zum Ergebnis? </p>
+</div>
+<div> <img alt="Screenshot - Übung 01-08" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_08.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Lückentext" height="25" src="../.inc/IcoLueckentext.gif" width="26"><br/> <span class="MargTextOrange">Lückentext</span>
+</div>
+ 
+
+
+
+</div><div class="box_large">
+	<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-09</div>
+<div class="UEB" minuten="8"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung 01-09" class="alternativbild" height="485" src="4wissen/graphics/ueb_EIP_09.gif" width="728">
+
+</div>
+</div>
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-10</div>
+<h2> </h2>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div><img alt="Übung EIP-10" class="alternativbild" height="490" src="4wissen/graphics/ueb_EIP_10.gif" width="578">
+</div></div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-11</div>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung EIP-11" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_11.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-12</div>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung EIP-12" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_12.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Drag und Drop" height="25" src="../.inc/IcoDragAndDrop.gif" width="26"><br/>
+<span class="MargTextOrange">Drag and Drop</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-13</div>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+
+</div>
+<div> <img alt="Screenshot - Übung 01-13" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_13.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-14</div>
+<h2>Eclipse Eigenschaften</h2>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+<p>
+Welche Eigenschaften treffen auf Eclipse zu? </p>
+</div>
+<div> <img alt="Screenshot - Übung EIP-14" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_14.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	<img alt="Icon Multiple Choice Übung" height="25" src="../.inc/IcoMultipleChoice.gif" width="26"><br/>
+<span class="MargTextOrange">Multiple Choice</span>
+</div>
+
+
+
+<div class="uebContainer">
+<div class="uebContainerCaption">Übung EIP-15</div>
+<h2>Eclipse Komponenten</h2>
+<div class="UEB" minuten="3"></div>
+<div class="uebContainerBody">
+<p>
+Welche Komponenten sind Teil von Eclipse? </p>
+</div>
+<div> <img alt="Screenshot - Übung EIP-15" class="alternativbild" height="400" src="4wissen/graphics/ueb_EIP_15.gif" width="578">
+
+</div>
+</div>
+
+
+
+</div><div class="box">
+	<div class="paragraphTopDesc">
+	 
+</div>
+ 
+</div><h1 class="appendixTitle">Appendix</h1>
+<div class="appendix">
+<div class="content">
+<h1>Sinnbilder für Struktogramme nach Nassi-Shneiderman DIN 66261;November 1985</h1>
+<p>Die folgende Tabelle enthält die Nassi-Shneiderman-Darstellungen, die in Java
+      implementiert sind. Die Struktogramme für die Wiederholung ohne Bedingungsprüfung
+      und die Parallelverarbeitung sind nicht aufgeführt.</p>
+<table class="datentabelle">
+<tbody>
+<tr class="evenTR alignLeft">
+<th><strong>Sinnbild</strong></th>
+<th><strong>Benennung </strong></th>
+<th><strong>Ersatzdarstellung</strong></th>
+</tr>
+<tr class="evenTR">
+<td colspan="3"><strong>Verarbeitung,                  allgemein (Process) </strong></td>
+</tr>
+<tr class="oddTR">
+<td><img alt="Block" height="100" src="1einstieg/graphics/AbbStruktogramm_1.gif" width="195"/></td>
+<td>Block</td>
+<td> </td>
+</tr>
+<tr class="oddTR">
+<td><img alt="Folge" height="100" src="1einstieg/graphics/AbbStruktogramm_2.gif" width="195"/></td>
+<td>Folge (serial)</td>
+<td> </td>
+</tr>
+<tr class="evenTR">
+<td colspan="3"><b>Alternative (selective choice)</b></td>
+</tr>
+<tr class="oddTR">
+<td><img alt="bedingte Verarbeitung" height="100" src="1einstieg/graphics/AbbStruktogramm_3a.gif" width="195"/></td>
+<td>bedingte Verarbeitung (monadic selective)</td>
+<td><img alt="bedingte Verarbeitung alt" height="100" src="1einstieg/graphics/AbbStruktogramm_3b.gif" width="195"/></td>
+</tr>
+<tr class="oddTR">
+<td><img alt="einfache Alternative" height="100" src="1einstieg/graphics/AbbStruktogramm_4a.gif" width="195"/></td>
+<td>einfache Alternative (dyadic selective)</td>
+<td><img alt="einfache Alternative alt" height="100" src="1einstieg/graphics/AbbStruktogramm_4b.gif" width="195"/></td>
+</tr>
+<tr class="oddTR">
+<td><img alt="mehrfach Alternative" height="100" src="1einstieg/graphics/AbbStruktogramm_5a.gif" width="300"/></td>
+<td>mehrfache Alternative (multiple exklusive selective)</td>
+<td><img alt="mehrfach Alternative alt" height="100" src="1einstieg/graphics/AbbStruktogramm_5b.gif" width="300"/></td>
+</tr>
+<tr class="evenTR">
+<td><b>Wiederholung (iterative)</b></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="oddTR">
+<td><img alt="vorrausgehende Pruefung" height="100" src="1einstieg/graphics/AbbStruktogramm_6.gif" width="195"/></td>
+<td>Wiederholung mit vorausgehender Bedingungsprüfung (pre-tested iteration)</td>
+<td> </td>
+</tr>
+<tr class="oddTR">
+<td><img alt="nachfolgende Prüfung" height="100" src="1einstieg/graphics/AbbStruktogramm_7.gif" width="195"/></td>
+<td>Wiederholung mit nachfolgender Bedingungsprüfung (post-tested iteration)</td>
+<td> </td>
+</tr>
+<tr class="evenTR">
+<td>even</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr class="oddTR">
+<td><img alt="even " height="100" src="1einstieg/graphics/AbbStruktogramm_8a.gif" width="195"/></td>
+<td> </td>
+<td><img alt="even alt" height="100" src="1einstieg/graphics/AbbStruktogramm_8b.gif" width="195"/></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+
+</div><div class="appendix">
+<div class="content">
+<h1>Installation von Eclipse Luna (4.4.1) unter Linux Ubuntu
+    </h1>
+<div class="termContainer">
+<h2>Hinweis</h2>
+<p>Eclipse wird auch im Ubuntu Software Center zum Download angeboten. Jedoch, zum jetzigen Zeitpunkt im Dezember 2014, in einer veralteten Version. Wir empfehlen das Herunterladen der aktuellen Version von der <a href="http://www.eclipse.org/downloads" target="_blank"></a> <a class="weblink" href="http://www.eclipse.org/downloads" target="_blank">Website</a></p>
+</div>
+<br/>
+<p><b>Download</b></p>
+<p>Laden Sie die aktuelle Version von Eclipse für Ihr Betriebssystem herunter und speichern die zip-Datei an einem beliebigen Ort.</p>
+<img alt="Abb. Eclipse Download" height="401" src="2einfuehrung/graphics/lixAbbEclipseDownload.gif" width="582"/>
+<br/>
+<div class="bildtitel">Abb.: Screenshot Eclipse Download</div>
+<br/>
+<p><b>Entpacken</b></p>
+<p>Nach abgeschlossenem Download wechseln Sie in das Verzeichnis, in das Sie die Datei heruntergeladenen haben. Bei der Datei handelt es sich um eine Zip-Datei, die nun in ein von Ihnen gewünschtes Programmverzeichnis entpackt werden muss. Eine Installation ist nicht notwendig.</p>
+<p><b>Eclipse starten</b></p>
+<p>Nach dem Entpacken können Sie Eclipse aus dem Programmverzeichnis mittels Doppelklick auf die Datei <q lang="de">eclipse</q> starten</p>
+<p>
+<img alt="Abb. Eclipse starten" height="518" src="2einfuehrung/graphics/lixAbbEclipseStarten.gif" width="617"/></p>
+<div class="bildtitel">Abb.: Eclipse starten</div>
+<p> </p>
+</div>
+
+</div><div class="appendix">
+<div class="content">
+<h1>Fehler beim Starten von Eclipse</h1>
+<p>Kann Eclipse die Java Runtime Umgebung (JRE) oder das JDK beim Starten nicht finden, wird folgende  Fehlermeldung angezeigt:</p>
+<p><img alt="Abb. Eclipse JDK Fehler" height="152" src="2einfuehrung/graphics/AbbEclipseJDKFehler.gif" width="344"/><br/>
+</p>
+<p>Der Grund für diese Fehlermeldung ist, dass Eclipse Ihre JRE- / JDK-Installation nicht, in dem in Ihren Umgebungsvariablen eingestellten Pfad, finden kann.  </p>
+<p><b>Pfad in Umgebungsvariablen einstellen</b></p>
+<p>Sie müssen den Pfad in dem sich Ihre JRE / JDK-Installation befindet in den Umgebungsvariablen folgendermaßen einstellen:</p>
+<p>
+    Klicken Sie mit der rechten Maustaste auf das  Arbeitsplatzsymbol, dass sich auf dem Desktop befinden. Klicken Sie im erscheinenden Kontextmenü auf den Eintrag <q lang="de">Eigenschaften</q>. Im Eigenschaftenfenster wechseln Sie auf den Reiter <q lang="de">Erweitert</q> und betätigen dort den Button <q lang="de">Umgebungsvariablen</q>.</p>
+<p>
+<img alt="Abb. Arbeitsplatz Eigenschaften" height="461" src="2einfuehrung/graphics/AbbArbeitsplatzEigenschaften.gif" width="410"/></p>
+<div class="bildtitel">Abb.: Arbeitsplatz Eigenschaften</div>
+<p><br/>
+      In den Benutzervariablen fügen Sie entweder mit <q lang="de">Neu</q>
+einen neuen Eintrag hinzu oder wenn bereits ein Eintrag mit dem Variablennamen <q lang="de">Path</q> besteht, passen Sie diesen mittels <q lang="de">Bearbeiten</q> an.</p>
+<p><img alt="Abb. Umgebungsvariablen" height="423" src="2einfuehrung/graphics/AbbUmgebungsvariablen.gif" width="384"/></p>
+<p>Geben Sie im Feld <q lang="de">Name der Variable</q> den Wert <q lang="de">Path</q> ein. Im Feld <q lang="de">Wert der Variable</q> tragen sie den Pfad ein in dem Sie das JDK installiert haben.  Wenn Sie das Fenster mit <q lang="de">Bearbeiten</q> geöffnet haben, fügen Sie an den bereits bestehenden Inhalt im Feld <q lang="de">Wert der Variablen</q> ein Semikolon an und anschliessend den Pfad zu Ihrer JDK-Installation. Bestätigen Sie  das Fenster mit <q lang="de">OK</q>.</p>
+<p><img alt="Abb. Path Variable" height="140" src="2einfuehrung/graphics/AbbPathVariable.gif" width="351"/></p>
+<p>In dem Fenster <q lang="de">Umgebungsvariablen</q> ist nun ein neuer bzw. bearbeiteter Eintrag für die Variable <q lang="de">Path</q> vorhanden.</p>
+<p><img alt="Abb. Umgebungsvariablen Neu" height="423" src="2einfuehrung/graphics/AbbUmgebungsvariablenNeu.gif" width="384"/></p>
+<p>Bestätigen Sie das Fenster <q lang="de">Umgebungsvariablen</q> und <q lang="de">Systemeingenschaften</q> mit <q lang="de">OK</q> und starten Sie Eclispe erneut.</p>
+</div>
+
+</div><div class="appendix">
+<div class="content">
+<!-- Seitenumbruch nach diesem Element -->
+<div class="pg-break-after"> </div>
+<!-- ====================== -->
+<h1>Java SE Development Kit 7.0</h1>
+<p>Das JDK wird auf der Seite der Firma Oracle  kostenlos zum <a href="http://java.sun.com/javase/downloads/index.jsp" target="_blank"></a> <a class="weblink" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Download</a> angeboten.</p>
+<br/>
+<p><b>Download</b></p>
+<p>Laden Sie das aktuelle <strong>Java SE Development Kit (JDK)</strong>  für das gewünschte Betriebssystem herunter. Verwenden Sie nicht die Bundle Versionen. Wie verwenden in unserem Beispiel das JDK 7.0 Update 3 für Windows.</p>
+<div class="termContainer">
+<p>In der Regel wird auf der Downloadseite auch das <strong>Java SE Runtime Environment (JRE) </strong>zum Download angeboten. Sie sollten auf jedenfall darauf achten, dass Sie das <strong>JDK</strong> herunterladen, denn nur mit dem <strong>JDK</strong> stehen Ihnen alle Funktionalitäten zur Verfügung, die wir in den folgenden Lerneinheiten benötigen.</p>
+</div>
+<br/>
+<p>
+<img alt="Abb. DK Download 1" height="579" src="2einfuehrung/graphics/AbbJDK7Download.gif" width="601"/></p>
+<div class="bildtitel">Abb.: Screenshot JDK Download</div>
+<p>
+<br/>
+    Nach abgeschlossenem Download müsste sich auf Ihrer Festplatte eine Datei befinden, die sich <q lang="de"><strong>jdk-7xx-windows-x64.exe</strong></q> nennt. Die beiden kleinen xx stehen für die aktuelle  Versionsnummer des JDK. Diese kann sich schnell ändern und darum haben wir hier  Platzhalter eingesetzt.</p>
+<br/>
+<p><b>Installation</b></p>
+<p>Wechseln Sie im Datei-Explorer in das Verzeichnis, in das Sie die Datei heruntergeladen haben und
+    starten Sie die Installation durch Doppelklick auf die heruntergeladene Datei.</p>
+<p>
+<img alt="Abb. JDK Download Datei" height="240" src="2einfuehrung/graphics/AbbJDKDownloadDatei.gif" width="517"/></p>
+<div class="bildtitel">Abb.: Windows Explorer: heruntergeladenen Installationsdatei</div>
+<p> </p>
+<div class="termContainer">
+<img alt="" class="floatLeft" height="29" src="../.inc/exclaim.gif" style="margin-right: 10px" width="8"><p>Wenn Sie sich bei der Installation nicht ganz
+      sicher sind, dann bestätigen Sie am besten immer die <a href="javascript:openGlossar('standardvor')">Standardvorgaben</a>,
+      die Ihnen von der Installationsroutine vorgeschlagen werden.</p>
+</div>
+<p> </p>
+</div>
+
+</div><div class="appendix">
+<div class="content">
+<h1>Quellcode Klasse Taschenrechner</h1>
+<!-- codeContainer Start -->
+<div class="codeContainer">
+<div class="codeContainerCaption">Taschenrechner.java</div>
+<div class="codeContainerContent">
+<pre class="source"><code class="numbers"> </code><code class="code" data-language="java">package taschenrechner;
+
+ public class Taschenrechner {
+
+     public Taschenrechner() {
+         rechner = new Gui();
+     }
+
+     public static void main(String[] args) {
+         new Taschenrechner();
+     }
+ }</code></pre><div class="clear"></div>
+</div>
+</div>
+<!-- codeContainer Ende -->
+</div>
+
+</div><div class="appendix">
+<div class="content">
+<h1>Quellcode Klasse Taschenrechner</h1>
+<!-- codeContainer Start -->
+<div class="codeContainer">
+<div class="codeContainerCaption">Taschenrechner.java</div>
+<div class="codeContainerContent">
+<pre class="source"><code class="numbers"> </code><code class="code" data-language="java">package taschenrechner;
+
+ public class Taschenrechner {
+
+     private Gui rechner;
+
+     public Taschenrechner() {
+         rechner = new Gui();
+     }
+
+     public static void main(String[] args) {
+         new Taschenrechner();
+     }
+ }</code></pre><div class="clear"></div>
+</div>
+</div>
+<!-- codeContainer Ende -->
+</div>
+
+</div></div><!-- end main -->
+</div><!-- end mainText -->
+</div><!-- end content -->
+</body>
+</html>

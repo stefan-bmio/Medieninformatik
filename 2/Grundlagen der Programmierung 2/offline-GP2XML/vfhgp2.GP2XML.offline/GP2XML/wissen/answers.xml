@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<answers>
+	<answer id="1">
+		<answer text = "documenttypedefinition"			id = "1"></answer>
+		<answer text = "Document Type Definition"	id = "1"></answer>		
+	</answer>
+	<answer id="2">
+		<answer text = "cascadingstylesheets" 			id = "2"></answer>
+		<answer text = "Cascading Style Sheets"	id = "2"></answer>
+		
+	</answer>
+	<answer id="3">
+		<answer text = "extensiblestylesheetlanguagetransformations" 			id = "3"></answer>
+		<answer text = "Extensible Stylesheet Language Transformations"	id = "3"></answer>
+	</answer>
+	<answer id="4">
+		<answer text = "standardgeneralizedmarkuplanguage" 			id = "4"></answer>
+		<answer text = "Standard Generalized Markup Language"	id = "4"></answer>
+	</answer>
+	<answer id="5">
+		<answer text = "simpleapiforxml" 			id = "5"></answer>
+		<answer text = "Simple API for XML"	id = "5"></answer>
+	</answer>
+	<answer id="6">
+		<answer text = "extensiblehypertextmarkuplanguage"			id = "6"></answer>
+		<answer text = "Extensible Hypertext Markup Language"	id = "6"></answer>		
+	</answer>
+	<answer id="7">
+		<answer text = "xmlschemadefinition" 			id = "7"></answer>
+		<answer text = "XML Schema Definition"	id = "7"></answer>
+		
+	</answer>
+	<answer id="8">
+		<answer text = "extensiblestylesheetlanguage" 			id = "8"></answer>
+		<answer text = "Extensible Stylesheet Language"	id = "8"></answer>
+	</answer>
+	<answer id="9">
+		<answer text = "documentobjectmodel" 			id = "9"></answer>
+		<answer text = "Document Object Model"	id = "9"></answer>
+	</answer>
+	<answer id="10">
+		<answer text = "extensiblemarkuplanguage" 			id = "10"></answer>
+		<answer text = "Extensible Markup Language"	id = "10"></answer>
+	</answer>
+</answers>	
+

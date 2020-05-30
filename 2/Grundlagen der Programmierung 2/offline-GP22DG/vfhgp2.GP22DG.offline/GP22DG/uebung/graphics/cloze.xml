@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cloze xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Cloze.xsd">
+	<text>Java-Grafiken basieren auf $1$. Ein Pixel ist ein $2$, der eine bestimmte Farbe und Intensität ( = Helligkeit ) hat. Die $3$ und damit die Dichte der Pixelrasterung ist hardwareabhängig und bei verschiedenen Bildschirmen unterschiedlich. Grober Anhaltspunkt: 100 Pixel nebeneinander erstrecken sich etwa über 3,5 cm. 
+	Die $4$ jedes Pixels wird durch ein $5$ (x | y) (= seine Koordinaten ) in einem $6$ rechtwinkligen kartesischen Koordinatensystem festgelegt, dessen $7$ (0 | 0) in der linken, oberen Ecke des Grafik-Fensters liegt.</text>
+	<gapword id="1" word="Pixel"/>
+	<gapword id="2" word="Rasterpunkt"/>
+	<gapword id="3" word="Pixelgröße"/>
+	<gapword id="4" word="Position"/>
+	<gapword id="5" word="Zahlenpaar"/>
+	<gapword id="6" flexion="zweidimensionalen" word="zweidimensional"/>
+	<gapword id="7" word="Ursprungspunkt"/>	
+</cloze>

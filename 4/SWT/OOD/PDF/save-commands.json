@@ -1,0 +1,8 @@
+{
+  "commands" : [
+    "*.tex : pdflatex {filename}",
+
+    "*.mp : mpost -output-directory mps {filename}",
+    "*.mp : pdflatex design.tex"
+  ]
+}

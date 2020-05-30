@@ -1,0 +1,2 @@
+Prädikatenlogik (Unterschied Aussagenlogik, etc)
+n^2-n = n*(n-1)
