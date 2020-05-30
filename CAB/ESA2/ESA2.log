@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  30 MAY 2020 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  30 MAY 2020 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -72,51 +72,69 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \TX@cols=\count88
 \TX@ftn=\toks18
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen112
+\c@nlinenum=\count89
+\TeXr@lab=\toks19
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2017/03/19 v3.3-145 Customizing captions (AR)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/04/15 v1.7-167 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen112
-\captionmargin@=\dimen113
-\captionwidth=\dimen114
-\caption@tempdima=\dimen115
-\caption@indent=\dimen116
-\caption@parindent=\dimen117
-\caption@hangindent=\dimen118
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
 )
-\c@ContinuedFloat=\count89
+\c@ContinuedFloat=\count90
 )
-(./ESA2.aux)
+(./ESA2.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `ESA2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-
-(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count90
-\scratchdimen=\dimen119
+\scratchcounter=\count91
+\scratchdimen=\dimen120
 \scratchbox=\box28
-\nofMPsegments=\count91
-\nofMParguments=\count92
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count93
-\MPscratchDim=\dimen120
-\MPnumerator=\count94
-\makeMPintoPDFobject=\count95
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen121
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -176,29 +194,177 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./ESA2.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 47--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]|\OT1/cmr/bx/n/10 Shortest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+\OT1/cmr/m/n/10 Auf-gaben braucht nicht
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+\OT1/cmr/m/n/10 Prozessen wer-den lange
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 69--69
+\OT1/cmr/m/n/10 eines Prozesses ist nicht
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 69--69
+[]|\OT1/cmr/bx/n/10 First Come
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]|\OT1/cmr/m/n/10 Einhaltung des Fairness-
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 69--69
+\OT1/cmr/m/n/10 durch Warten auf l^^?angere
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 69--69
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 85--85
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--86
+
+ []
+
+File: fcfs.mps Graphic file (type mps)
+[MP to PDF] (./fcfs.mps)
+Overfull \hbox (72.6291pt too wide) in paragraph at lines 90--91
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--94
+
+ []
+
+[2]
+File: sjf.mps Graphic file (type mps)
+ [MP to PDF] (./sjf.mps)
+Overfull \hbox (72.6291pt too wide) in paragraph at lines 96--97
+[][] 
+ []
+
+File: srtn.mps Graphic file (type mps)
+[MP to PDF] (./srtn.mps)
+Overfull \hbox (72.6291pt too wide) in paragraph at lines 102--103
+[][] 
+ []
+
+File: rr.mps Graphic file (type mps)
+[MP to PDF] (./rr.mps)
+Overfull \hbox (72.6291pt too wide) in paragraph at lines 108--109
+[][] 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+File: ps.mps Graphic file (type mps)
+[MP to PDF] (./ps.mps)
+Overfull \hbox (68.64148pt too wide) in paragraph at lines 118--119
+[][] 
+ []
+
+[4] (./ESA2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2597 strings out of 492649
- 41440 string characters out of 6129622
- 102763 words of memory out of 5000000
- 6483 multiletter control sequences out of 15000+600000
+ 2812 strings out of 492649
+ 43582 string characters out of 6129622
+ 114600 words of memory out of 5000000
+ 6678 multiletter control sequences out of 15000+600000
  4553 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,4n,38p,271b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb>
-Output written on ESA2.pdf (1 page, 21364 bytes).
+ 41i,10n,38p,271b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on ESA2.pdf (4 pages, 47619 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 25 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
